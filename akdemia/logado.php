@@ -43,11 +43,6 @@ include('protect.php');
             </a>
           </div>
           <div class="u-custom-menu u-nav-container">
-            <div  style="margin-left:-30%; margin-right:30%; margin-top:3%; float:left;">
-          Bem vindo, <?php echo $_SESSION['nome']; ?>
-
-          <a href="logout.php">Sair</a>
-          </div>
             <ul class="u-nav u-unstyled u-nav-1"><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="Página-Inicial.html#carousel_6c19" data-page-id="958515637" style="padding: 24px 20px;">Página Inicial</a>
 </li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" style="padding: 24px 20px;">Perfil</a>
 </li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="#" style="padding: 24px 20px;">Contato</a>
@@ -56,6 +51,7 @@ include('protect.php');
 </li></ul>
           </div>
           <div class="u-custom-menu u-nav-container-collapse">
+            
             <div class="u-black u-container-style u-inner-container-layout u-opacity u-opacity-95 u-sidenav">
               <div class="u-inner-container-layout u-sidenav-overflow">
                 <div class="u-menu-close"></div>
@@ -69,7 +65,11 @@ include('protect.php');
             </div>
             <div class="u-black u-menu-overlay u-opacity u-opacity-70"></div>
           </div>
-        </nav>
+        </nav><div  style="margin-left:20%; margin-top:-4%; float:left;">
+          Bem vindo, <?php echo $_SESSION['nome']; ?>
+
+          <a href="logout.php">Sair</a>
+          </div>
       </div></header>
     <section class="u-align-center u-clearfix u-image u-section-1" id="carousel_6c19" data-image-width="1280" data-image-height="720">
       <div class="u-clearfix u-sheet u-sheet-1">
