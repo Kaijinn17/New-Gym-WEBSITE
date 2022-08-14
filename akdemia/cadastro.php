@@ -14,7 +14,7 @@ $sql = "INSERT INTO clientes(nome,telefone,email,senha,data_nascimento,genero)VA
 
 if (mysqli_query($conn, $sql)){
 
-     header("Location: Login.html");
+     header("Location: logar.php");
 
 }
 
