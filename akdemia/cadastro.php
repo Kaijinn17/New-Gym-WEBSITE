@@ -11,6 +11,7 @@ $genero = $_POST['select'];
 
 $sql = "INSERT INTO clientes(nome,telefone,email,senha,data_nascimento,genero)VALUES('$nome','$telefone','$email','$senha','$data_nascimento','$genero') ";
 
+
 if (mysqli_query($conn, $sql)){
 
      header("Location: Login.html");
