@@ -29,6 +29,24 @@ include('protect.php');
     <meta property="og:title" content="Página Inicial">
     <meta property="og:description" content="">
     <meta property="og:type" content="website">
+
+<style>
+
+.btn-sair{
+margin-left:20px;
+background-color:red; 
+border:none; 
+border-radius:10px; 
+cursor: pointer;
+width:100px;
+font-family:fantasy;
+}  
+
+.btn-sair:hover{
+background-color:#680000;
+}
+      
+</style>
   </head>
   <body data-home-page="Página-Inicial.html" data-home-page-title="Página Inicial" class="u-body u-xl-mode" data-lang="pt"><header class="u-clearfix u-header u-header" id="sec-cf8d"><div class="u-clearfix u-sheet u-sheet-1">
         <a href="https://nicepage.com" class="u-image u-logo u-image-1" data-image-width="2581" data-image-height="729">
@@ -68,7 +86,7 @@ include('protect.php');
         </nav><div  style="margin-left:20%; margin-top:-4%; float:left;">
           Bem vindo, <?php echo $_SESSION['nome']; ?>
 
-          <a href="logout.php">Sair</a>
+          <button class="btn-sair"><a style="color:white;" href="logout.php">Sair</a></button>
           </div>
       </div></header>
     <section class="u-align-center u-clearfix u-image u-section-1" id="carousel_6c19" data-image-width="1280" data-image-height="720">
