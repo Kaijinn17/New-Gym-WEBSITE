@@ -5,7 +5,7 @@ if(!isset($_SESSION)) {
   }
 
   if(!isset($_SESSION['id'])) {
-    die("Você precisa logar em uma conta para acessar está Página.<p><a href=\"login.html\">Entrar </p>");
+    die("Você precisa logar em uma conta para acessar está Página.<p><a href=\"logar.php\">Entrar </p>");
   }
 
 
