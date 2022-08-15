@@ -2,6 +2,10 @@
 
 include('config.php');
 
+$mysqli = new mysqli("ec2-54-85-56-210.compute-1.amazonaws.com/", "vivuuvngcdbszv", "8b0e2945b9a7a493843837d2fd2c22585136ce20f859ee51517857780f47ebf1", "dfopd816p36hgh");
+
+
+
 if(isset($_POST['email']) || isset($_POST['senha'])) {
 
    if(strlen($_POST['email']) == 0) {
