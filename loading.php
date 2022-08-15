@@ -95,7 +95,7 @@ h1{
     float: center;
     color: white;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    margin-top: 17%;
+    margin-top: 20%;
 }
 </style>
 <script>
