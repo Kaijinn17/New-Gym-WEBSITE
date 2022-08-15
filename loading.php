@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastrando...</title>
+
 <style>
 body {
   display: flex;
@@ -13,11 +14,11 @@ body {
   align-items: center;
   background: rgb(0, 0, 0);
 }
+
 .loading {
   display: flex;
   position: absolute;
   float: center;
-  margin-bottom: 50px;
 }
 .loading .dot {
   position: relative;
@@ -65,6 +66,7 @@ body {
 .loading .dot:nth-child(5)::before {
   animation-delay: 1s;
 }
+
 @keyframes wave {
   50%, 75% {
     transform: scale(2.5);
@@ -73,6 +75,7 @@ body {
     opacity: 0;
   }
 }
+
 h1{
     font-size: 25px;
    font-family: serif;
@@ -92,20 +95,25 @@ h1{
      opacity: 0;
    }
  }
+
 .nadadiv{
     float: center;
     color: white;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    margin-top: 20%;
+    margin-top: 15%;
 }
 </style>
+
 <script>
+
 setTimeout(
         function(){
             window.location = "logar.php" 
         },
     9000);
+
 </script>
+
 </head>
 <body>
     
@@ -119,5 +127,6 @@ setTimeout(
       <div class="nadadiv">
         <h1 class="nadaver">Em alguns instantes a sua Conta será Cadastrada...</h1>
       </div>
+
 </body>
 </html>
