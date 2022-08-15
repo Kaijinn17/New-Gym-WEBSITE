@@ -17,6 +17,7 @@ body {
   display: flex;
   position: absolute;
   float: center;
+  margin-bottom: 50px;
 }
 .loading .dot {
   position: relative;
