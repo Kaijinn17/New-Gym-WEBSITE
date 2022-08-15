@@ -2,10 +2,6 @@
 
 include('config.php');
 
-$mysqli = new mysqli("localhost", "whoami", "akdemiacetep", "akdemiadb1");
-
-
-
 if(isset($_POST['email']) || isset($_POST['senha'])) {
 
    if(strlen($_POST['email']) == 0) {
