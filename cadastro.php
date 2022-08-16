@@ -9,7 +9,7 @@ $senha = $_POST['password'];
 $data_nascimento = $_POST['date'];
 $genero = $_POST['select'];
 
-$sql = "INSERT INTO clientes(nome,telefone,email,senha,data_nascimento,genero)VALUES('$nome','$telefone','$email','$senha','$data_nascimento','$genero') ";
+$sql = "INSERT INTO users(nome,telefone,email,senha,data_nascimento,genero)VALUES('$nome','$telefone','$email','$senha','$data_nascimento','$genero') ";
 
 
 if (mysqli_query($conn, $sql)){
