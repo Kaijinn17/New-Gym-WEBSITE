@@ -2,6 +2,16 @@
 
 <?php
 
+[
+
+    'array' => 'MongoDB\Model\BSONArray',
+
+    'document' => 'MongoDB\Model\BSONDocument',
+
+    'root' => 'MongoDB\Model\BSONDocument',
+
+]
+
 $nome = $_POST['name'];
 $telefone = $_POST['phone'];
 $email = $_POST['email'];
