@@ -76,7 +76,7 @@
     </section>
     <section class="u-align-center u-clearfix u-section-2" id="carousel_28e0">
       <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
-        <h3 class="u-text u-text-default u-text-1">Nossos professores</h3>
+        <h3 class="u-text u-text-default u-text-1">Nossos professoreS</h3>
         <div class="u-list u-list-1">
           <div class="u-repeater u-repeater-1">
             <div class="u-align-center u-container-style u-list-item u-repeater-item">
