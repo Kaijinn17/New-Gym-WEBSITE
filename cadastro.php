@@ -1,6 +1,8 @@
-<?php include_once"config.php"; ?>
+<?php 
 
-<?php
+require_once 'config.php'; 
+
+
 
 
 
