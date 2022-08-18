@@ -8,7 +8,7 @@ if (!empty($_POST)) {
     try {
       // Preparar as informações
         // Montar a SQL (pgsql)
-        $sql = "INSERT INTO users
+        $sql = "INSERT INTO clientes
                   (nome, data_nascimento, telefone, email, senha)
                 VALUES
                   (:nome, :dataNascimento, :telefone, :email, :senha)";
