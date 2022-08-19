@@ -1,10 +1,3 @@
-<?php
-
-include('protect.php');
-
-?>
-
-
 <!DOCTYPE html>
 <html style="font-size: 16px;" lang="pt">
 
@@ -14,10 +7,10 @@ include('protect.php');
   <meta name="keywords" content="">
   <meta name="description" content="">
   <title>Página Inicial</title>
-  <link rel="stylesheet" href="nicepage.css" media="screen">
-  <link rel="stylesheet" href="home.css" media="screen">
-  <script class="u-script" type="text/javascript" src="jquery.js" defer=""></script>
-  <script class="u-script" type="text/javascript" src="nicepage.js" defer=""></script>
+  <link rel="stylesheet" href="./assets/css/nicepage.css" media="screen">
+  <link rel="stylesheet" href="./assets/css/home.css" media="screen">
+  <script class="u-script" type="text/javascript" src="./assets/js/jquery.js" defer=""></script>
+  <script class="u-script" type="text/javascript" src="./assets/js/nicepage.js" defer=""></script>
   <meta name="generator" content="Nicepage 4.14.1, nicepage.com">
   <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i">
   <link id="u-page-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald:200,300,400,500,600,700">
@@ -33,29 +26,13 @@ include('protect.php');
   <meta property="og:title" content="Página Inicial">
   <meta property="og:description" content="">
   <meta property="og:type" content="website">
-
-  <style>
-    .btn-sair {
-      margin-left: 20px;
-      background-color: red;
-      border: none;
-      border-radius: 10px;
-      cursor: pointer;
-      width: 100px;
-      font-family: fantasy;
-    }
-
-    .btn-sair:hover {
-      background-color: #680000;
-    }
-  </style>
 </head>
 
-<body data-home-page="home.html" data-home-page-title="Página Inicial" class="u-body u-xl-mode" data-lang="pt">
+<body class="u-body u-xl-mode" data-lang="pt">
   <header class="u-clearfix u-header u-header" id="sec-cf8d">
     <div class="u-clearfix u-sheet u-sheet-1">
-      <a href="https://nicepage.com" class="u-image u-logo u-image-1" data-image-width="2581" data-image-height="729">
-        <img src="images/akdemia2.png" class="u-logo-image u-logo-image-1">
+      <a href="./home.php" class="u-image u-logo u-image-1" data-image-width="2581" data-image-height="729">
+        <img src="./assets/images/akdemia2.png" class="u-logo-image u-logo-image-1">
       </a>
       <nav class="u-menu u-menu-one-level u-offcanvas u-menu-1">
         <div class="menu-collapse" style="font-size: 1rem; letter-spacing: 0px;">
@@ -87,7 +64,6 @@ include('protect.php');
           </ul>
         </div>
         <div class="u-custom-menu u-nav-container-collapse">
-
           <div class="u-black u-container-style u-inner-container-layout u-opacity u-opacity-95 u-sidenav">
             <div class="u-inner-container-layout u-sidenav-overflow">
               <div class="u-menu-close"></div>
@@ -108,11 +84,6 @@ include('protect.php');
           <div class="u-black u-menu-overlay u-opacity u-opacity-70"></div>
         </div>
       </nav>
-      <div style="margin-left:20%; margin-top:-4%; float:left;">
-        Bem vindo, <?php echo $_SESSION['nome']; ?>
-
-        <button class="btn-sair"><a style="color:white;" href="logout.php">Sair</a></button>
-      </div>
     </div>
   </header>
   <section class="u-align-center u-clearfix u-image u-section-1" id="carousel_6c19" data-image-width="1280" data-image-height="720">
@@ -121,23 +92,24 @@ include('protect.php');
       </h2>
       <h2 class="u-custom-font u-font-oswald u-text u-text-default u-text-2">DEMIA</h2>
       <p class="u-text u-text-default u-text-white u-text-3">Somos a Academia Que Vai Revolucionar a Estética!!</p>
+      <a href="cadastrar.php" data-page-id="13566755" class="u-active-custom-color-2 u-border-none u-btn u-btn-round u-button-style u-custom-color-1 u-hover-custom-color-2 u-radius-50 u-btn-1">criar conta</a>
     </div>
   </section>
   <section class="u-align-center u-clearfix u-section-2" id="carousel_28e0">
     <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
-      <h3 class="u-text u-text-default u-text-1">Nossos professores</h3>
+      <h3 class="u-text u-text-default u-text-1">Nossos professoreS</h3>
       <div class="u-list u-list-1">
         <div class="u-repeater u-repeater-1">
           <div class="u-align-center u-container-style u-list-item u-repeater-item">
             <div class="u-container-layout u-similar-container u-container-layout-1">
-              <img src="images/man-holding-barbell-1431282.jpg" alt="" class="u-expanded-width u-image u-image-default u-image-1" data-image-width="810" data-image-height="1080">
+              <img src="./assets/images/man-holding-barbell-1431282.jpg" alt="" class="u-expanded-width u-image u-image-default u-image-1" data-image-width="810" data-image-height="1080">
               <h5 class="u-text u-text-2">CarLOS ANSELMO</h5>
               <p class="u-text u-text-grey-40 u-text-3">Criador dos Designs Visuais do site e Personal Trainer</p>
             </div>
           </div>
           <div class="u-align-center u-container-style u-list-item u-repeater-item">
             <div class="u-container-layout u-similar-container u-container-layout-2">
-              <img src="images/athlete-black-and-white-boxer-boxing-290416.jpg" alt="" class="u-expanded-width u-image u-image-default u-image-2">
+              <img src="./assets/images/atleta.jpg" alt="" class="u-expanded-width u-image u-image-default u-image-2">
               <h5 class="u-text u-text-4">vULGO LIDER DA SALA</h5>
               <p class="u-text u-text-grey-40 u-text-5">Gerente do nosso banco de Dados e Preparador Físico de Atletas do Basquete.</p>
             </div>
@@ -217,7 +189,7 @@ include('protect.php');
                       <path d="M373.333,266.88c-25.003,0-49.493-3.904-72.704-11.563c-11.328-3.904-24.192-0.896-31.637,6.699l-46.016,34.752    c-52.8-28.181-86.592-61.952-114.389-114.368l33.813-44.928c8.512-8.512,11.563-20.971,7.915-32.64    C142.592,81.472,138.667,56.96,138.667,32c0-17.643-14.357-32-32-32H32C14.357,0,0,14.357,0,32    c0,205.845,167.488,373.333,373.333,373.333c17.643,0,32-14.357,32-32V298.88C405.333,281.237,390.976,266.88,373.333,266.88z"></path>
                     </svg><img></span>&nbsp;+1 (234) 567-8910
                 </a>
-                <img class="u-image u-image-default u-preserve-proportions u-image-2" src="images/48d3c3d305db88bcb361f470239b2cfc45048738dee1964d2376416d6c94d51073b09b9658aae1e18c2f8db1ba2dd47dca43477beb44691f23b499_1280.png" alt="" data-image-width="150" data-image-height="150">
+                <img class="u-image u-image-default u-preserve-proportions u-image-2" src="./assets/images/48d3c3d305db88bcb361f470239b2cfc45048738dee1964d2376416d6c94d51073b09b9658aae1e18c2f8db1ba2dd47dca43477beb44691f23b499_1280.png" alt="" data-image-width="150" data-image-height="150">
                 <h2 class="u-custom-font u-font-oswald u-subtitle u-text u-text-default u-text-2">akdemia@gmail.com</h2>
               </div>
             </div>
