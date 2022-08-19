@@ -11,7 +11,7 @@ if (!empty($_POST) && isset($_POST['name']) && isset($_POST['date']) && isset($_
     $sql = "INSERT INTO clientes
                   (nome, data_nascimento, telefone, email, senha, genero)
                 VALUES
-                  (:nome, :dataNascimento, :telefone, :email, :senha, :genero)";
+                  (:nome, :data_nascimento, :telefone, :email, :senha, :genero)";
 
     // Preparar a SQL (pdo)
     $stmt = $pdo->prepare($sql);
