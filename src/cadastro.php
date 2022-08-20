@@ -10,9 +10,9 @@ if (!empty($_POST) && isset($_POST['name']) && isset($_POST['date']) && isset($_
     // Preparar as informações
     // Montar a SQL (pgsql)
     $sql = "INSERT INTO clientes
-                  (nome, data_nascimento, telefone, email, senha, genero)
+                  (nome, data_nascimento, telefone, email, senha, genero, planos)
                 VALUES
-                  (:nome, :dataNascimento, :telefone, :email, :senha, :genero)";
+                  (:nome, :dataNascimento, :telefone, :email, :senha, :genero, :planos)";
 
     // Preparar a SQL (pdo)
     $stmt = $pdo->prepare($sql);
@@ -24,7 +24,8 @@ if (!empty($_POST) && isset($_POST['name']) && isset($_POST['date']) && isset($_
       ':telefone' => $_POST['phone'],
       ':email' => $_POST['email'],
       ':senha' => md5($_POST['password']),
-      ':genero' => $_POST['genero']
+      ':genero' => $_POST['genero'],
+      ':planos' => $_POST['planos']
     );
 
     // Tentar Executar a SQL (INSERT)

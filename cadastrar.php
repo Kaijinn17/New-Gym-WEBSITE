@@ -126,6 +126,19 @@
               </svg>
             </div>
           </div>
+          <div class="u-form-group u-form-select u-form-group-6">
+            <label for="select-c568" class="u-label">Escolha o seu Plano</label>
+            <div class="u-form-select-wrapper">
+              <select id="select-c568" name="planos" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white" required="">
+                <option value="Masculino">Tri-mestral $00,00</option>
+                <option value="Feminino">Plano 2 $00,00</option>
+                <option value="Feminino">Plano 3 $00,00</option>
+              </select>
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="12" version="1" class="u-caret">
+                <path fill="currentColor" d="M4 8L0 4h8z"></path>
+              </svg>
+            </div>
+          </div>
           <div class="u-form-agree u-form-group u-form-group-7">
             <input type="checkbox" id="agree-1b1f" name="agree" class="u-agree-checkbox" required="">
             <label for="agree-1b1f" class="u-label">Eu aceito os <a href="#">Termos de Serviço</a>
