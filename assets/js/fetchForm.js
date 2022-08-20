@@ -12,7 +12,6 @@ form.addEventListener("submit", async evt => {
     const genero = evt.path[0].genero.value;
     const planos = evt.path[0].planos.value;
     const agree = evt.path[0].agree.value;
-    console.log(evt.path[0]);return false;
 
     const url = './src/cadastro.php'
     const formData = `name=${name}&phone=${phone}&email=${email}&password=${password}&date=${date}&genero=${genero}&planos=${planos}&agree=${agree}`;
