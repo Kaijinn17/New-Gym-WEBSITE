@@ -3,7 +3,7 @@ require_once './createTable.php';
 require_once '../config.php';
 
 
-if (!empty($_POST) && isset($_POST['name']) && isset($_POST['date']) && isset($_POST['phone']) && isset($_POST['email']) && isset($_POST['password']) && isset($_POST['genero']) && isset($_POST['agree'])) {
+if (!empty($_POST) && isset($_POST['name']) && isset($_POST['date']) && isset($_POST['phone']) && isset($_POST['email']) && isset($_POST['password']) && isset($_POST['genero']) && isset($_POST['planos']) && isset($_POST['agree'])) {
   // Está chegando dados por POST e então posso tentar inserir no banco
   // Obter as informações do formulário ($_POST)
   try {
