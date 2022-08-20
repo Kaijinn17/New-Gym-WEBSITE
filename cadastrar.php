@@ -1,3 +1,7 @@
+<?php
+ini_set("display_errors", false);
+?>
+
 <!DOCTYPE html>
 <html style="font-size: 16px;" lang="pt">
 
