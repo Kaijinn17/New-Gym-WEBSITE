@@ -25,7 +25,7 @@ if (!empty($_POST) && isset($_POST['name']) && isset($_POST['date']) && isset($_
       ':email' => $_POST['email'],
       ':senha' => md5($_POST['password']),
       ':genero' => $_POST['genero'],
-      ':planos' => $_POST['planos']
+      ':plans' => $_POST['plans']
     );
 
     // Tentar Executar a SQL (INSERT)
