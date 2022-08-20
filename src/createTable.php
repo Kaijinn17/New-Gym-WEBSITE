@@ -10,7 +10,7 @@ try {
     $sql .= "telefone varchar(80) NOT NULL COLLATE utf8mb4_unicode_ci,";
     $sql .= "email varchar(80) NOT NULL COLLATE utf8mb4_unicode_ci,";
     $sql .= "senha varchar(80) NOT NULL COLLATE utf8mb4_unicode_ci,";
-    $sql .= "genero varchar(80) NOT NULL COLLATE utf8mb4_unicode_ci";
+    $sql .= "genero varchar(80) NOT NULL COLLATE utf8mb4_unicode_ci,";
     $sql .= "planos varchar(80) NOT NULL COLLATE utf8mb4_unicode_ci";
     $sql .= ")ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;";
     $stmt = $pdo->prepare($sql);
