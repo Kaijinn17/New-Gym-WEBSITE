@@ -36,7 +36,7 @@ if (!empty($_POST) && isset($_POST['name']) && isset($_POST['date']) && isset($_
     }
   } catch (PDOException $e) {
     header("Content-type: application/json; charset=utf-8");
-    echo json_encode(array("success" => false, "message" => "Falha ao cadastrar: " . $e->getCode()));
+    echo json_encode(array("success" => false, "message" => "Falha ao cadastrar: " . $e->getMessage()));
   }
 } else {
   die();
