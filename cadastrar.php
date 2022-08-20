@@ -130,9 +130,9 @@
             <label for="select-c569" class="u-label">Escolha o seu Plano</label>
             <div class="u-form-select-wrapper">
               <select id="select-c569" name="planos" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white" required="">
-                <option value="Tri-mestral $00,00">Tri-mestral, Segunda a Sábado $180,00</option>
-                <option value="Plano 2 $00,00">3 Vezes Na Semana $70,00</option>
-                <option value="Plano 3 $00,00">Segunda a Sábado $80,00</option>
+                <option value="plano1">Tri-mestral, Segunda a Sábado $180,00</option>
+                <option value="plano2">3 Vezes Na Semana $70,00</option>
+                <option value="plano3">Segunda a Sábado $80,00</option>
               </select>
               <svg xmlns="http://www.w3.org/2000/svg" width="14" height="12" version="1" class="u-caret">
                 <path fill="currentColor" d="M4 8L0 4h8z"></path>
