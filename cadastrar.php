@@ -127,9 +127,9 @@
             </div>
           </div>
           <div class="u-form-group u-form-select u-form-group-6">
-            <label for="select-c568" class="u-label">Escolha o seu Plano</label>
+            <label for="select-c569" class="u-label">Escolha o seu Plano</label>
             <div class="u-form-select-wrapper">
-              <select id="select-c568" name="planos" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white" required="">
+              <select id="select-c569" name="planos" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white" required="">
                 <option value="Tri-mestral $00,00">Tri-mestral $00,00</option>
                 <option value="Plano 2 $00,00">Plano 2 $00,00</option>
                 <option value="Plano 3 $00,00">Plano 3 $00,00</option>
