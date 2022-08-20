@@ -25,7 +25,7 @@ if (!empty($_POST) && isset($_POST['name']) && isset($_POST['date']) && isset($_
       ':email' => $_POST['email'],
       ':senha' => md5($_POST['password']),
       ':genero' => $_POST['genero'],
-      ':plans' => $_POST['plans']
+      ':planos' => $_POST['planos']
     );
 
     // Tentar Executar a SQL (INSERT)
@@ -36,7 +36,7 @@ if (!empty($_POST) && isset($_POST['name']) && isset($_POST['date']) && isset($_
     }
   } catch (PDOException $e) {
     header("Content-type: application/json; charset=utf-8");
-    echo json_encode(array("success" => false, "message" => "Falha ao cadastrar: " . $e->getMessage()));
+    echo json_encode(array("success" => false, "message" => "Falha ao cadastrar: " . $e->getCode()));
   }
 } else {
   die();
