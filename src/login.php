@@ -1,5 +1,5 @@
 <?php
-
+require_once './createTable.php';
 require_once('../config.php');
 
 if (isset($_POST['email']) || isset($_POST['senha'])) {
