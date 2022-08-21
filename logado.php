@@ -1,4 +1,4 @@
-<?php include('./src/protect.php'); ?>
+<?php // include('./src/protect.php'); ?>
 
 
 <!DOCTYPE html>
@@ -70,15 +70,15 @@
         </div>
         <div class="u-custom-menu u-nav-container">
           <ul class="u-nav u-unstyled u-nav-1">
-            <li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="home.html#carousel_6c19" data-page-id="958515637" style="padding: 24px 20px;">Página Inicial</a>
+            <li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="home.php#carousel_6c19" data-page-id="958515637" style="padding: 24px 20px;">Página Inicial</a>
             </li>
-            <li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" style="padding: 24px 20px;">Perfil</a>
+            <li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" style="padding: 24px 20px; cursor: pointer;" href="perfil.php">Perfil</a>
             </li>
             <li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="#" style="padding: 24px 20px;">Contato</a>
             </li>
             <li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="#" style="padding: 24px 20px;">Sobre</a>
             </li>
-            <li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="home.html#carousel_28e0" data-page-id="958515637" style="padding: 24px 20px;">Personals</a>
+            <li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="home.php#carousel_28e0" data-page-id="958515637" style="padding: 24px 20px;">Personals</a>
             </li>
           </ul>
         </div>
@@ -88,15 +88,15 @@
             <div class="u-inner-container-layout u-sidenav-overflow">
               <div class="u-menu-close"></div>
               <ul class="u-align-center u-nav u-popupmenu-items u-unstyled u-nav-2">
-                <li class="u-nav-item"><a class="u-button-style u-nav-link" href="home.html#carousel_6c19" data-page-id="958515637">Página Inicial</a>
+                <li class="u-nav-item"><a class="u-button-style u-nav-link" href="home.php#carousel_6c19" data-page-id="958515637">Página Inicial</a>
                 </li>
-                <li class="u-nav-item"><a class="u-button-style u-nav-link">Perfil</a>
+                <li class="u-nav-item"><a class="u-button-style u-nav-link" style="cursor: pointer;" href="perfil.php">Perfil</a>
                 </li>
                 <li class="u-nav-item"><a class="u-button-style u-nav-link" href="#">Contato</a>
                 </li>
                 <li class="u-nav-item"><a class="u-button-style u-nav-link" href="#">Sobre</a>
                 </li>
-                <li class="u-nav-item"><a class="u-button-style u-nav-link" href="home.html#carousel_28e0" data-page-id="958515637">Personals</a>
+                <li class="u-nav-item"><a class="u-button-style u-nav-link" href="home.phpl#carousel_28e0" data-page-id="958515637">Personals</a>
                 </li>
               </ul>
             </div>
