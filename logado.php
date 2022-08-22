@@ -1,4 +1,4 @@
-<?php // include('./src/protect.php'); ?>
+<?php include('./src/protect.php'); ?>
 
 
 <!DOCTYPE html>
@@ -105,7 +105,8 @@
         </div>
       </nav>
       <div style="margin-left:20%; margin-top:-4%; float:left;">
-        Bem vindo, <?php echo $_SESSION['nome']; ?>
+        Bem vindo, <?php if (isset($_SESSION['nome'])) echo $_SESSION['nome'];
+                    else echo "null"; ?>
 
         <a style="color:white;" href="./src/logout.php"><button class="btn-sair">Sair</button></a>
       </div>

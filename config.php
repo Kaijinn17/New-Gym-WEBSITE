@@ -1,12 +1,13 @@
 <?php
 
-$endereco = $_SERVER['db_host'];
-$banco = $_SERVER['db_database'];
-$usuario = $_SERVER['db_user'];
-$senha = $_SERVER['db_password'];
+$endereco = 'localhost';
+$banco = 'akdemia';
+$usuario = 'root';
+$senha = '';
+$port = '3306';
 
 try {
-  $pdo = new PDO("mysql:host=$endereco;port=$_SERVER[db_port];charset=utf8;dbname=$banco", $usuario, $senha, [PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION]);
+  $pdo = new PDO("mysql:host=$endereco;port=$port;charset=utf8;dbname=$banco", $usuario, $senha, [PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION]);
 } catch (PDOException $e) {
   die($e->getMessage());
 }

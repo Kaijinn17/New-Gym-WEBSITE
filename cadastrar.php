@@ -73,7 +73,7 @@ ini_set("display_errors", false);
               <ul class="u-align-center u-nav u-popupmenu-items u-unstyled u-nav-2">
                 <li class="u-nav-item"><a class="u-button-style u-nav-link" href="home.html#carousel_6c19" data-page-id="958515637">Página Inicial</a>
                 </li>
-              <li class="u-nav-item"><a class="u-button-style u-nav-link" href="#">Contato</a>
+                <li class="u-nav-item"><a class="u-button-style u-nav-link" href="#">Contato</a>
                 </li>
                 <li class="u-nav-item"><a class="u-button-style u-nav-link" href="#">Sobre</a>
                 </li>
@@ -130,9 +130,9 @@ ini_set("display_errors", false);
             <label for="select-c569" class="u-label">Escolha o seu Plano</label>
             <div class="u-form-select-wrapper">
               <select id="select-c569" name="planos" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white" required="">
-                <option value="plano1">Tri-mestral, Segunda a Sábado $180,00</option>
-                <option value="plano2">3 Vezes Na Semana $70,00</option>
-                <option value="plano3">Segunda a Sábado $80,00</option>
+                <option value="trimestral">Tri-mestral, Segunda a Sábado $180,00</option>
+                <option value="intermediario">3 Vezes Na Semana $70,00</option>
+                <option value="semanal">Segunda a Sábado $80,00</option>
               </select>
               <svg xmlns="http://www.w3.org/2000/svg" width="14" height="12" version="1" class="u-caret">
                 <path fill="currentColor" d="M4 8L0 4h8z"></path>

@@ -1,135 +1,248 @@
-<?php // include('./src/protect.php'); ?>
-
-
+<?php require_once(__DIR__ . '/src/protect.php'); ?>
+<?php require_once(__DIR__ . '/src/profile.php'); ?>
 <!DOCTYPE html>
-<html style="font-size: 16px;" lang="pt">
+<html lang="pt-BR">
 
 <head>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta charset="utf-8">
-  <meta name="keywords" content="">
-  <meta name="description" content="">
-  <title>Página Inicial</title>
-  <link rel="stylesheet" href="./assets/css/nicepage.css" media="screen">
-  <link rel="stylesheet" href="./assets/css/home.css" media="screen">
-  <script class="u-script" type="text/javascript" src="./assets/js/jquery.js" defer=""></script>
-  <script class="u-script" type="text/javascript" src="./assets/js/nicepage.js" defer=""></script>
-  <meta name="generator" content="Nicepage 4.14.1, nicepage.com">
-  <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i">
-  <link id="u-page-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald:200,300,400,500,600,700">
-  <script type="application/ld+json">
-    {
-      "@context": "http://schema.org",
-      "@type": "Organization",
-      "name": "Site1",
-      "logo": "images/akdemia2.png"
-    }
-  </script>
-  <meta name="theme-color" content="#478ac9">
-  <meta property="og:title" content="Página Inicial">
-  <meta property="og:description" content="">
-  <meta property="og:type" content="website">
-
-  <style>
-    .btn-sair {
-      margin-left: 20px;
-      background-color: red;
-      border: none;
-      border-radius: 10px;
-      cursor: pointer;
-      width: 100px;
-      font-family: fantasy;
-    }
-
-    .btn-sair:hover {
-      background-color: #680000;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <title>Perfil</title>
+    <meta name="theme-color" content="#478ac9">
+    <meta property="og:title" content="Página De Perfil">
+    <meta property="og:description" content="">
+    <meta property="og:type" content="website">
+    <link href="./assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 </head>
 
-<body data-home-page="home.html" data-home-page-title="Página Inicial" class="u-body u-xl-mode" data-lang="pt">
-  <header class="u-clearfix u-header u-header" id="sec-cf8d">
-    <div class="u-clearfix u-sheet u-sheet-1">
-      <a href="./logado.php" class="u-image u-logo u-image-1" data-image-width="2581" data-image-height="729">
-        <img src="./assets/images/akdemia2.png" class="u-logo-image u-logo-image-1">
-      </a>
-      <nav class="u-menu u-menu-one-level u-offcanvas u-menu-1">
-        <div class="menu-collapse" style="font-size: 1rem; letter-spacing: 0px;">
-          <a class="u-button-style u-custom-left-right-menu-spacing u-custom-padding-bottom u-custom-top-bottom-menu-spacing u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="#">
-            <svg class="u-svg-link" viewBox="0 0 24 24">
-              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#menu-hamburger"></use>
-            </svg>
-            <svg class="u-svg-content" version="1.1" id="menu-hamburger" viewBox="0 0 16 16" x="0px" y="0px" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
-              <g>
-                <rect y="1" width="16" height="2"></rect>
-                <rect y="7" width="16" height="2"></rect>
-                <rect y="13" width="16" height="2"></rect>
-              </g>
-            </svg>
-          </a>
-        </div>
-        <div class="u-custom-menu u-nav-container">
-          <ul class="u-nav u-unstyled u-nav-1">
-            <li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="home.php#carousel_6c19" data-page-id="958515637" style="padding: 24px 20px;">Página Inicial</a>
-            </li>
-            <li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" style="padding: 24px 20px; cursor: pointer;" href="perfil.php">Perfil</a>
-            </li>
-            <li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="#" style="padding: 24px 20px;">Contato</a>
-            </li>
-            <li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="#" style="padding: 24px 20px;">Sobre</a>
-            </li>
-            <li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="home.php#carousel_28e0" data-page-id="958515637" style="padding: 24px 20px;">Personals</a>
-            </li>
-          </ul>
-        </div>
-        <div class="u-custom-menu u-nav-container-collapse">
+<body class="d-flex flex-column min-vh-100" style="background-color: #c3c3c3;">
 
-          <div class="u-black u-container-style u-inner-container-layout u-opacity u-opacity-95 u-sidenav">
-            <div class="u-inner-container-layout u-sidenav-overflow">
-              <div class="u-menu-close"></div>
-              <ul class="u-align-center u-nav u-popupmenu-items u-unstyled u-nav-2">
-                <li class="u-nav-item"><a class="u-button-style u-nav-link" href="home.php#carousel_6c19" data-page-id="958515637">Página Inicial</a>
-                </li>
-                <li class="u-nav-item"><a class="u-button-style u-nav-link" style="cursor: pointer;" href="perfil.php">Perfil</a>
-                </li>
-                <li class="u-nav-item"><a class="u-button-style u-nav-link" href="#">Contato</a>
-                </li>
-                <li class="u-nav-item"><a class="u-button-style u-nav-link" href="#">Sobre</a>
-                </li>
-                <li class="u-nav-item"><a class="u-button-style u-nav-link" href="home.phpl#carousel_28e0" data-page-id="958515637">Personals</a>
-                </li>
-              </ul>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="./perfil.php"><img src="./assets/images/akdemia2.png" alt="" width="158px" height="44.63px"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="./perfil.php">
+                                <div class="text-white">
+                                    Bem Vindo, <?php if (isset($_SESSION['nome'])) echo $_SESSION['nome'];
+                                                else echo "null"; ?>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="./src/logout.php">
+                                <button type="button" class="btn btn-sm btn-outline-danger">Sair</button>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="./home.php">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="./perfil.php">Perfil</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="./perfil.php">Contato</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="./perfil.php">Sobre</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./home.php#carousel_28e0">Personals</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-          </div>
-          <div class="u-black u-menu-overlay u-opacity u-opacity-70"></div>
+        </nav>
+    </header>
+
+    <section class="mt-5 mb-5">
+        <div class="container">
+            <div class="row d-flex justify-content-center">
+                <h1 class="d-flex justify-content-center">Perfil Do Usuario</h1>
+                <div class="col-md-3">
+                    <div id="infoUpload">
+                    </div>
+                    <div class="card" style="width: 18rem;">
+                        <div class="card-header">
+                            Profile
+                        </div>
+                        <div class="card-body">
+                            <?php if ($isPhoto == null) : ?>
+                                <img src="./assets/images/profile_picture_man.jpg" class="card-img-top" id="profile_photo" alt="porfilePhoto" width="300px">
+                                <p class="card-text d-flex justify-content-center" class="mt-2" id="send_photo">
+                                    <a href="#">Enviar Foto</a>
+                                </p>
+                                <input type="file" style="display:none;" id="file" name="file" />
+                            <?php else : ?>
+                                <img src="./src/uploads/<?php echo $isPhoto; ?>" class="card-img-top" id="profile_photo" alt="porfilePhoto" width="300px">
+                            <?php endif; ?>
+                            <h5 class="card-title d-flex justify-content-center"><?php echo ucfirst($user->nome); ?></h5>
+                            <p class="card-text">
+
+                            <table class="table">
+                                <tbody>
+                                    <tr>
+                                        <td>ID: </td>
+                                        <td><?php echo $user->id; ?></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Data de nascimento: </td>
+                                        <td><?php echo $user->data_nascimento; ?></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Telefone: </td>
+                                        <td><?php echo $user->telefone; ?></td>
+                                    </tr>
+                                    <tr>
+                                        <td>E-mail: </td>
+                                        <td><?php echo $user->email; ?></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Genero: </td>
+                                        <td><?php echo $user->genero; ?></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Plano: </td>
+                                        <td><?php echo $user->planos; ?></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            </p>
+                        </div>
+                        <div class="card-footer">
+                            <?php date_default_timezone_set("America/Sao_Paulo"); ?>
+                            <?php echo date('Y-m-d H:i:s') ?>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-      </nav>
-      <div style="margin-left:20%; margin-top:-4%; float:left;">
-        Bem vindo, <?php echo $_SESSION['nome']; ?>
+    </section>
+    <hr>
+    <section>
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-md-12">
+                    <h1 class="d-flex justify-content-center">Perfil Do Usuario</h1>
+                </div>
+            </div>
+            <div class="row d-flex justify-content-between">
 
-        <a style="color:white;" href="./src/logout.php"><button class="btn-sair">Sair</button></a>
-      </div>
-    </div>
-  </header>
 
 
-  <footer class="u-align-center u-clearfix u-footer u-grey-80 u-footer" id="sec-13b5">
-    <div class="u-clearfix u-sheet u-sheet-1">
-      <p class="u-small-text u-text u-text-variant u-text-1">Este site é apenas um projeto de estudantes do 3 Ano do Ensino Médio, Nada aqui deve ser realmente levado a sério.</p>
-    </div>
-  </footer>
-  <section class="u-backlink u-clearfix u-grey-80">
-    <a class="u-link" href="https://nicepage.com/website-templates" target="_blank">
-      <span>Website Templates</span>
-    </a>
-    <p class="u-text">
-      <span>created with</span>
-    </p>
-    <a class="u-link" href="" target="_blank">
-      <span>Website Builder Software</span>
-    </a>.
-  </section>
 
+
+                <div class="col-md-3">
+                    <div class="card border-success mb-3" style="max-width: 18rem;">
+                        <div class="card-header bg-transparent border-success">
+                            <div class="d-flex justify-content-center fw-bold">
+                                Plano Trimestral
+                            </div>
+                        </div>
+                        <div class="card-body text-success">
+                            <h5 class="card-title">Preço</h5>
+                            <p class="card-text">180,00 (Desconto de 25%)</p>
+                        </div>
+                        <div class="card-footer bg-transparent border-success">
+                            <h5 class="card-title">Periodo</h5>
+                            <p class="card-text">Segunda a sabado.</p>
+                            <p class="card-text d-flex justify-content-center">
+                                <a href="./src/profile.php?plano=trimestral" class="w-100">
+                                    <button class="btn btn-success w-100">
+                                        Adiquirir
+                                    </button>
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="card border-info mb-3" style="max-width: 18rem;">
+                        <div class="card-header bg-transparent border-info">
+                            <div class="d-flex justify-content-center fw-bold">
+                                Plano Intermediario
+                            </div>
+                        </div>
+                        <div class="card-body text-info">
+                            <h5 class="card-title">Preço</h5>
+                            <p class="card-text">70,00</p>
+                        </div>
+                        <div class="card-footer bg-transparent border-info">
+                            <h5 class="card-title">Periodo</h5>
+                            <p class="card-text">3 dias da semana a sua escolha.</p>
+                            <p class="card-text d-flex justify-content-center">
+                                <a href="./src/profile.php?plano=intermediario" class="w-100">
+                                    <button class="btn btn-info w-100">
+                                        Adiquirir
+                                    </button>
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="card border-secondary mb-3" style="max-width: 18rem;">
+                        <div class="card-header bg-transparent border-secondary">
+                            <div class="d-flex justify-content-center fw-bold">
+                                Plano Semanal
+                            </div>
+                        </div>
+                        <div class="card-body text-secondary">
+                            <h5 class="card-title">Preço</h5>
+                            <p class="card-text">80,00 (Desconto 50%)</p>
+                        </div>
+                        <div class="card-footer bg-transparent border-secondary">
+                            <h5 class="card-title">Periodo</h5>
+                            <p class="card-text">Segunda a Sabado.</p>
+                            <p class="card-text d-flex justify-content-center">
+                                <a href="./src/profile.php?plano=semanal" class="w-100">
+                                    <button class="btn btn-secondary w-100">
+                                        Adiquirir
+                                    </button>
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="mt-auto bg-dark footer mt-5">
+        <div class="container mt-3">
+            <div class="row">
+                <div class="col-12">
+                    <ul class="list-unstyled">
+                        <li class="text-white"><a class="text-decoration-none link-light" href="https://github.com/Kaijinn17/New-Gym-WEBSITE" target="_blank">Repositório do
+                                projeto</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="bg-white">
+            <div class="row mb-1">
+                <div class="col-12 d-flex justify-content-center">
+                    <span class="text-white">© 2022 - <?php echo date("Y") ?>, Inc</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/js/photoUpload.js"></script>
 </body>
 
 </html>

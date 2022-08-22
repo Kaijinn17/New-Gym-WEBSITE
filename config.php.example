@@ -1,0 +1,13 @@
+<?php
+
+$endereco = '';
+$banco = '';
+$usuario = '';
+$senha = '';
+$port = '';
+
+try {
+  $pdo = new PDO("mysql:host=$endereco;port=$port;charset=utf8;dbname=$banco", $usuario, $senha, [PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION]);
+} catch (PDOException $e) {
+  die($e->getMessage());
+}
