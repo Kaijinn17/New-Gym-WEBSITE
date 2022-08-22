@@ -1,9 +1,9 @@
 <?php
 
-$endereco = 'localhost';
-$banco = 'akdemia';
-$usuario = 'root';
-$senha = '';
+$endereco = $_SERVER['db_host'];
+$banco =  $_SERVER['db_database'];
+$usuario =  $_SERVER['db_user'];
+$senha =  $_SERVER['db_password'];
 $port = '3306';
 
 try {
