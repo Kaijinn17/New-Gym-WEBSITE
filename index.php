@@ -26,61 +26,36 @@
   <meta property="og:title" content="Página Inicial">
   <meta property="og:description" content="">
   <meta property="og:type" content="website">
+  <link href="./assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
 </head>
 
 <body data-home-page="home.php" data-home-page-title="Página Inicial" class="u-body u-xl-mode" data-lang="pt">
-  <header class="u-clearfix u-header u-header" id="sec-cf8d">
-    <div class="u-clearfix u-sheet u-sheet-1">
-      <a href="./index.php" class="u-image u-logo u-image-1" data-image-width="2581" data-image-height="729">
-        <img src="./assets/images/akdemia2.png" class="u-logo-image u-logo-image-1">
-      </a>
-      <nav class="u-menu u-menu-one-level u-offcanvas u-menu-1">
-        <div class="menu-collapse" style="font-size: 1rem; letter-spacing: 0px;">
-          <a class="u-button-style u-custom-left-right-menu-spacing u-custom-padding-bottom u-custom-top-bottom-menu-spacing u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="#">
-            <svg class="u-svg-link" viewBox="0 0 24 24">
-              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#menu-hamburger"></use>
-            </svg>
-            <svg class="u-svg-content" version="1.1" id="menu-hamburger" viewBox="0 0 16 16" x="0px" y="0px" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
-              <g>
-                <rect y="1" width="16" height="2"></rect>
-                <rect y="7" width="16" height="2"></rect>
-                <rect y="13" width="16" height="2"></rect>
-              </g>
-            </svg>
-          </a>
-        </div>
-        <div class="u-custom-menu u-nav-container">
-          <ul class="u-nav u-unstyled u-nav-1">
-            <li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="home.html#carousel_6c19" data-page-id="958515637" style="padding: 24px 20px;">Página Inicial</a>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-secondary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="./perfil.php"><img src="./assets/images/akdemia2.png" alt="" width="158px" height="44.63px"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="./home.php">Home</a>
             </li>
-            <li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="#" style="padding: 24px 20px;">Contato</a>
+            <li class="nav-item">
+              <a class="nav-link" href="./home.php#sec-85ba">Contato</a>
             </li>
-            <li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="#" style="padding: 24px 20px;">Sobre</a>
+            <li class="nav-item">
+              <a class="nav-link" href="./home.php#sec-6969">Sobre</a>
             </li>
-            <li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="home.html#carousel_28e0" data-page-id="958515637" style="padding: 24px 20px;">Personals</a>
+            <li class="nav-item">
+              <a class="nav-link" href="./home.php#carousel_28e0">Personals</a>
             </li>
           </ul>
         </div>
-        <div class="u-custom-menu u-nav-container-collapse">
-          <div class="u-black u-container-style u-inner-container-layout u-opacity u-opacity-95 u-sidenav">
-            <div class="u-inner-container-layout u-sidenav-overflow">
-              <div class="u-menu-close"></div>
-              <ul class="u-align-center u-nav u-popupmenu-items u-unstyled u-nav-2">
-                <li class="u-nav-item"><a class="u-button-style u-nav-link" href="home.html#carousel_6c19" data-page-id="958515637">Página Inicial</a>
-                </li>
-                <li class="u-nav-item"><a class="u-button-style u-nav-link" href="#">Contato</a>
-                </li>
-                <li class="u-nav-item"><a class="u-button-style u-nav-link" href="#">Sobre</a>
-                </li>
-                <li class="u-nav-item"><a class="u-button-style u-nav-link" href="home.html#carousel_28e0" data-page-id="958515637">Personals</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="u-black u-menu-overlay u-opacity u-opacity-70"></div>
-        </div>
-      </nav>
-    </div>
+      </div>
+    </nav>
   </header>
   <section class="u-align-center u-clearfix u-image u-section-1" id="carousel_6c19" data-image-width="1280" data-image-height="720">
     <div class="u-clearfix u-sheet u-sheet-1">
@@ -196,22 +171,30 @@
   </section>
 
 
-  <footer class="u-align-center u-clearfix u-footer u-grey-80 u-footer" id="sec-13b5">
-    <div class="u-clearfix u-sheet u-sheet-1">
-      <p class="u-small-text u-text u-text-variant u-text-1">Este site é apenas um projeto de estudantes do 3 Ano do Ensino Médio, Nada aqui deve ser realmente levado a sério.</p>
+  <footer class="mt-auto bg-secondary footer mt-5" id="sec-6969">
+    <div class="container mt-3">
+      <div class="row">
+        <div class="col-12">
+          <ul class="list-unstyled">
+            <li class="text-white"><a class="text-decoration-none link-light" href="https://github.com/Kaijinn17/New-Gym-WEBSITE" target="_blank">Repositório do
+                projeto</a></li>
+          </ul>
+        </div>
+      </div>
+      <hr class="bg-white">
+      <div class="row mb-1">
+        <div class="col-md-12 d-flex justify-content-center">
+          <p class="u-small-text u-text u-text-variant u-text-1">Este site é apenas um projeto de estudantes do 3 Ano do Ensino Médio, Nada aqui deve ser realmente levado a sério.</p>
+        </div>
+        <div class="col-12 d-flex justify-content-center">
+          <span class="text-white">© 2022 - <?php echo date("Y") ?>, Inc</span>
+        </div>
+      </div>
     </div>
   </footer>
-  <section class="u-backlink u-clearfix u-grey-80">
-    <a class="u-link" href="https://nicepage.com/website-templates" target="_blank">
-      <span>Website Templates</span>
-    </a>
-    <p class="u-text">
-      <span>created with</span>
-    </p>
-    <a class="u-link" href="" target="_blank">
-      <span>Website Builder Software</span>
-    </a>.
-  </section>
+
+  <script src="./assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+
 
 </body>
 

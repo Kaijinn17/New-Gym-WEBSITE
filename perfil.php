@@ -21,7 +21,7 @@
 <body class="d-flex flex-column min-vh-100" style="background-color: #c3c3c3;">
 
     <header>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-secondary">
             <div class="container-fluid">
                 <a class="navbar-brand" href="./perfil.php"><img src="./assets/images/akdemia2.png" alt="" width="158px" height="44.63px"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -45,21 +45,21 @@
                     </ul>
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="./home.php">Home</a>
+                            <a class="nav-link" aria-current="page" href="./logado.php">Home</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link active" href="./perfil.php">Perfil</a>
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link" href="./perfil.php">Contato</a>
+                            <a class="nav-link" href="./logado.php#sec-85ba">Contato</a>
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link" href="./perfil.php">Sobre</a>
+                            <a class="nav-link" href="./perfil.php#sec-6969">Sobre</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="./home.php#carousel_28e0">Personals</a>
+                            <a class="nav-link" href="./logado.php#carousel_28e0">Personals</a>
                         </li>
                     </ul>
                 </div>
@@ -222,24 +222,27 @@
         </div>
     </section>
 
-    <footer class="mt-auto bg-dark footer mt-5">
-        <div class="container mt-3">
-            <div class="row">
-                <div class="col-12">
-                    <ul class="list-unstyled">
-                        <li class="text-white"><a class="text-decoration-none link-light" href="https://github.com/Kaijinn17/New-Gym-WEBSITE" target="_blank">Repositório do
-                                projeto</a></li>
-                    </ul>
-                </div>
-            </div>
-            <hr class="bg-white">
-            <div class="row mb-1">
-                <div class="col-12 d-flex justify-content-center">
-                    <span class="text-white">© 2022 - <?php echo date("Y") ?>, Inc</span>
-                </div>
-            </div>
+    <footer class="mt-auto bg-secondary footer mt-5" id="sec-6969">
+    <div class="container mt-3">
+      <div class="row">
+        <div class="col-12">
+          <ul class="list-unstyled">
+            <li class="text-white"><a class="text-decoration-none link-light" href="https://github.com/Kaijinn17/New-Gym-WEBSITE" target="_blank">Repositório do
+                projeto</a></li>
+          </ul>
         </div>
-    </footer>
+      </div>
+      <hr class="bg-white">
+      <div class="row mb-1">
+        <div class="col-md-12 d-flex justify-content-center">
+          <p class="u-small-text u-text u-text-variant u-text-1">Este site é apenas um projeto de estudantes do 3 Ano do Ensino Médio, Nada aqui deve ser realmente levado a sério.</p>
+        </div>
+        <div class="col-12 d-flex justify-content-center">
+          <span class="text-white">© 2022 - <?php echo date("Y") ?>, Inc</span>
+        </div>
+      </div>
+    </div>
+  </footer>
 
     <script src="./assets/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="./assets/js/photoUpload.js"></script>
