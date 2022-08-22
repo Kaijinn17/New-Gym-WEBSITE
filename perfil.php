@@ -135,7 +135,7 @@
         <div class="container">
             <div class="row mb-5">
                 <div class="col-md-12">
-                    <h1 class="d-flex justify-content-center">Perfil Do Usuario</h1>
+                    <h1 class="d-flex justify-content-center">Planos</h1>
                 </div>
             </div>
             <div class="row d-flex justify-content-between">
