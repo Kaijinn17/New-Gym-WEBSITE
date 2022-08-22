@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Tempo de geração: 19-Ago-2022 às 10:46
+-- Tempo de geração: 22-Ago-2022 às 02:03
 -- Versão do servidor: 10.4.24-MariaDB
--- versão do PHP: 8.0.19
+-- versão do PHP: 8.1.6
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -35,7 +35,8 @@ CREATE TABLE `clientes` (
   `email` varchar(80) NOT NULL,
   `senha` varchar(80) NOT NULL,
   `genero` varchar(80) NOT NULL,
-  `planos` varchar(200) NOT NULL
+  `planos` varchar(200) NOT NULL,
+  `foto` varchar(255) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
