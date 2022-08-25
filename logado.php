@@ -1,7 +1,5 @@
-<?php include('./src/protect.php'); ?>
 <?php include('./src/comentarios.php'); ?>
-<?php include('config.php'); ?>
-
+<?php include('./src/protect.php'); ?>
 
 <!DOCTYPE html>
 <html style="font-size: 16px;" lang="pt">

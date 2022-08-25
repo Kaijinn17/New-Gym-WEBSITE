@@ -6,12 +6,12 @@ $data = date("Y/m/d");
 $comentario=$_POST['comentario']; 
 if(strlen($_POST['nome'])) #insere somente se no form foi escrito o nome
 {
-    $insert = mysql_query("INSERT INTO tbcomentarios(nome,email,data,comentario) 
-    values('$nome','$email','$data','$comentario')");
+    $sql = "INSERT INTO tbcomentarios(nome,email,data,comentario) 
+    values('$nome','$email','$data','$comentario')";
 }
 $sql = "SELECT * FROM tbcomentarios ORDER BY id desc";
-$executar=mysql_query($sql);
-while( $exibir = mysql_query($executar)){
+$executar=($sql);
+while( $exibir = ($executar)){
     echo $exibir['data'];
     echo "</br>";
     echo $exibir['nome'];
