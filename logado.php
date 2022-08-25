@@ -1,4 +1,3 @@
-<?php include('./src/comentarios.php'); ?>
 <?php include('./src/protect.php'); ?>
 
 <!DOCTYPE html>
