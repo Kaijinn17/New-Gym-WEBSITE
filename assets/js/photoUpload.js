@@ -20,8 +20,6 @@ if (btnSendPhoto) {
                 if (responseData.success) {
                     infoUpload.innerHTML = `<div class="alert alert-success" role="alert">${responseData.message}</div>`;
                     profilePhoto.src = responseData.path;
-                    btnSendPhoto.style.display='show';
-                    inputFile.style.display='show';
                 } else {
                     infoUpload.innerHTML = `<div class="alert alert-danger" role="alert">${responseData.message}</div>`;
                 }

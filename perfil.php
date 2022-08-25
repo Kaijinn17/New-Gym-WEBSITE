@@ -79,7 +79,7 @@
                             Profile
                         </div>
                         <div class="card-body">
-                            <?php if ($isPhoto == null) : ?>
+                            <?php if ($isPhoto == $profilePhoto) : ?>
                                 <img src="./assets/images/profile_picture_man.jpg" class="card-img-top" id="profile_photo" alt="porfilePhoto" width="300px">
                                 <p class="card-text d-flex justify-content-center" class="mt-2" id="send_photo">
                                     <a href="#">Enviar Foto</a>
