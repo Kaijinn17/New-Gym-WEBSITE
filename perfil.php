@@ -161,7 +161,7 @@
 
 
 
-                <div class="col-md-3">
+                <div class="col-md-4">
                     <div class="card border-success mb-3" style="max-width: 18rem;">
                         <div class="card-header bg-transparent border-success">
                             <div class="d-flex justify-content-center fw-bold">
@@ -211,7 +211,7 @@
                     </div>
                 </div>
 
-                <div class="col-md-3">
+                <div class="col-md-4">
                     <div class="card border-secondary mb-3" style="max-width: 18rem;">
                         <div class="card-header bg-transparent border-secondary">
                             <div class="d-flex justify-content-center fw-bold">
