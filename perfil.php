@@ -79,11 +79,15 @@
                             Profile
                         </div>
                         <div class="card-body">
+                            <?php if ($isPhoto == null) : ?>
                                 <img src="./assets/images/profile_picture_man.jpg" class="card-img-top" id="profile_photo" alt="porfilePhoto" width="300px">
                                 <p class="card-text d-flex justify-content-center" class="mt-2" id="send_photo">
                                     <a href="#">Enviar Foto</a>
                                 </p>
                                 <input type="file" style="display:none;" id="file" name="file" />
+                            <?php else : ?>
+                                <img src="./src/uploads/<?php echo $isPhoto; ?>" class="card-img-top" id="profile_photo" alt="porfilePhoto" width="300px">
+                            <?php endif; ?>
                             <h5 class="card-title d-flex justify-content-center"><?php echo ucfirst($user->nome); ?></h5>
                             <p class="card-text">
 
