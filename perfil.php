@@ -186,7 +186,7 @@
                     </div>
                 </div>
 
-                <div class="col-md-3">
+                <div class="col-md-4">
                     <div class="card border-info mb-3" style="max-width: 18rem;">
                         <div class="card-header bg-transparent border-info">
                             <div class="d-flex justify-content-center fw-bold">
