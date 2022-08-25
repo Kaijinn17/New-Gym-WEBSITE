@@ -125,6 +125,7 @@
                                     <a href="./perfil.php#minhaDiv"><button class="btn btn-success w-100" onclick="Mudarestado('minhaDiv')" >
                                         Mudar Plano
                                     </button></a></td>
+                                    <tr></tr>
                                 </tbody>
                             </table>
                             </p>
