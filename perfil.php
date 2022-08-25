@@ -120,11 +120,12 @@
                                     <tr>
                                         <td>Plano: </td>
                                         <td><?php echo $user->planos; ?></td>
-                                    </tr>
-                                    <div>
-                                    <button class="btn btn-success w-100" onclick="Mudarestado('minhaDiv')">
+                                        <div>
+                                    <button class="btn btn-success w-100" onclick="Mudarestado('minhaDiv')" href="#minhaDiv">
                                         Mudar Plano
                                     </button>
+                                    </tr>
+                                    
                                     </div>
                                 </tbody>
                             </table>
@@ -141,7 +142,7 @@
     </section>
     <hr>
     <section>
-        <div id="minhaDiv" class="container">
+        <div id="minhaDiv" class="container" style="display: none;">
             <div class="row mb-5">
                 <div class="col-md-12">
                     <h1 class="d-flex justify-content-center">Planos</h1>
