@@ -84,7 +84,6 @@
                                     <a href="#">Enviar Foto</a>
                                 </p>
                                 <input type="file" style="display:none;" id="file" name="file" />
-                                <img src="./src/uploads/<?php echo $isPhoto; ?>" class="card-img-top" id="profile_photo" alt="porfilePhoto" width="300px">
                             <h5 class="card-title d-flex justify-content-center"><?php echo ucfirst($user->nome); ?></h5>
                             <p class="card-text">
 
