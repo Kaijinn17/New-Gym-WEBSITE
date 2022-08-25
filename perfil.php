@@ -16,6 +16,14 @@
     <meta property="og:description" content="">
     <meta property="og:type" content="website">
     <link href="./assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+<style>
+
+.btn-plano{
+  margin: 20px;
+}
+</style>
+
 </head>
 
 <body class="d-flex flex-column min-vh-100" style="background-color: #c3c3c3;">
@@ -125,7 +133,7 @@
                             </table>
                             </p>
                         </div>
-                        <div>
+                        <div class="btn-plano">
                         <a href="./perfil.php#minhaDiv"><button class="btn btn-success w-100" onclick="Mudarestado('minhaDiv')" >
                                         Mudar Plano
                                     </button></a>
