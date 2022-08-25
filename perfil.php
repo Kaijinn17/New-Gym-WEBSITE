@@ -1,5 +1,5 @@
-<?php require_once(__DIR__ . '/src/protect.php'); ?>
-<?php require_once(__DIR__ . '/src/profile.php'); ?>
+<//?php require_once(__DIR__ . '/src/protect.php'); ?>
+<//?php require_once(__DIR__ . '/src/profile.php'); ?>
 <!DOCTYPE html>
 <html lang="pt-BR">
 
@@ -121,12 +121,12 @@
                                         <td>Plano: </td>
                                         <td><?php echo $user->planos; ?></td>
                                         </tr>
-                                    <tr>
-                                    <td>              
-                                <a href="./perfil.php#minhaDiv"><button class="btn btn-success w-100" onclick="Mudarestado('minhaDiv')" >
+                                        <tr style="width:100%;">
+                                            <td style="width:100%;">
+                                        <a href="./perfil.php#minhaDiv"><button class="btn btn-success w-100" onclick="Mudarestado('minhaDiv')" >
                                         Mudar Plano
-                                    </button></a>         </td>
-                                    </tr>
+                                    </button></a></td>
+                                        </tr>
                                 </tbody>
                             </table>
                             </p>
