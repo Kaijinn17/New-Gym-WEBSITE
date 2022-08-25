@@ -121,15 +121,14 @@
                                         <td>Plano: </td>
                                         <td><?php echo $user->planos; ?></td>
                                         </tr>
-                                        <tr style="width:100%;">
-                                            <td style="width:100%;">
-                                        <a href="./perfil.php#minhaDiv"><button class="btn btn-success w-100" onclick="Mudarestado('minhaDiv')" >
-                                        Mudar Plano
-                                    </button></a></td>
-                                        </tr>
                                 </tbody>
                             </table>
                             </p>
+                        </div>
+                        <div>
+                        <a href="./perfil.php#minhaDiv"><button class="btn btn-success w-100" onclick="Mudarestado('minhaDiv')" >
+                                        Mudar Plano
+                                    </button></a>
                         </div>
                         <div class="card-footer">
                             <?php date_default_timezone_set("America/Sao_Paulo"); ?>
