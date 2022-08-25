@@ -1,4 +1,6 @@
 <?php include('./src/protect.php'); ?>
+<?php include('./src/comentarios.php'); ?>
+<?php include('config.php'); ?>
 
 
 <!DOCTYPE html>
@@ -145,33 +147,15 @@
           <p class="u-text u-text-2">É muito importante pra nós sabermos oque você está achando do nosso serviço.</p>
         </div>
       </div>
-      <div class="u-form u-form-1">
-        <form action="#" method="POST" class="u-clearfix u-form-spacing-20 u-form-vertical u-inner-form" style="padding: 10px" source="email" name="form">
-          <div class="u-form-email u-form-group u-form-partition-factor-2">
-            <label for="email-f2a8" class="u-label u-text-grey-40">E-mail</label>
-            <input type="email" placeholder="Enter a valid email address" id="email-f2a8" name="email" class="u-border-1 u-border-grey-30 u-grey-80 u-input u-input-rectangle" required="">
-          </div>
-          <div class="u-form-group u-form-name u-form-partition-factor-2">
-            <label for="name-f2a8" class="u-label u-text-grey-40">Name</label>
-            <input type="text" placeholder="Enter your Name" id="name-f2a8" name="name" class="u-border-1 u-border-grey-30 u-grey-80 u-input u-input-rectangle" required="">
-          </div>
-          <div class="u-form-date u-form-group u-form-partition-factor-2 u-form-group-3">
-            <label for="date-4441" class="u-label u-text-grey-40">Date</label>
-            <input type="date" placeholder="MM/DD/YYYY" id="date-4441" name="date" class="u-border-1 u-border-grey-30 u-grey-80 u-input u-input-rectangle" required="">
-          </div>
-          <div class="u-form-group u-form-partition-factor-2 u-form-phone u-form-group-4">
-            <label for="phone-447e" class="u-label u-text-grey-40">Phone</label>
-            <input type="tel" pattern="\+?\d{0,2}[\s\(\-]?([0-9]{3})[\s\)\-]?([\s\-]?)([0-9]{3})[\s\-]?([0-9]{2})[\s\-]?([0-9]{2})" placeholder="Enter your phone (e.g. +14155552675)" id="phone-447e" name="phone" class="u-border-1 u-border-grey-30 u-grey-80 u-input u-input-rectangle" required="">
-          </div>
-          <div class="u-form-group u-form-message u-form-group-5">
+   <div class="u-form u-form-1">
+<div class="u-form-group u-form-message u-form-group-5">
             <label for="message-f2a8" class="u-label u-text-grey-40">Message</label>
             <textarea placeholder="Enter your message" rows="4" cols="50" id="message-f2a8" name="message" class="u-border-1 u-border-grey-30 u-grey-80 u-input u-input-rectangle" required=""></textarea>
           </div>
           <div class="u-align-left u-form-group u-form-submit">
             <a href="#" class="u-border-2 u-border-white u-btn u-btn-rectangle u-btn-submit u-button-style u-none u-btn-1">Submit</a>
             <input type="submit" value="submit" class="u-form-control-hidden">
-          </div>
-          <div class="u-form-send-message u-form-send-success"> Thank you! Your message has been sent. </div>
+          </div>form-send-success"> Thank you! Your message has been sent. </div>
           <div class="u-form-send-error u-form-send-message"> Unable to send your message. Please fix errors then try again. </div>
           <input type="hidden" value="" name="recaptchaResponse">
         </form>

@@ -27,10 +27,9 @@
   <meta property="og:description" content="">
   <meta property="og:type" content="website">
   <link href="./assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
 </head>
 
-<body data-home-page="home.php" data-home-page-title="Página Inicial" class="u-body u-xl-mode" data-lang="pt">
+<body class="u-body u-xl-mode" data-lang="pt">
   <header>
     <nav class="navbar navbar-expand-lg navbar-dark bg-secondary">
       <div class="container-fluid">
@@ -46,6 +45,7 @@
             <li class="nav-item">
               <a class="nav-link" href="./home.php#sec-85ba">Contato</a>
             </li>
+
             <li class="nav-item">
               <a class="nav-link" href="./home.php#sec-6969">Sobre</a>
             </li>
@@ -69,7 +69,7 @@
   </section>
   <section class="u-align-center u-clearfix u-section-2" id="carousel_28e0">
     <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
-      <h3 class="u-text u-text-default u-text-1">Nossos professores</h3>
+      <h3 class="u-text u-text-default u-text-1">Nossos professoreS</h3>
       <div class="u-list u-list-1">
         <div class="u-repeater u-repeater-1">
           <div class="u-align-center u-container-style u-list-item u-repeater-item">
@@ -81,7 +81,7 @@
           </div>
           <div class="u-align-center u-container-style u-list-item u-repeater-item">
             <div class="u-container-layout u-similar-container u-container-layout-2">
-              <img src="./assets/images/athlete-black-and-white-boxer-boxing-290416.jpg" alt="" class="u-expanded-width u-image u-image-default u-image-2">
+              <img src="./assets/images/atleta.jpg" alt="" class="u-expanded-width u-image u-image-default u-image-2">
               <h5 class="u-text u-text-4">vULGO LIDER DA SALA</h5>
               <p class="u-text u-text-grey-40 u-text-5">Gerente do nosso banco de Dados e Preparador Físico de Atletas do Basquete.</p>
             </div>
@@ -99,49 +99,6 @@
           <path d="m0 204.647h116.941c0 64.48-52.461 116.941-116.941 116.941v58.471c96.728 0 175.412-78.684 175.412-175.412v-175.412h-175.412z"></path>
         </svg></span>
       <h2 class="u-text u-text-body-alt-color u-text-2"> Quem tem um objetivo, não tem desculpas. Foque e treine com determinação,Não tenha medo de falhar. Esse é o caminho para o sucesso, Se não conseguiu fazer o exercício hoje, tente de novo amanhã. A prática é que vai te deixar melhor. Não desista!</h2>
-    </div>
-  </section>
-  <section class="u-align-left u-clearfix u-white u-section-4" id="carousel_0d0f">
-    <div class="u-clearfix u-sheet u-valign-middle-lg u-valign-middle-md u-valign-middle-sm u-valign-middle-xl u-sheet-1">
-      <div class="u-align-left u-container-style u-group u-group-1">
-        <div class="u-container-layout u-valign-middle u-container-layout-1">
-          <h2 class="u-text u-text-1">DEixe uma mensagem</h2>
-          <p class="u-text u-text-2">É muito importante pra nós sabermos oque você está achando do nosso serviço.</p>
-        </div>
-      </div>
-      <div class="u-form u-form-1">
-        <form action="#" method="POST" class="u-clearfix u-form-spacing-20 u-form-vertical u-inner-form" style="padding: 10px" source="email" name="form">
-          <div class="u-form-email u-form-group u-form-partition-factor-2">
-            <label for="email-f2a8" class="u-label u-text-grey-40">E-mail</label>
-            <input type="email" placeholder="Enter a valid email address" id="email-f2a8" name="email" class="u-border-1 u-border-grey-30 u-grey-80 u-input u-input-rectangle" required="">
-          </div>
-          <div class="u-form-group u-form-name u-form-partition-factor-2">
-            <label for="name-f2a8" class="u-label u-text-grey-40">Name</label>
-            <input type="text" placeholder="Enter your Name" id="name-f2a8" name="name" class="u-border-1 u-border-grey-30 u-grey-80 u-input u-input-rectangle" required="">
-          </div>
-          <div class="u-form-date u-form-group u-form-partition-factor-2 u-form-group-3">
-            <label for="date-4441" class="u-label u-text-grey-40">Date</label>
-            <input type="date" placeholder="MM/DD/YYYY" id="date-4441" name="date" class="u-border-1 u-border-grey-30 u-grey-80 u-input u-input-rectangle" required="">
-          </div>
-          <div class="u-form-group u-form-partition-factor-2 u-form-phone u-form-group-4">
-            <label for="phone-447e" class="u-label u-text-grey-40">Phone</label>
-            <input type="tel" pattern="\+?\d{0,2}[\s\(\-]?([0-9]{3})[\s\)\-]?([\s\-]?)([0-9]{3})[\s\-]?([0-9]{2})[\s\-]?([0-9]{2})" placeholder="Enter your phone (e.g. +14155552675)" id="phone-447e" name="phone" class="u-border-1 u-border-grey-30 u-grey-80 u-input u-input-rectangle" required="">
-          </div>
-          <div class="u-form-group u-form-message u-form-group-5">
-            <label for="message-f2a8" class="u-label u-text-grey-40">Message</label>
-            <textarea placeholder="Enter your message" rows="4" cols="50" id="message-f2a8" name="message" class="u-border-1 u-border-grey-30 u-grey-80 u-input u-input-rectangle" required=""></textarea>
-          </div>
-          <div class="u-align-left u-form-group u-form-submit">
-            <a href="#" class="u-border-2 u-border-white u-btn u-btn-rectangle u-btn-submit u-button-style u-none u-btn-1">Submit</a>
-            <input type="submit" value="submit" class="u-form-control-hidden">
-          </div>
-          <div class="u-form-send-message u-form-send-success"> Thank you! Your message has been sent. </div>
-          <div class="u-form-send-error u-form-send-message"> Unable to send your message. Please fix errors then try again. </div>
-          <input type="hidden" value="" name="recaptchaResponse">
-        </form>
-      </div>
-      <a href="https://nicepage.com/k/infographic-html-templates" class="u-border-2 u-border-black u-btn u-button-style u-hover-black u-none u-text-hover-white u-btn-2">Enviar<br>
-      </a>
     </div>
   </section>
   <section class="u-black u-clearfix u-section-5" id="sec-85ba">
@@ -170,8 +127,6 @@
       </div>
     </div>
   </section>
-
-
   <footer class="mt-auto bg-secondary footer mt-5" id="sec-6969">
     <div class="container mt-3">
       <div class="row">
@@ -195,7 +150,6 @@
   </footer>
 
   <script src="./assets/bootstrap/js/bootstrap.bundle.min.js"></script>
-
 
 </body>
 

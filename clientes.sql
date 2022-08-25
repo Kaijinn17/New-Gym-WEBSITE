@@ -39,6 +39,8 @@ CREATE TABLE `clientes` (
   `foto` varchar(255) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
+
+
 --
 -- Índices para tabelas despejadas
 --
