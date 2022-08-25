@@ -122,11 +122,10 @@
                                         <td><?php echo $user->planos; ?></td>
                                         </tr>
                                     <tr>
-                                        <td></td>
-                                    <td>    
+                                    <td>              
                                 <a href="./perfil.php#minhaDiv"><button class="btn btn-success w-100" onclick="Mudarestado('minhaDiv')" >
                                         Mudar Plano
-                                    </button></a>  </td>
+                                    </button></a>         </td>
                                     </tr>
                                 </tbody>
                             </table>
