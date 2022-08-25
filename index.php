@@ -64,8 +64,6 @@
       <h2 class="u-custom-font u-font-oswald u-text u-text-default u-text-2">DEMIA</h2>
       <p class="u-text u-text-default u-text-white u-text-3">Somos a Academia Que Vai Revolucionar a Estética!!</p>
       <a href="cadastrar.php" data-page-id="13566755" class="u-active-custom-color-2 u-border-none u-btn u-btn-round u-button-style u-custom-color-1 u-hover-custom-color-2 u-radius-50 u-btn-1">criar conta</a>
-    </div>
-    <div>
     <a href="logar.php" data-page-id="13566755" class="u-active-custom-color-2 u-border-none u-btn u-btn-round u-button-style u-custom-color-1 u-hover-custom-color-2 u-radius-50 u-btn-1">login</a>
     </div>
   </section>
