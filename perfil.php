@@ -98,7 +98,7 @@
                                 <p class="card-text d-flex justify-content-center" class="mt-2" id="send_photo">
                                     <a href="#">Enviar Foto</a>
                                 </p>
-                                <input type="file" style="display:none;" id="profile_image" name="profile_image" />
+                                <input type="file" style="display:none;" id="file" name="profile_image" />
                             <?php endif; ?>
                             <h5 class="card-title d-flex justify-content-center"><?php echo ucfirst($user->nome); ?></h5>
                             <p class="card-text">
