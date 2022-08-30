@@ -176,8 +176,8 @@
                             <h5 class="card-title">Periodo</h5>
                             <p class="card-text">Segunda a sabado.</p>
                             <p class="card-text d-flex justify-content-center">
-                                <?php if ($user->planos = 'Plano Trimestral'): ?>
-                                    <p>Adquirir</p>
+                                <?php if ($user->planos = Plano Trimestral): ?>
+                                    <p>plano selecionado</p>
                                     </p>
                             <?php else : ?>
                                 <p class="card-text d-flex justify-content-center">
