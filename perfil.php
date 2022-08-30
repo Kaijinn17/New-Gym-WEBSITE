@@ -207,12 +207,18 @@
                             <h5 class="card-title">Periodo</h5>
                             <p class="card-text">3 dias da semana a sua escolha.</p>
                             <p class="card-text d-flex justify-content-center">
+                            <?php if ($user->planos = $user->planos): ?>
+                                    <p>plano selecionado</p>
+                                    </p>
+                            <?php else : ?>
+                                <p class="card-text d-flex justify-content-center">
                                 <a href="./src/profile.php?plano=intermediario" class="w-100">
                                     <button class="btn btn-info w-100">
                                         Adquirir
                                     </button>
                                 </a>
                             </p>
+                            </php endif ; ?>
                         </div>
                     </div>
                 </div>
