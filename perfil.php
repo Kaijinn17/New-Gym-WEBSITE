@@ -176,12 +176,18 @@
                             <h5 class="card-title">Periodo</h5>
                             <p class="card-text">Segunda a sabado.</p>
                             <p class="card-text d-flex justify-content-center">
+                                <?php if ($user->planos = 'Plano Trimestral'): ?>
+                                    <p>Adquirir</p>
+                                    </p>
+                            <?php else : ?>
+                                <p class="card-text d-flex justify-content-center">
                                 <a href="./src/profile.php?plano=trimestral" class="w-100">
                                     <button class="btn btn-success w-100">
-                                        Adiquirir
+                                        Adquirir
                                     </button>
                                 </a>
                             </p>
+                            <?php endif ; ?>
                         </div>
                     </div>
                 </div>
@@ -203,7 +209,7 @@
                             <p class="card-text d-flex justify-content-center">
                                 <a href="./src/profile.php?plano=intermediario" class="w-100">
                                     <button class="btn btn-info w-100">
-                                        Adiquirir
+                                        Adquirir
                                     </button>
                                 </a>
                             </p>
@@ -228,7 +234,7 @@
                             <p class="card-text d-flex justify-content-center">
                                 <a href="./src/profile.php?plano=semanal" class="w-100">
                                     <button class="btn btn-secondary w-100">
-                                        Adiquirir
+                                        Adquirir
                                     </button>
                                 </a>
                             </p>
