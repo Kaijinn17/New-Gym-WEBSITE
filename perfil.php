@@ -175,11 +175,6 @@
                         <div class="card-footer bg-transparent border-success">
                             <h5 class="card-title">Periodo</h5>
                             <p class="card-text">Segunda a sabado.</p>
-                            <p class="card-text d-flex justify-content-center">
-                                <?php if ($user->planos = $user->planos): ?>
-                                    <p>plano selecionado</p>
-                                    </p>
-                            <?php else : ?>
                                 <p class="card-text d-flex justify-content-center">
                                 <a href="./src/profile.php?plano=trimestral" class="w-100">
                                     <button class="btn btn-success w-100">
@@ -187,7 +182,6 @@
                                     </button>
                                 </a>
                             </p>
-                            <?php endif ; ?>
                         </div>
                     </div>
                 </div>
@@ -207,18 +201,12 @@
                             <h5 class="card-title">Periodo</h5>
                             <p class="card-text">3 dias da semana a sua escolha.</p>
                             <p class="card-text d-flex justify-content-center">
-                            <?php if ($user->planos = $user->planos): ?>
-                                    <p>plano selecionado</p>
-                                    </p>
-                            <?php else : ?>
-                                <p class="card-text d-flex justify-content-center">
                                 <a href="./src/profile.php?plano=intermediario" class="w-100">
                                     <button class="btn btn-info w-100">
                                         Adquirir
                                     </button>
                                 </a>
                             </p>
-                            </php endif ; ?>
                         </div>
                     </div>
                 </div>
