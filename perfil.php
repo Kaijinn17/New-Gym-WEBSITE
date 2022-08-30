@@ -187,6 +187,7 @@
                                     </button>
                                 </a>
                             </p>
+                            <?php endif ; ?>
                         </div>
                     </div>
                 </div>
