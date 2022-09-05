@@ -37,10 +37,10 @@
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <div class="collapse navbar-collapse d-lg-flex justify-content-end" id="navbarSupportedContent">
+        <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="./home.php">Home</a>
+              <a class="nav-link" aria-current="page" href="./home.php">Home</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="./home.php#sec-85ba">Contato</a>
@@ -51,6 +51,9 @@
             </li>
             <li class="nav-item">
               <a class="nav-link" href="./home.php#carousel_28e0">Personals</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="treinos.php">Treinos</a>
             </li>
           </ul>
         </div>

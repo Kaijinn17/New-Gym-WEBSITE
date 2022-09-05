@@ -1,4 +1,4 @@
-<?php include('./src/protect.php'); ?>
+<?php //include('./src/protect.php'); ?>
 
 
 <!DOCTYPE html>
@@ -61,8 +61,7 @@
             <li class="nav-item">
               <a class="nav-link" aria-current="page" href="./perfil.php">
                 <div class="text-white">
-                  Bem Vindo, <?php if (isset($_SESSION['nome'])) echo $_SESSION['nome'];
-                              else echo "null"; ?>
+                  <?php if (isset($_SESSION['nome'])) echo $_SESSION['nome'];?>
                 </div>
               </a>
             </li>
@@ -70,7 +69,7 @@
               <a class="nav-link" aria-current="page" href="./src/logout.php">
                 <button type="button" class="btn btn-sm btn-outline-danger">Sair</button>
               </a>
-            </li>
+            </li> 
           </ul>
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
             <li class="nav-item">

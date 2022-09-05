@@ -1,5 +1,5 @@
-<?php require_once(__DIR__ . '/src/protect.php'); ?>
-<?php require_once(__DIR__ . '/src/profile.php'); ?>
+<?php // require_once(__DIR__ . '/src/protect.php'); ?>
+<?php //require_once(__DIR__ . '/src/profile.php'); ?>
 <!DOCTYPE html>
 <html lang="pt-BR">
 
@@ -40,8 +40,8 @@
                         <li class="nav-item">
                             <a class="nav-link" aria-current="page" href="./perfil.php">
                                 <div class="text-white">
-                                    Bem Vindo, <?php if (isset($_SESSION['nome'])) echo $_SESSION['nome'];
-                                                else echo "null"; ?>
+                                   <?php if (isset($_SESSION['nome'])) echo $_SESSION['nome'];
+                                               ?>
                                 </div>
                             </a>
                         </li>
