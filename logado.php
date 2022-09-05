@@ -77,18 +77,19 @@
               <a class="nav-link active" aria-current="page" href="./logado.php">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="./perfil.php">Perfil</a>
-            </li>
-
-            <li class="nav-item">
               <a class="nav-link" href="./logado.php#sec-85ba">Contato</a>
             </li>
-
             <li class="nav-item">
               <a class="nav-link" href="./logado.php#sec-6969">Sobre</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="./logado.php#carousel_28e0">Personals</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="treinos.php">Treinos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./perfil.php">Perfil</a>
             </li>
           </ul>
         </div>
@@ -135,32 +136,6 @@
           <path d="m0 204.647h116.941c0 64.48-52.461 116.941-116.941 116.941v58.471c96.728 0 175.412-78.684 175.412-175.412v-175.412h-175.412z"></path>
         </svg></span>
       <h2 class="u-text u-text-body-alt-color u-text-2"> Quem tem um objetivo, não tem desculpas. Foque e treine com determinação,Não tenha medo de falhar. Esse é o caminho para o sucesso, Se não conseguiu fazer o exercício hoje, tente de novo amanhã. A prática é que vai te deixar melhor. Não desista!</h2>
-    </div>
-  </section>
-  <section class="u-align-left u-clearfix u-white u-section-4" id="carousel_0d0f">
-    <div class="u-clearfix u-sheet u-valign-middle-lg u-valign-middle-md u-valign-middle-sm u-valign-middle-xl u-sheet-1">
-      <div class="u-align-left u-container-style u-group u-group-1">
-        <div class="u-container-layout u-valign-middle u-container-layout-1">
-          <h2 class="u-text u-text-1">DEixe uma mensagem</h2>
-          <p class="u-text u-text-2">É muito importante pra nós sabermos oque você está achando do nosso serviço.</p>
-        </div>
-      </div>
-      <div class="u-form u-form-1">
-<div class="u-form-group u-form-message u-form-group-5">
-            <label for="message-f2a8" class="u-label u-text-grey-40">Message</label>
-            <textarea placeholder="Enter your message" rows="4" cols="50" id="message-f2a8" name="message" class="u-border-1 u-border-grey-30 u-grey-80 u-input u-input-rectangle" required=""></textarea>
-          </div>
-          <div class="u-align-left u-form-group u-form-submit">
-            <a href="#" class="u-border-2 u-border-white u-btn u-btn-rectangle u-btn-submit u-button-style u-none u-btn-1">Submit</a>
-            <input type="submit" value="submit" class="u-form-control-hidden">
-          </div>
-          <div class="u-form-send-message u-form-send-success"> Thank you! Your message has been sent. </div>
-          <div class="u-form-send-error u-form-send-message"> Unable to send your message. Please fix errors then try again. </div>
-          <input type="hidden" value="" name="recaptchaResponse">
-        </form>
-      </div>
-      <a href="https://nicepage.com/k/infographic-html-templates" class="u-border-2 u-border-black u-btn u-button-style u-hover-black u-none u-text-hover-white u-btn-2">Enviar<br>
-      </a>
     </div>
   </section>
   <section class="u-black u-clearfix u-section-5" id="sec-85ba">

@@ -56,18 +56,19 @@
                             <a class="nav-link" aria-current="page" href="./logado.php">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" href="./perfil.php">Perfil</a>
-                        </li>
-
-                        <li class="nav-item">
                             <a class="nav-link" href="./logado.php#sec-85ba">Contato</a>
                         </li>
-
                         <li class="nav-item">
                             <a class="nav-link" href="./perfil.php#sec-6969">Sobre</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="./logado.php#carousel_28e0">Personals</a>
+                        </li>
+                        <li class="nav-item">
+                              <a class="nav-link" href="treinos.php">Treinos</a>
+                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="./perfil.php">Perfil</a>
                         </li>
                     </ul>
                 </div>
