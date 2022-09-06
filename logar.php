@@ -53,9 +53,6 @@
             <li class="nav-item">
               <a class="nav-link" href="./home.php#carousel_28e0">Personals</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="treinos.php">Treinos</a>
-            </li>
           </ul>
         </div>
       </div>

@@ -37,9 +37,9 @@ ini_set("display_errors", false);
 
 <body data-home-page="./home.php" data-home-page-title="Página Inicial" class="u-body u-xl-mode" data-lang="pt">
   <header>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-secondary">
+  <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: black;">
       <div class="container-fluid">
-        <a class="navbar-brand" href="./perfil.php"><img src="./assets/images/akdemia2.png" alt="" width="158px" height="44.63px"></a>
+        <a class="navbar-brand" href="./perfil.php"><img src="./assets/images/akdemia3.png" alt="" width="158px" height="44.63px"></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
