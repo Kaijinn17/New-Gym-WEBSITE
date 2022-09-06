@@ -88,7 +88,12 @@
     </nav>
   </header>
 
-  <div class="text-bg-danger p-3 d-lg-flex justify-content-center" style="font-size: 20px;"><strong>Continue Em Forma Com Treinos Em Casa</strong></div>
+  <div class="text-bg-danger p-3 d-lg-flex justify-content-center" style="font-size: 20px;">
+  <strong>Olá 
+    <?php if (isset($_SESSION['nome'])) echo $_SESSION['nome'];?>
+    Continue Em Forma Com Treinos Em Casa
+  </strong>
+</div>
  
   <div class="cards d-flex justify-content-center m-4">
   <div class="card mb-3 row" style="max-width: 1000px;">
