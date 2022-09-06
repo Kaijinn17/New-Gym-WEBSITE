@@ -1,3 +1,5 @@
+<?php include('./src/protect.php'); ?>
+
 <!DOCTYPE html>
 <html style="font-size: 16px;" lang="pt">
 
@@ -38,6 +40,20 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse d-lg-flex justify-content-end" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="./perfil.php">
+                <div class="text-white">
+                  <?php if (isset($_SESSION['nome'])) echo $_SESSION['nome'];?>
+                </div>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="./src/logout.php">
+                <button type="button" class="btn btn-sm btn-outline-danger">Sair</button>
+              </a>
+            </li> 
+          </ul>
         <ul class="navbar-nav">
             <li class="nav-item">
               <a class="nav-link" aria-current="page" href="./home.php">Home</a>
