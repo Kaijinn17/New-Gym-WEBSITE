@@ -1,4 +1,4 @@
-<?php //include('./src/protect.php'); ?>
+<?php include('./src/protect.php'); ?>
 
 
 <!DOCTYPE html>
