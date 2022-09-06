@@ -56,17 +56,17 @@
           </ul>
         <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="./home.php">Home</a>
+              <a class="nav-link" aria-current="page" href="./logado.php">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="./home.php#sec-85ba">Contato</a>
+              <a class="nav-link" href="./logado.php#sec-85ba">Contato</a>
             </li>
 
             <li class="nav-item">
-              <a class="nav-link" href="./home.php#sec-6969">Sobre</a>
+              <a class="nav-link" href="./logado.php#sec-6969">Sobre</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="./home.php#carousel_28e0">Personals</a>
+              <a class="nav-link" href="./logado.php#carousel_28e0">Personals</a>
             </li>
             <li class="nav-item">
               <a class="nav-link active" href="treinos.php">Treinos</a>
