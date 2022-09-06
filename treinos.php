@@ -88,7 +88,7 @@
     </nav>
   </header>
 
-  <div class="text-bg-light p-2 d-lg-flex justify-content-left" style="font-size: 18px;">
+  <div class="text-bg-light p-2 d-lg-flex justify-content-center" style="font-size: 18px;">
     <strong>Olá <span style="color: red;"><?php if (isset($_SESSION['nome'])) echo $_SESSION['nome'];?></span> Continue Em Forma Com Treinos Em Casa</strong>
 </div>
  
