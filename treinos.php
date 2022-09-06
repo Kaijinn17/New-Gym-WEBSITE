@@ -71,6 +71,9 @@
             <li class="nav-item">
               <a class="nav-link active" href="treinos.php">Treinos</a>
             </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="perfil.php">Perfil</a>
+            </li>
           </ul>
         </div>
       </div>
