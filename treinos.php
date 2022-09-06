@@ -89,8 +89,8 @@
   </header>
 
   <div class="text-bg-light p-1 d-lg-flex justify-content-center" style="font-size: 17px;">
-     Olá<h3 style="color: red;"><?php if (isset($_SESSION['nome'])) echo $_SESSION['nome'];?></h3><br>
-    Continue Em Forma Com Treinos Em Casa
+    <strong>Olá<h3 style="color: red;"><?php if (isset($_SESSION['nome'])) echo $_SESSION['nome'];?></h3></strong><br>
+    <strong>Continue Em Forma Com Treinos Em Casa</strong>
 </div>
  
   <div class="cards d-flex justify-content-center m-4">
