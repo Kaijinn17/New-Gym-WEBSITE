@@ -36,7 +36,7 @@ ini_set("display_errors", false);
 </head>
 
 <body data-home-page="./home.php" data-home-page-title="Página Inicial" class="u-body u-xl-mode" data-lang="pt">
-  <header>
+  <header class="mb-2">
   <nav class="navbar navbar-expand-lg navbar-dark mb-2" style="background-color: black;">
       <div class="container-fluid">
         <a class="navbar-brand" href="./perfil.php"><img src="./assets/images/akdemia3.png" alt="" width="158px" height="44.63px"></a>
