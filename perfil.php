@@ -80,7 +80,7 @@
         <div class="container">
             <div class="row d-flex justify-content-center">
                 <h1 class="d-flex justify-content-center">Perfil Do Usuario</h1>
-                <div class="col-md-4 d-flex justify-content-center">
+                <div class="col-md-4">
                     <div id="infoUpload">
                     </div>
                     <div class="card " style="width: 350px;">
