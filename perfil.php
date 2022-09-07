@@ -76,14 +76,14 @@
         </nav>
     </header>
 
-    <section class="mt-5 mb-5">
+    <section class="mt-5 mb-5" style="margin: 55px;">
         <div class="container">
             <div class="row d-flex justify-content-center">
                 <h1 class="d-flex justify-content-center">Perfil Do Usuario</h1>
                 <div class="col-md-4">
                     <div id="infoUpload">
                     </div>
-                    <div class="card " style="width: 350px;">
+                    <div class="card" style="width: 350px;">
                         <div class="card-header">
                             Profile
                         </div>
