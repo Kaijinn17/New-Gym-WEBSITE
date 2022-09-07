@@ -80,10 +80,10 @@
         <div class="container">
             <div class="row d-flex justify-content-center">
                 <h1 class="d-flex justify-content-center">Perfil Do Usuario</h1>
-                <div class="col-md-4">
+                <div class="col-md-4 d-flex justify-content-center">
                     <div id="infoUpload">
                     </div>
-                    <div class="card" style="width: 350px;">
+                    <div class="card " style="width: 350px;">
                         <div class="card-header">
                             Profile
                         </div>
@@ -156,20 +156,16 @@
                     <h1 class="d-flex justify-content-center">Planos</h1>
                 </div>
             </div>
-            <div class="row d-flex justify-content-between">
+            <div class="row d-flex d-flex justify-content-around">
 
-
-
-
-
-                <div class="col-md-3">
-                    <div class="card border-success mb-3" style="max-width: 18rem;">
+                <div class="col-md-3 mb-5" style="width: 22rem;">
+                    <div class="card border-success mb-3">
                         <div class="card-header bg-transparent border-success">
                             <div class="d-flex justify-content-center fw-bold">
                                 Plano Trimestral
                             </div>
                         </div>
-                        <div class="card-body text-success">
+                        <div class="card-body text-success" style="height: 120px;">
                             <h5 class="card-title">Preço</h5>
                             <p class="card-text">180,00 (Desconto de 25%)</p>
                         </div>
@@ -187,14 +183,14 @@
                     </div>
                 </div>
 
-                <div class="col-md-3">
-                    <div class="card border-info mb-3" style="max-width: 18rem;">
+                <div class="col-md-3 mb-5" style="width: 22rem;">
+                    <div class="card border-info mb-3">
                         <div class="card-header bg-transparent border-info">
                             <div class="d-flex justify-content-center fw-bold">
                                 Plano Intermediario
                             </div>
                         </div>
-                        <div class="card-body text-info">
+                        <div class="card-body text-info"  style="height: 120px;">
                             <h5 class="card-title">Preço</h5>
                             <p class="card-text">70,00</p>
                         </div>
@@ -212,14 +208,14 @@
                     </div>
                 </div>
 
-                <div class="col-md-3">
-                    <div class="card border-secondary mb-3" style="max-width: 18rem;">
+                <div class="col-md-3 mb-5" style="width: 22rem;">
+                    <div class="card border-secondary mb-3">
                         <div class="card-header bg-transparent border-secondary">
                             <div class="d-flex justify-content-center fw-bold">
                                 Plano Semanal
                             </div>
                         </div>
-                        <div class="card-body text-secondary">
+                        <div class="card-body text-secondary" style="height: 120px;">
                             <h5 class="card-title">Preço</h5>
                             <p class="card-text">80,00 (Desconto 50%)</p>
                         </div>
