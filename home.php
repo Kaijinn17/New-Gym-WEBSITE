@@ -90,7 +90,7 @@
     <span class="visually-hidden">Next</span>
   </button>
 </div>
-  <section class="u-align-center u-clearfix u-section-2" id="carousel_28e0">
+  <section style="background-color:white;"  class="u-align-center u-clearfix u-section-2" id="carousel_28e0">
     <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
       <h3 class="u-text u-text-default u-text-1">Nossos professoreS</h3>
       <div class="u-list u-list-1">
@@ -150,15 +150,10 @@
       </div>
     </div>
   </section>
-  <footer class="mt-auto bg-secondary footer mt-5" id="sec-6969">
+  <footer style="background-color:gray;" class="footer" id="sec-6969">
     <div class="container mt-3">
       <div class="row">
-        <div class="col-12">
-          <ul class="list-unstyled">
-            <li class="text-white"><a class="text-decoration-none link-light" href="https://github.com/Kaijinn17/New-Gym-WEBSITE" target="_blank">Repositório do
-                projeto</a></li>
-          </ul>
-        </div>
+
       </div>
       <hr class="bg-white">
       <div class="row mb-1">
