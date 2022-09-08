@@ -134,15 +134,10 @@ ini_set("display_errors", false);
   </section>
 
 
-  <footer class="mt-auto bg-secondary footer mt-5" id="sec-6969">
+  <footer style="background-color:gray;" class="footer" id="sec-6969">
     <div class="container mt-3">
       <div class="row">
-        <div class="col-12">
-          <ul class="list-unstyled">
-            <li class="text-white"><a class="text-decoration-none link-light" href="https://github.com/Kaijinn17/New-Gym-WEBSITE" target="_blank">Repositório do
-                projeto</a></li>
-          </ul>
-        </div>
+
       </div>
       <hr class="bg-white">
       <div class="row mb-1">
