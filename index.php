@@ -29,7 +29,7 @@
   <link href="./assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 </head>
 
-<body class="u-body u-xl-mode" data-lang="pt">
+<body  style="background-color:gray;" class="u-body u-xl-mode" data-lang="pt">
   <header>
   <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: black;">
       <div class="container-fluid">
@@ -57,16 +57,39 @@
       </div>
     </nav>
   </header>
-  <section class="u-align-center u-clearfix u-image u-section-1" id="carousel_6c19" data-image-width="1280" data-image-height="720">
-    <div class="u-clearfix u-sheet u-sheet-1">
-      <h2 class="u-custom-font u-font-oswald u-text u-text-body-alt-color u-text-default u-text-1">AK<br>
-      </h2>
-      <h2 class="u-custom-font u-font-oswald u-text u-text-default u-text-2">DEMIA</h2>
-      <p class="u-text u-text-default u-text-white u-text-3">Somos a Academia Que Vai Revolucionar a Estética!!</p>
-      <a href="cadastrar.php" data-page-id="13566755" class="u-active-custom-color-2 u-border-none u-btn u-btn-round u-button-style u-custom-color-1 u-hover-custom-color-2 u-radius-50 u-btn-1">criar conta</a>
-    <a href="logar.php" data-page-id="13566755" class="u-active-custom-color-2 u-border-none u-btn u-btn-round u-button-style u-custom-color-1 u-hover-custom-color-2 u-radius-50 u-btn-1">login</a>
+  <div style="width:100%; height:540px;" id="carouselExampleIntervalNoTouching" class="carousel carousel-light slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active" data-bs-interval="5000">
+      <img src="./assets/images/6d49dcf7778555f4a1fcb22a3a5b6334f2f9ad034e7c1926e4fe951665c5c2498f1d9e30c50ace3337af7bddf92a8d867dbae75a3f996dea0e7510_1280.jpg" class="d-block w-100" style="height:540px;" alt="...">
+      <div class="carousel-caption d-md-block">
+        <strong><span style="font-size: 70px; margin-right:10px;">AK</span><span style="color:red;font-size: 70px;">DEMIA</span></strong>
+        <p style="font-size: 30px; font-family:fantasy;">Somos a Academia Que Vai Revolucionar a Estética!</p>
+      </div>
     </div>
-  </section>
+    <div class="carousel-item" data-bs-interval="5000">
+      <img src="./assets/images/photo2.jpg" class="d-block w-100" style="height:540px;" alt="...">
+      <div class="carousel-caption d-md-block">
+        <strong><span style="font-size: 70px; margin-right:10px;">AK</span><span style="color:red;font-size: 70px;">DEMIA</span></strong>
+        <p style="font-size: 30px; font-family:fantasy;">to pensando no que escrever...</p>
+      </div>
+    </div>
+    <div class="carousel-item" data-bs-interval="5000">
+      <img src="./assets/images/photo3.jpg" class="d-block w-100" style="height:540px;" alt="...">
+      <div class="carousel-caption d-md-block">
+        <strong><span style="font-size: 70px; margin-right:10px;">AK</span><span style="color:red;font-size: 70px;">DEMIA</span></strong>
+        <p style="font-size: 30px; font-family:fantasy;">to pensando no que escrever...</p>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
   <section class="u-align-center u-clearfix u-section-2" id="carousel_28e0">
     <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
       <h3 class="u-text u-text-default u-text-1">Nossos professoreS</h3>
