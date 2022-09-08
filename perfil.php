@@ -183,7 +183,7 @@
                     </div>
                 </div>
 
-                <div class="col-md-3 mb-5" style="width: 22rem;">
+                <div class="col-md-3 mb-5" style="width: 22rem;" id="card-efect">
                     <div class="card border-info mb-3">
                         <div class="card-header bg-transparent border-info">
                             <div class="d-flex justify-content-center fw-bold">
@@ -208,7 +208,7 @@
                     </div>
                 </div>
 
-                <div class="col-md-3 mb-5" style="width: 22rem;">
+                <div class="col-md-3 mb-5" style="width: 22rem;" id="card-efect">
                     <div class="card border-secondary mb-3">
                         <div class="card-header bg-transparent border-secondary">
                             <div class="d-flex justify-content-center fw-bold">

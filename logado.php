@@ -48,7 +48,7 @@
   </style>
 </head>
 
-<body data-home-page="home.html" data-home-page-title="Página Inicial" class="u-body u-xl-mode" data-lang="pt">
+<body style="background-color:gray;" data-home-page="home.html" data-home-page-title="Página Inicial" class="u-body u-xl-mode" data-lang="pt">
   <header>
   <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: black;">
       <div class="container-fluid">
@@ -95,15 +95,40 @@
       </div>
     </nav>
   </header>
-  <section class="u-align-center u-clearfix u-image u-section-1" id="carousel_6c19" data-image-width="1280" data-image-height="720">
-    <div class="u-clearfix u-sheet u-sheet-1">
-      <h2 class="u-custom-font u-font-oswald u-text u-text-body-alt-color u-text-default u-text-1">AK<br>
-      </h2>
-      <h2 class="u-custom-font u-font-oswald u-text u-text-default u-text-2">DEMIA</h2>
-      <p class="u-text u-text-default u-text-white u-text-3">Somos a Academia Que Vai Revolucionar a Estética!!</p>
+  <div style="width:100%; height:540px;" id="carouselExampleIntervalNoTouching" class="carousel carousel-light slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active" data-bs-interval="5000">
+      <img src="./assets/images/6d49dcf7778555f4a1fcb22a3a5b6334f2f9ad034e7c1926e4fe951665c5c2498f1d9e30c50ace3337af7bddf92a8d867dbae75a3f996dea0e7510_1280.jpg" class="d-block w-100" style="height:540px;" alt="...">
+      <div class="carousel-caption d-md-block">
+        <strong><span style="font-size: 70px; margin-right:10px;">AK</span><span style="color:red;font-size: 70px;">DEMIA</span></strong>
+        <p style="font-size: 30px; font-family:fantasy;">Somos a Academia Que Vai Revolucionar a Estética!</p>
+      </div>
     </div>
-  </section>
-  <section class="u-align-center u-clearfix u-section-2" id="carousel_28e0">
+    <div class="carousel-item" data-bs-interval="5000">
+      <img src="./assets/images/photo2.jpg" class="d-block w-100" style="height:540px;" alt="...">
+      <div class="carousel-caption d-md-block">
+        <strong><span style="font-size: 70px; margin-right:10px;">AK</span><span style="color:red;font-size: 70px;">DEMIA</span></strong>
+        <p style="font-size: 30px; font-family:fantasy;">to pensando no que escrever...</p>
+      </div>
+    </div>
+    <div class="carousel-item" data-bs-interval="5000">
+      <img src="./assets/images/photo3.jpg" class="d-block w-100" style="height:540px;" alt="...">
+      <div class="carousel-caption d-md-block">
+        <strong><span style="font-size: 70px; margin-right:10px;">AK</span><span style="color:red;font-size: 70px;">DEMIA</span></strong>
+        <p style="font-size: 30px; font-family:fantasy;">to pensando no que escrever...</p>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+<section style="background-color:white;" class="u-align-center u-clearfix u-section-2" id="carousel_28e0">
     <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
       <h3 class="u-text u-text-default u-text-1">Nossos professores</h3>
       <div class="u-list u-list-1">
@@ -137,7 +162,7 @@
       <h2 class="u-text u-text-body-alt-color u-text-2"> Quem tem um objetivo, não tem desculpas. Foque e treine com determinação,Não tenha medo de falhar. Esse é o caminho para o sucesso, Se não conseguiu fazer o exercício hoje, tente de novo amanhã. A prática é que vai te deixar melhor. Não desista!</h2>
     </div>
   </section>
-  <section class="u-black u-clearfix u-section-5" id="sec-85ba">
+  <section style="background-color:white;" class="u-black u-clearfix u-section-5" id="sec-85ba">
     <div class="u-clearfix u-sheet u-sheet-1">
       <h1 class="u-custom-font u-font-oswald u-text u-text-custom-color-1 u-text-default u-title u-text-1">Entre Em Contato Com a Gente </h1>
       <div class="u-clearfix u-expanded-width-md u-expanded-width-sm u-expanded-width-xs u-gutter-0 u-layout-wrap u-layout-wrap-1">
@@ -148,7 +173,7 @@
                 <div alt="" class="u-align-left u-expanded-width-lg u-expanded-width-md u-expanded-width-xl u-image u-image-circle u-image-1" src="" data-image-width="1280" data-image-height="1280"></div>
               </div>
             </div>
-            <div class="u-align-center-sm u-align-center-xs u-align-left-lg u-align-left-md u-align-left-xl u-container-style u-layout-cell u-right-cell u-size-47 u-layout-cell-2">
+            <div style="background-color:white; color:black;" class="u-align-center-sm u-align-center-xs u-align-left-lg u-align-left-md u-align-left-xl u-container-style u-layout-cell u-right-cell u-size-47 u-layout-cell-2">
               <div class="u-container-layout u-container-layout-2">
                 <a href="https://nicepage.com/pt/modelos-site" class="u-active-none u-bottom-left-radius-0 u-bottom-right-radius-0 u-btn u-btn-rectangle u-button-style u-hover-none u-none u-radius-0 u-top-left-radius-0 u-top-right-radius-0 u-btn-1"><span class="u-icon"><svg class="u-svg-content" viewBox="0 0 405.333 405.333" x="0px" y="0px" style="width: 1em; height: 1em;">
                       <path d="M373.333,266.88c-25.003,0-49.493-3.904-72.704-11.563c-11.328-3.904-24.192-0.896-31.637,6.699l-46.016,34.752    c-52.8-28.181-86.592-61.952-114.389-114.368l33.813-44.928c8.512-8.512,11.563-20.971,7.915-32.64    C142.592,81.472,138.667,56.96,138.667,32c0-17.643-14.357-32-32-32H32C14.357,0,0,14.357,0,32    c0,205.845,167.488,373.333,373.333,373.333c17.643,0,32-14.357,32-32V298.88C405.333,281.237,390.976,266.88,373.333,266.88z"></path>
@@ -165,15 +190,10 @@
   </section>
 
 
-  <footer class="mt-auto bg-secondary footer mt-5" id="sec-6969">
+  <footer style="background-color:gray;" class="footer" id="sec-6969">
     <div class="container mt-3">
       <div class="row">
-        <div class="col-12">
-          <ul class="list-unstyled">
-            <li class="text-white"><a class="text-decoration-none link-light" href="https://github.com/Kaijinn17/New-Gym-WEBSITE" target="_blank">Repositório do
-                projeto</a></li>
-          </ul>
-        </div>
+
       </div>
       <hr class="bg-white">
       <div class="row mb-1">
