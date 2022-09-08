@@ -95,7 +95,7 @@
       </div>
     </nav>
   </header>
-  <div style="width:100%; height:540px;" id="carouselExampleIntervalNoTouching" class="carousel carousel-light slide" data-bs-ride="carousel">
+  <div style="width:100%; height:540px;" id="carouselExampleInterval" class="carousel carousel-light slide" data-bs-ride="carousel">
   <div class="carousel-inner">
     <div class="carousel-item active" data-bs-interval="5000">
       <img src="./assets/images/6d49dcf7778555f4a1fcb22a3a5b6334f2f9ad034e7c1926e4fe951665c5c2498f1d9e30c50ace3337af7bddf92a8d867dbae75a3f996dea0e7510_1280.jpg" class="d-block w-100" style="height:540px;" alt="...">
