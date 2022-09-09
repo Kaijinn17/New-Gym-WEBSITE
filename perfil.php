@@ -139,6 +139,11 @@
                                         Mudar Plano
                                     </button></a>
                         </div>
+                        <div class="btn-plano">
+                        <a href="#"><button class="btn btn-success w-100" onclick="funcao1()" >
+                                        Pagar Mensalidade
+                                    </button></a>
+                        </div>
                         <div class="card-footer">
                             <?php date_default_timezone_set("America/Sao_Paulo"); ?>
                             <?php echo date('Y-m-d H:i:s') ?>
@@ -255,6 +260,12 @@
 
     <script src="./assets/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="./assets/js/photoUpload.js"></script>
+    <script>
+function funcao1()
+{
+alert("Este Botão Ainda Não Funciona!");
+}
+</script>
 </body>
 
 </html>
