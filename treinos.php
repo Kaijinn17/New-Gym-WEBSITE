@@ -8,7 +8,7 @@
   <meta charset="utf-8">
   <meta name="keywords" content="">
   <meta name="description" content="">
-  <title>Página Inicial</title>
+  <title>Treinos</title>
   <link rel="stylesheet" href="./assets/css/nicepage.css" media="screen">
   <link rel="stylesheet" href="./assets/css/home.css" media="screen">
   <script class="u-script" type="text/javascript" src="./assets/js/jquery.js" defer=""></script>
@@ -39,7 +39,7 @@
   <link href="./assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 </head>
 
-<body class="u-body u-xl-mode" style="background-color: darkgray;" data-lang="pt">
+<body class="u-body u-xl-mode" style="background-color: black;" data-lang="pt">
   <header>
     <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: black;">
       <div class="container-fluid">
@@ -87,11 +87,25 @@
       </div>
     </nav>
   </header>
+  
+  <div style="background-color:white; width:100%;" class="d-flex justify-content-center p-3">
+  <div class="btn-group">
+  <button type="button" class="btn btn-danger dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+    Escolher Tipo De Treino
+  </button>
+  <ul class="dropdown-menu">
+    <li><a class="dropdown-item" onclick="Calistenia('divCalist')">Calistenia</a></li>
+    <li><a class="dropdown-item" onclick="Academia('divAcad')">Academia</a></li>
+  </ul>
+</div>
+</div>
 
+  <div id="divCalist" class="justify-content-center" style="display: none;">
   <div class="text-bg-light p-2 d-lg-flex justify-content-center" style="font-size: 18px;">
     <strong>Olá <span style="color: red;"><?php if (isset($_SESSION['nome'])) echo $_SESSION['nome'];?></span>, Continue Em Forma Com Treinos Em Casa</strong>
 </div>
  
+ <div class="justify-content-center m-4">
   <div class="cards d-flex justify-content-center m-4">
   <div class="card mb-3 row" style="max-width: 1000px;">
   <div class="row g-0">
@@ -227,8 +241,184 @@
   </div>
 </div>
   </div>
+ </div>
+  </div>
 
-  <footer style="background-color:gray;" class="footer" id="sec-6969">
+  <div id="divAcad" class="justify-content-center" style="display: none;">
+  <div class="text-bg-light p-2 d-lg-flex justify-content-center" style="font-size: 18px;">
+    <strong>Olá <span style="color: red;"><?php if (isset($_SESSION['nome'])) echo $_SESSION['nome'];?></span>, Faça esses Treinos se não houver Professores disponiveis</strong>
+</div>
+ 
+ <div class="justify-content-center m-4">
+  <div class="cards d-flex justify-content-center m-4">
+  <div class="card mb-3 row" style="max-width: 1000px;">
+  <div class="row g-0">
+    <div class="col-md-4">
+      <img src="./assets/images/biceps.gif" style="height: 100%;"  class="img-fluid rounded-start" alt="...">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title">1.Rosca Direta</h5>
+        <p class="card-text">Para começar, fique em pé e pegue um halter com cada mão. Os cotovelos devem estar próximos ao tronco e as palmas das mãos direcionadas para a frente;
+Então, com os antebraços imóveis, solte o ar e levante os pesos ao mesmo tempo em que contrai os bíceps. Isso deve ser feito até que os bíceps estejam completamente contraídos e os halteres se encontrem na altura dos ombros;
+Em seguida, permaneça na posição contraída por um instante;
+Depois, inspire o ar e retorne lentamente ao posicionamento original. </p>
+        <p><strong>O que trabalha principalmente:</strong> Biceps</p>
+      </div>
+    </div>
+  </div>
+</div>
+  </div>
+
+  <div class="cards d-flex justify-content-center m-4">
+  <div class="card mb-3 row" style="max-width: 1000px;">
+  <div class="row g-0">
+    <div class="col-md-4">
+      <img src="./assets/images/triceps.gif" style="height: 100%;"  class="img-fluid rounded-start" alt="...">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title">2.Tríceps na polia alta com corda</h5>
+        <p class="card-text">Prenda uma corda a uma polia alta no equipamento de cabo e segure-a com uma pegada neutra, ou seja, as palmas das mãos devem ficar voltadas uma para a outra.
+Fique em pé, com o tronco reto e uma ligeiramente inclinado para frente. Os antebraços devem estar próximos ao corpo e perpendiculares ao chão.
+Então, use o tríceps para abaixar a corda, levando cada lado do acessório até as coxas, ao mesmo tempo em que exala o ar. Na parte final do movimento, os braços deverão estar totalmente estendidos e quase perpendiculares ao chão.
+Segure a posição contraída durante um segundo e lentamente erga a corda, retornando ao posicionamento original, ao mesmo tempo em que exala o ar.</p>
+        <p><strong>O que trabalha principalmente:</strong> Triceps</p>
+      </div>
+    </div>
+  </div>
+</div>
+  </div>
+
+  <div class="cards d-flex justify-content-center m-4">
+  <div class="card mb-3 row" style="max-width: 1000px;">
+  <div class="row g-0">
+    <div class="col-md-4">
+      <img src="./assets/images/costas.gif" style="height: 100%;"  class="img-fluid rounded-start" alt="...">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title">3.Remada unilateral com halter</h5>
+        <p class="card-text">Para começar, coloque um halter em cada lado de um banco reto.
+Em seguida, coloque as pernas em cima do banco, encostando o joelho e incline tronco para a frente até a parte superior do corpo ficar paralela ao chão.
+Depois, coloque uma das mãos no banco (a que for correspondente a perna que está no banco) para obter suporte e pegue um halter com a outra mão. Mantenha a região lombar reta e a palma da mão voltada para o tronco.
+Então, leve o peso para cima, até a lateral do peito. Flexione o cotovelo e mantenha o tronco imóvel.
+Durante esse movimento, solte o ar e contraia bem os músculos das costas. Você deve se certificar de que está fazendo força com os músculos das costas e não com o braço. Além disso, os antebraços não devem fazer nenhum esforço, a não ser o de segurar o halter.
+Depois, desça o halter e volte à posição inicial, ao mesmo tempo em que inala o ar. Após atingir o número determinado de repetições, troque a posição dos braços.</p>
+        <p><strong>O que trabalha principalmente:</strong> Região média das costas, o latíssimo do dorso, os bíceps e os ombros.</p>
+      </div>
+    </div>
+  </div>
+</div>
+  </div>
+
+  <div class="cards d-flex justify-content-center m-4">
+  <div class="card mb-3 row" style="max-width: 1000px;">
+  <div class="row g-0">
+    <div class="col-md-4">
+      <img src="./assets/images/ombro.gif" style="height: 100%;"  class="img-fluid rounded-start" alt="...">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title">4.Elevação lateral de ombros com halteres</h5>
+        <p class="card-text">Para começar, fique em pé e posicione os seus pés paralelos aos ombros. Segure um halter em cada mão com as palmas voltadas para você. Não se esqueça de manter a coluna reta e as escápulas encaixadas para trás.;
+Em seguida, coloque os pesos próximos, na altura das coxas e deixe os cotovelos levemente flexionados;
+Depois, eleve os halteres lateralmente, fazendo o movimento de abdução dos ombros (em que os braços são levantados para fora e para o lado), até os braços ficarem paralelos ao chão. O esforço do movimento deve ser concentrado na parte lateral dos deltoides, na articulação dos ombros, portanto, os cotovelos devem permanecer imóveis;
+Então, contraia bem os músculos e desça lentamente os halteres e volte à posição original.</p>
+        <p><strong>O que trabalha principalmente:</strong> Deltoide lateral, mas o exercício ainda aciona, de modo secundário, o deltoide anterior e o deltoide posterior.</p>
+      </div>
+    </div>
+  </div>
+</div>
+  </div>
+
+  <div class="cards d-flex justify-content-center m-4">
+  <div class="card mb-3 row" style="max-width: 1000px;">
+  <div class="row g-0">
+    <div class="col-md-4">
+      <img src="./assets/images/peito.gif" style="height: 100%;"  class="img-fluid rounded-start" alt="...">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title">5.Supino reto com halteres</h5>
+        <p>Sentar em um banco reto com um halter em cada uma das coxas. Com o auxílio das pernas, subir os pesos ao mesmo tempo em que deita o corpo para trás, firmando bem as costas e os glúteos no banco.
+
+Com os cotovelos estendidos, segurar um halter deitado em cada mão. A pegada deve ser com os polegares voltados para o lado de dentro. Um deve estar próximo ao outro, com ambos na altura do peito.
+
+Descer os halteres de modo controlado, fazendo o movimento de flexão dos cotovelos até que as cargas alcancem a altura do peito. Durante a execução desta parte, alongar bem os músculos do peitoral.Empurrar os pesos para cima, deixando um halter bem próximo ao outro, até os cotovelos se estenderem. A força deve estar concentrada nos músculos do peitoral. Somente os braços devem subir, os ombros devem ser mantidos encaixados para trás.</p>
+        <p><strong>O que trabalha principalmente:</strong> Peito</p>
+      </div>
+    </div>
+  </div>
+</div>
+  </div>
+
+  <div class="cards d-flex justify-content-center m-4">
+  <div class="card mb-3 row" style="max-width: 1000px;">
+  <div class="row g-0">
+    <div class="col-md-4">
+      <img src="./assets/images/pernas.gif" style="height: 100%;"  class="img-fluid rounded-start" alt="...">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title">6.Leg press</h5>
+        <p>Comece sentado no aparelho e com os pés no centro da plataforma e paralelos aos ombros, eles ainda devem apontar ligeiramente para fora, acompanhando o alinhamento dos joelhos;
+Em seguida, estenda os joelhos, empurrando a plataforma para frente, e destrave o peso. Segure as alças do aparelho para auxiliar a estabilização. Deixe as costas e a lombar fixadas no banco;
+Então, desça o peso cuidadosamente, flexionando os joelhos em aproximadamente 90º. Tome cuidado para não descer demais e travar os joelhos;
+Empurre a plataforma para frente com a força das coxas até estender os joelhos. Segure a contração do músculo durante um momento e repita o exercício quantas vezes for determinado;
+Ao término do exercício, trave os pesos e saia do equipamento com cuidado.</p>
+        <p><strong>O que trabalha principalmente:</strong> Fortalece a panturrilha, o quadríceps (parte da frente das coxas), os glúteos e os isquiotibiais (posteriores das coxas).</p>
+      </div>
+    </div>
+  </div>
+</div>
+  </div>
+
+  <div class="cards d-flex justify-content-center m-4">
+  <div class="card mb-3 row" style="max-width: 1000px;">
+  <div class="row g-0">
+    <div class="col-md-4">
+      <img src="./assets/images/panturrilha.gif" style="height: 100%;"  class="img-fluid rounded-start" alt="...">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title">7.Elevação de panturrilha com barra</h5>
+        <p>Para começar, fique em pé, com os pés paralelos aos ombros. Pegue uma barra e coloque-a na parte superior das costas, como a imagem acima mostra. Segure a barra com uma pegada pronada, ou seja, com as palmas das mãos direcionadas para o lado de fora.
+Enquanto segura a barra, pressione-a para baixo e contraia as escápulas dos ombros, para ter estabilidade;
+Então, pressione as pontas dos pés para levantar os calcanhares do chão, como exibido na figura acima;
+Em seguida, retorne à posição original.</p>
+        <p><strong>O que trabalha principalmente:</strong> Panturrilha</p>
+      </div>
+    </div>
+  </div>
+</div>
+  </div>
+
+  <div class="cards d-flex justify-content-center m-4">
+  <div class="card mb-3 row" style="max-width: 1000px;">
+  <div class="row g-0">
+    <div class="col-md-4">
+      <img src="./assets/images/abdomen.gif" style="height: 100%;"  class="img-fluid rounded-start" alt="...">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title">8.Abdominal giro russo com peso</h5>
+        <p>deite-se de costas no chão ou em uma esteira de exercícios com as pernas completamente estendidas e a parte superior do corpo na posição vertical. Segure uma anilha pelos lados com as duas mãos posicionando-a em frente aos músculos abdominais, com os braços ligeiramente flexionados. Se preferir, esse exercício pode ser feito apenas com o peso do próprio corpo, sem a utilização da anilha.
+
+Dobre ligeiramente os joelhos e erga as pernas e os pés, deixando apenas o bumbum no solo, como na primeira imagem. Incline a parte superior do corpo um pouco para trás como forma de ajudar a manter o equilíbrio ao longo do exercício.
+
+A partir daí, leve a anilha para o lado esquerdo até tocar o peso no chão, ao mesmo tempo em que exala o ar. Em seguida volte à posição inicial, inalando o ar e repita o movimento no lado direito. </p>
+        <p><strong>Obs:</strong> A movimentação durante o exercício deve ser devagar e controlada. Fazer movimentos bruscos pode causar lesões nas costas.</p>
+        <p><strong>O que trabalha principalmente:</strong> a força dos músculos abdominais.</p>
+      </div>
+    </div>
+  </div>
+</div>
+  </div>
+ </div>
+  </div>
+
+  <footer id="foot" style="background-color:gray; position:absolute;bottom:0; width:100%; text-align:center;" class="footer" id="sec-6969">
     <div class="container mt-3">
       <div class="row">
 
@@ -246,6 +436,7 @@
   </footer>
 
   <script src="./assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="./assets/js/photoUpload.js"></script>
 
 </body>
 

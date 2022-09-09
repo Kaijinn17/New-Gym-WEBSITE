@@ -134,7 +134,7 @@ ini_set("display_errors", false);
   </section>
 
 
-  <footer style="background-color:gray;" class="footer" id="sec-6969">
+  <footer style="background-color:gray;bottom:0; width:100%; text-align:center;" class="footer" id="sec-6969">
     <div class="container mt-3">
       <div class="row">
 
