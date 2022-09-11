@@ -43,19 +43,19 @@ try {
 }
 
 if($plano = 'Trimestral') {
-    echo '<div id="qrCode">TRUE</div>';
+    echo "<div id='qrCode'>TRUE</div";
 }else{
-    echo '<div id="qrCode">FALSE</div>';
+    echo "<div id='qrCode'>FALSE</div";
 }
 if($plano = 'Intermediario') {
-    echo '<div id="qrCode">TRUE</div>';
+    echo "<div id='qrCode'>TRUE</div";
 }else{
-    echo '<div id="qrCode">FALSE</div>';
+    echo "<div id='qrCode'>FALSE</div";
 }
 if($plano = 'Semanal') {
-    echo '<div id="qrCode">TRUE</div>';
+    echo "<div id='qrCode'>TRUE</div";
 }else{
-    echo '<div id="qrCode">FALSE</div>';
+    echo "<div id='qrCode'>FALSE</div";
 }
 
 $isPhoto = $user->foto;
