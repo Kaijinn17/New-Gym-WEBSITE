@@ -58,3 +58,5 @@ switch($planos) {
         echo "<div>Semanal</div";
         break;
 }
+
+echo $planos;
