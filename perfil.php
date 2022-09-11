@@ -89,13 +89,13 @@
                         </div>
                         <div class="card-body">
                             <?php if ($isPhoto == null) : ?>
-                                <img src="./assets/images/profile_picture_man.jpg" class="card-img-top" id="profile_photo" alt="porfilePhoto" width="300px">
+                                <img src="./assets/images/profile_picture_man.jpg" class="card-img-top" id="profile_photo" alt="porfilePhoto" width="300px" height="300px">
                                 <p class="card-text d-flex justify-content-center" class="mt-2" id="send_photo">
                                     <a href="#">Enviar Foto</a>
                                 </p>
                                 <input type="file" style="display:none;" id="file" name="file" />
                             <?php else : ?>
-                                <img src="./src/uploads/<?php echo $isPhoto; ?>" class="card-img-top" id="profile_photo" alt="porfilePhoto" width="300px">
+                                <img src="./src/uploads/<?php echo $isPhoto; ?>" class="card-img-top" id="profile_photo" alt="porfilePhoto" width="300px" height="300px">
                                 <p class="card-text d-flex justify-content-center" class="mt-2" id="send_photo">
                                     <a href="#">Enviar Foto</a>
                                 </p>
@@ -153,7 +153,7 @@
             </div>
         </div>
     </section>
-    
+
     <div class="d-flex justify-content-center m-4">
         
     <div id="qrCode" class="card bg-dark text-light" style="width: 28rem;display:none;position:absolute;margin-top:-700px;">
