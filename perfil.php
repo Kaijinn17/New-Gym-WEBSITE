@@ -154,7 +154,7 @@
         </div>
     </section>
     <div class="d-flex justify-content-center m-4">
-        <?php if($user->planos == 'Trimestral'): ?>
+        <?php if($planos == 'Trimestral'): ?>
     <div id="qrCode" class="card bg-dark text-light" style="width: 28rem;display:none;position:absolute;margin-top:-700px;">
     <div class="card-header bg-transparent border-success">
                             <div class="d-flex justify-content-center fw-bold">
@@ -177,7 +177,7 @@
 <?php endif; ?>
 </div>
 <div class="d-flex justify-content-center m-4">
-<?php if($user->planos == 'Intermediario'): ?>
+<?php if($planos == 'Intermediario'): ?>
     <div id="qrCode" class="card bg-dark text-light" style="width: 28rem;display:none;position:absolute;margin-top:-700px;">
     <div class="card-header bg-transparent border-success">
                             <div class="d-flex justify-content-center fw-bold">
@@ -200,7 +200,7 @@
 <?php endif; ?>
 </div>
 <div class="d-flex justify-content-center m-4">
-<?php if($user->planos == 'Semanal'): ?>
+<?php if($planos == 'Semanal'): ?>
     <div id="qrCode" class="card bg-dark text-light" style="width: 28rem;display:none;position:absolute;margin-top:-700px;">
     <div class="card-header bg-transparent border-success">
                             <div class="d-flex justify-content-center fw-bold">
