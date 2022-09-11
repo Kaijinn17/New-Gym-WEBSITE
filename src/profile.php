@@ -45,13 +45,13 @@ try {
 switch($user->planos) {
     case 'Trimestral':
         echo "<div id='qrCode'>TRUE</div";
-    break;
+        break;
     case 'Intermediario':
         echo "<div id='qrCode'>TRUE</div";
-    break;
+        break;
     case 'Semanal':
         echo "<div id='qrCode'>TRUE</div";
-    break;
+        break;
 }
 
 $isPhoto = $user->foto;
