@@ -42,20 +42,16 @@ try {
     exit;
 }
 
-if($plano = 'Trimestral') {
-    echo "<div id='qrCode'>TRUE</div";
-}else{
-    echo "<div id='qrCode'>FALSE</div";
-}
-if($plano = 'Intermediario') {
-    echo "<div id='qrCode'>TRUE</div";
-}else{
-    echo "<div id='qrCode'>FALSE</div";
-}
-if($plano = 'Semanal') {
-    echo "<div id='qrCode'>TRUE</div";
-}else{
-    echo "<div id='qrCode'>FALSE</div";
+switch($user->planos) {
+    case 'Trimestral':
+        echo "<div id='qrCode'>TRUE</div";
+    break;
+    case 'Intermediario':
+        echo "<div id='qrCode'>TRUE</div";
+    break;
+    case 'Semanal':
+        echo "<div id='qrCode'>TRUE</div";
+    break;
 }
 
 $isPhoto = $user->foto;
