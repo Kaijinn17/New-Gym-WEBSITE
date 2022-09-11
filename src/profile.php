@@ -44,13 +44,13 @@ try {
 
 switch($user->planos) {
     case 'Trimestral':
-        echo "<div id='qrCode'>TRUE</div";
+        echo "<div>Trimestral</div";
         break;
     case 'Intermediario':
-        echo "<div id='qrCode'>TRUE</div";
+        echo "<div>Intermediario</div";
         break;
     case 'Semanal':
-        echo "<div id='qrCode'>TRUE</div";
+        echo "<div>Semanal</div";
         break;
 }
 
