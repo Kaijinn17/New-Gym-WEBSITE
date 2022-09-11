@@ -42,7 +42,10 @@ try {
     exit;
 }
 
-switch($user->planos) {
+
+$isPhoto = $user->foto;
+
+switch($planos) {
     case 'Trimestral':
         echo "<div>Trimestral</div";
         break;
@@ -53,5 +56,3 @@ switch($user->planos) {
         echo "<div>Semanal</div";
         break;
 }
-
-$isPhoto = $user->foto;
