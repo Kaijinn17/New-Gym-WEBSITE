@@ -48,15 +48,13 @@ $isPhoto = $user->foto;
 $planos = $user->planos;
 
 switch($planos) {
-    case 'Trimestral':
+    case 'trimestral':
         echo "<div>Trimestral</div";
         break;
-    case 'Intermediario':
+    case 'intermediario':
         echo "<div>Intermediario</div";
         break;
-    case 'Semanal':
+    case 'semanal':
         echo "<div>Semanal</div";
         break;
 }
-
-echo $planos;
