@@ -7,8 +7,8 @@ try {
     $sql .= "id int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,";
     $sql .= "nome varchar(80) NOT NULL COLLATE utf8mb4_unicode_ci,";
     $sql .= "data_nascimento date NOT NULL,";
-    $sql .= "telefone varchar(80) NOT NULL COLLATE utf8mb4_unicode_ci,";
-    $sql .= "email varchar(80) NOT NULL COLLATE utf8mb4_unicode_ci,";
+    $sql .= "telefone varchar(80) NOT NULL UNIQUE COLLATE utf8mb4_unicode_ci,";
+    $sql .= "email varchar(80) NOT NULL UNIQUE COLLATE utf8mb4_unicode_ci,";
     $sql .= "senha varchar(80) NOT NULL COLLATE utf8mb4_unicode_ci,";
     $sql .= "genero varchar(80) NOT NULL COLLATE utf8mb4_unicode_ci,";
     $sql .= "planos varchar(200) NOT NULL COLLATE utf8mb4_unicode_ci,";
