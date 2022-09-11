@@ -42,17 +42,17 @@ try {
     exit;
 }
 
-if($user->planos = 'Trimestral') {
+if($plano = 'Trimestral') {
     echo '<div id="qrCode">TRUE</div>';
 }else{
     echo '<div id="qrCode">FALSE</div>';
 }
-if($user->planos = 'Intermediario') {
+if($plano = 'Intermediario') {
     echo '<div id="qrCode">TRUE</div>';
 }else{
     echo '<div id="qrCode">FALSE</div>';
 }
-if($user->planos = 'Semanal') {
+if($plano = 'Semanal') {
     echo '<div id="qrCode">TRUE</div>';
 }else{
     echo '<div id="qrCode">FALSE</div>';
