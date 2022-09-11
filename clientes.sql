@@ -46,10 +46,9 @@ CREATE TABLE `clientes` (
 --
 -- Índices para tabela `clientes`
 --
-ALTER TABLE `clientes`
-  ADD PRIMARY KEY (`id`),
-  ADD UNIQUE KEY `email` (`email`),
-  ADD UNIQUE KEY `telefone` (`telefone`);
+ALTER TABLE `clientes` ADD CONSTRAINT UNIQUE (`id`);
+ALTER TABLE `clientes` ADD CONSTRAINT UNIQUE (`email`);
+ALTER TABLE `clientes` ADD CONSTRAINT UNIQUE (`telefone`);
 
 --
 -- AUTO_INCREMENT de tabelas despejadas
