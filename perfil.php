@@ -153,8 +153,9 @@
             </div>
         </div>
     </section>
+    <?php if($user->planos = 'Trimestral'): ?>
     <div class="d-flex justify-content-center m-4">
-        <?php if($user->planos = 'Trimestral'): ?>
+        
     <div id="qrCode" class="card bg-dark text-light" style="width: 28rem;display:none;position:absolute;margin-top:-700px;">
     <div class="card-header bg-transparent border-success">
                             <div class="d-flex justify-content-center fw-bold">
@@ -176,8 +177,10 @@
 </div>
 
 </div>
-<div class="d-flex justify-content-center m-4">
+
 <?php elseif($user->planos = 'Intermediario'): ?>
+<div class="d-flex justify-content-center m-4">
+
     <div id="qrCode" class="card bg-dark text-light" style="width: 28rem;display:none;position:absolute;margin-top:-700px;">
     <div class="card-header bg-transparent border-success">
                             <div class="d-flex justify-content-center fw-bold">
@@ -199,8 +202,10 @@
 </div>
 
 </div>
-<div class="d-flex justify-content-center m-4">
+
 <?php else: ?>
+<div class="d-flex justify-content-center m-4">
+
     <div id="qrCode" class="card bg-dark text-light" style="width: 28rem;display:none;position:absolute;margin-top:-700px;">
     <div class="card-header bg-transparent border-success">
                             <div class="d-flex justify-content-center fw-bold">
@@ -220,8 +225,9 @@
   <strong><h5 class="card-title" style="margin-right: 7px;">Você irá Pagar Um Valor De </h5></strong><h5> $80,00 Reais</h5>
   </div>
 </div>
-<?php endif; ?>
 </div>
+<?php endif; ?>
+
     <hr>
     <section>
         <div id="minhaDiv" class="container" style="display: none;">
