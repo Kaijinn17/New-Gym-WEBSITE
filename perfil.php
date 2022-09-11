@@ -140,7 +140,7 @@
                                     </button></a>
                         </div>
                         <div class="btn-plano">
-                        <a onclick="Mudarestado('qrCode')"><button class="btn btn-success w-100" onclick="funcao1()" >
+                        <a onclick="Mudarestado('qrCode')"><button class="cooldown btn btn-success w-100" onclick="funcao1()" >
                                         Pagar Mensalidade
                                     </button></a>
                         </div>
@@ -339,6 +339,15 @@
 
     <script src="./assets/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="./assets/js/photoUpload.js"></script>
+    <script>
+        $("button.cooldown").click(function () {
+  var btn = $(this);
+  btn.prop("disabled", true);
+  setTimeout(function () {
+    btn.prop("disabled", false);
+  }, 15000);
+});
+    </script>
     
 </body>
 
