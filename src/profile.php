@@ -42,7 +42,7 @@ try {
     exit;
 }
 
-switch($user->planos) {
+switch($planos) {
     case 'Trimestral':
         echo "<div id='qrCode'>TRUE</div";
     break;
