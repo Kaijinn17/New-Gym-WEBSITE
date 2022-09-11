@@ -76,11 +76,11 @@
         </nav>
     </header>
 
-    <section class="mt-5 mb-5" style="margin: 55px;">
+    <section class="mt-5 mb-5">
         <div class="container">
             <div class="row d-flex justify-content-center">
                 <h1 class="d-flex justify-content-center">Perfil Do Usuario</h1>
-                <div class="col-md-4">
+                <div class="col-md-4 d-flex justify-content-center">
                     <div id="infoUpload">
                     </div>
                     <div class="card" style="width: 350px;">
@@ -140,7 +140,7 @@
                                     </button></a>
                         </div>
                         <div class="btn-plano">
-                        <a href="#"><button class="btn btn-success w-100" onclick="funcao1()" >
+                        <a onclick="Mudarestado('qrCode')"><button class="btn btn-success w-100" onclick="funcao1()" >
                                         Pagar Mensalidade
                                     </button></a>
                         </div>
@@ -153,6 +153,75 @@
             </div>
         </div>
     </section>
+    <div class="d-flex justify-content-center m-4">
+        <?php if($user->planos == 'Trimestral'): ?>
+    <div id="qrCode" class="card bg-dark text-light" style="width: 28rem;display:none;position:absolute;margin-top:-700px;">
+    <div class="card-header bg-transparent border-success">
+                            <div class="d-flex justify-content-center fw-bold">
+                                Faça agora o pagamento por pix utilizando nosso QR Code
+                            </div>
+                            <div class="d-flex justify-content-end">
+                            <button onclick="Mudarestado('qrCode')" type="button" class="btn btn-danger d-flex justify-content-end" style="position:absolute;margin-top:-89px;">X</button>
+                            </div>                      
+                        </div>
+<div class="d-flex justify-content-center">
+  <img src="./assets/images/qrcode180.png" style="width: 20rem;" class="card-img mt-4" alt="...">
+  </div>
+  <div class="card-body">
+    
+  </div>
+  <div class="card-footer border-success d-flex justify-content-center">
+  <strong><h5 class="card-title" style="margin-right: 7px;">Você irá Pagar Um Valor De </h5></strong><h5> $180,00 Reais</h5>
+  </div>
+</div>
+<?php endif; ?>
+</div>
+<div class="d-flex justify-content-center m-4">
+<?php if($user->planos == 'Intermediario'): ?>
+    <div id="qrCode" class="card bg-dark text-light" style="width: 28rem;display:none;position:absolute;margin-top:-700px;">
+    <div class="card-header bg-transparent border-success">
+                            <div class="d-flex justify-content-center fw-bold">
+                                Faça agora o pagamento por pix utilizando nosso QR Code
+                            </div>
+                            <div class="d-flex justify-content-end">
+                            <button onclick="Mudarestado('qrCode')" type="button" class="btn btn-danger d-flex justify-content-end" style="position:absolute;margin-top:-89px;">X</button>
+                            </div>  
+                        </div>
+<div class="d-flex justify-content-center">
+  <img src="./assets/images/qrcode70.png" style="width: 20rem;" class="card-img mt-4" alt="...">
+  </div>
+  <div class="card-body">
+
+    </div>
+  <div class="card-footer border-success d-flex justify-content-center">
+  <strong><h5 class="card-title" style="margin-right: 7px;">Você irá Pagar Um Valor De </h5></strong><h5> $70,00 Reais</h5>
+  </div>
+</div>
+<?php endif; ?>
+</div>
+<div class="d-flex justify-content-center m-4">
+<?php if($user->planos == 'Semanal'): ?>
+    <div id="qrCode" class="card bg-dark text-light" style="width: 28rem;display:none;position:absolute;margin-top:-700px;">
+    <div class="card-header bg-transparent border-success">
+                            <div class="d-flex justify-content-center fw-bold">
+                                Faça agora o pagamento por pix utilizando nosso QR Code
+                            </div>
+                            <div class="d-flex justify-content-end">
+                            <button onclick="Mudarestado('qrCode')" type="button" class="btn btn-danger d-flex justify-content-end" style="position:absolute;margin-top:-89px;">X</button>
+                            </div>  
+                        </div>
+<div class="d-flex justify-content-center">
+  <img src="./assets/images/qrcode80.png" style="width: 20rem;" class="card-img mt-4" alt="...">
+  </div>
+  <div class="card-body">
+     
+</div>
+<div class="card-footer border-success d-flex justify-content-center">
+  <strong><h5 class="card-title" style="margin-right: 7px;">Você irá Pagar Um Valor De </h5></strong><h5> $80,00 Reais</h5>
+  </div>
+</div>
+<?php endif; ?>
+</div>
     <hr>
     <section>
         <div id="minhaDiv" class="container" style="display: none;">
@@ -260,12 +329,7 @@
 
     <script src="./assets/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="./assets/js/photoUpload.js"></script>
-    <script>
-function funcao1()
-{
-alert("Este Botão Ainda Não Funciona!");
-}
-</script>
+    
 </body>
 
 </html>
