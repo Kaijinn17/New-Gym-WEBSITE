@@ -153,7 +153,7 @@
             </div>
         </div>
     </section>
-    <?php if($planos = $plano1) : ?>
+    
     <div class="d-flex justify-content-center m-4">
         
     <div id="qrCode" class="card bg-dark text-light" style="width: 28rem;display:none;position:absolute;margin-top:-700px;">
@@ -178,7 +178,7 @@
 
 </div>
 
-<?php elseif($planos = $plano2) : ?>
+
 <div class="d-flex justify-content-center m-4">
 
     <div id="qrCode" class="card bg-dark text-light" style="width: 28rem;display:none;position:absolute;margin-top:-700px;">
@@ -203,7 +203,7 @@
 
 </div>
 
-<?php else : ?>
+
 <div class="d-flex justify-content-center m-4">
 
     <div id="qrCode" class="card bg-dark text-light" style="width: 28rem;display:none;position:absolute;margin-top:-700px;">
@@ -226,7 +226,7 @@
   </div>
 </div>
 </div>
-<?php endif; ?>
+
 
     <hr>
     <section>
