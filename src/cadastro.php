@@ -49,7 +49,7 @@ if (
     }
   } catch (PDOException $e) {
     header("Content-type: application/json; charset=utf-8");
-    echo json_encode(array("success" => false, "message" => "Falha ao cadastrar: email ou número de telefone já cadastrado" . $e->getCode()));
+    echo json_encode(array("success" => false, "message" => "Falha ao cadastrar: email ou número de telefone já cadastrado " . $e->getCode()));
   }
 } else {
   die();
