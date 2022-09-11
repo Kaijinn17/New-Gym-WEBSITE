@@ -43,3 +43,7 @@ try {
 }
 
 $isPhoto = $user->foto;
+
+$plano1 = 'Trimestral';
+$plano2 = 'Intermediario';
+$plano3 = 'Semanal';
