@@ -42,8 +42,6 @@ try {
     exit;
 }
 
-$isPhoto = $user->foto;
-
 if($user->planos = 'Trimestral') {
     echo '<div id="qrCode">TRUE</div>';
 }else{
@@ -59,3 +57,5 @@ if($user->planos = 'Semanal') {
 }else{
     echo '<div id="qrCode">FALSE</div>';
 }
+
+$isPhoto = $user->foto;
