@@ -45,6 +45,7 @@ try {
 
 
 $isPhoto = $user->foto;
+$planos = $user->planos;
 
 switch($planos) {
     case 'Trimestral':
