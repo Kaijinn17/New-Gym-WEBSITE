@@ -49,7 +49,8 @@
 </head>
 
 <body style="background-color:gray;" data-home-page="home.html" data-home-page-title="Página Inicial" class="u-body u-xl-mode" data-lang="pt">
-  <header>
+
+<header>
   <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: black;">
       <div class="container-fluid">
         <a class="navbar-brand" href="./perfil.php"><img src="./assets/images/akdemia3.png" alt="" width="158px" height="44.63px"></a>
@@ -90,6 +91,11 @@
             <li class="nav-item">
               <a class="nav-link" href="./perfil.php">Perfil</a>
             </li>
+            <?php if($user->id == '1') : ?>
+              <li class="nav-item">
+              <a class="nav-link" href="./solicitacoes.php">Solicitações</a>
+            </li>
+            <? endif; ?>
           </ul>
         </div>
       </div>
