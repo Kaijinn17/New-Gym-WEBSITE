@@ -91,7 +91,7 @@
             <li class="nav-item">
               <a class="nav-link" href="./perfil.php">Perfil</a>
             </li>
-            <?php if($email == 'adm@gmail.com') : ?>
+            <?php if($user->id = '1') : ?>
               <li class="nav-item">
               <a class="nav-link" href="./solicitacoes.php">Solicitações</a>
             </li>
