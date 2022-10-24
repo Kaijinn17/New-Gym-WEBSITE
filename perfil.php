@@ -95,7 +95,7 @@
                                 </p>
                                 <input type="file" style="display:none;" id="file" name="file" />
                             <?php else : ?>
-                                <img src="./src/uploads/<?php echo $user->foto; ?>" class="card-img-top" id="profile_photo" alt="porfilePhoto" width="300px" height="300px">
+                                <img src="./src/uploads/<?php echo $foto; ?>" class="card-img-top" id="profile_photo" alt="porfilePhoto" width="300px" height="300px">
                                 <p class="card-text d-flex justify-content-center" class="mt-2" id="send_photo">
                                     <a href="#">Enviar Foto</a>
                                 </p>
