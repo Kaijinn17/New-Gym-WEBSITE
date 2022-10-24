@@ -74,7 +74,7 @@
       <img src="./assets/images/photo2.jpg" class="d-block w-100" style="height:700px;" alt="...">
       <div class="carousel-caption d-md-block">
         <strong><span style="font-size: 70px; margin-right:10px;">AK</span><span style="color:red;font-size: 70px;">DEMIA</span></strong>
-        <p style="font-size: 30px; font-family:fantasy;">to pensando no que escrever...</p>
+        
         <div class="d-flex justify-content-center">
         <a href="cadastrar.php" style="margin-right:20px; width:100px;" data-page-id="13566755" class="u-active-custom-color-2 u-border-none u-btn u-btn-round u-button-style u-custom-color-1 u-hover-custom-color-2 u-radius-50 u-btn-1">criar conta</a>
     <a href="logar.php" style=" width:150px;" data-page-id="13566755" class="u-active-custom-color-2 u-border-none u-btn u-btn-round u-button-style u-custom-color-1 u-hover-custom-color-2 u-radius-50 u-btn-1">login</a>
@@ -85,7 +85,7 @@
       <img src="./assets/images/photo3.jpg" class="d-block w-100" style="height:700px;" alt="...">
       <div class="carousel-caption d-md-block">
         <strong><span style="font-size: 70px; margin-right:10px;">AK</span><span style="color:red;font-size: 70px;">DEMIA</span></strong>
-        <p style="font-size: 30px; font-family:fantasy;">to pensando no que escrever...</p>
+        
         <div class="d-flex justify-content-center">
         <a href="cadastrar.php" style="margin-right:20px; width:100px;" data-page-id="13566755" class="u-active-custom-color-2 u-border-none u-btn u-btn-round u-button-style u-custom-color-1 u-hover-custom-color-2 u-radius-50 u-btn-1">criar conta</a>
     <a href="logar.php" style=" width:150px;" data-page-id="13566755" class="u-active-custom-color-2 u-border-none u-btn u-btn-round u-button-style u-custom-color-1 u-hover-custom-color-2 u-radius-50 u-btn-1">login</a>

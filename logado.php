@@ -108,14 +108,12 @@
       <img src="./assets/images/photo2.jpg" class="d-block w-100" style="height:700px;" alt="...">
       <div class="carousel-caption d-md-block">
         <strong><span style="font-size: 70px; margin-right:10px;">AK</span><span style="color:red;font-size: 70px;">DEMIA</span></strong>
-        <p style="font-size: 30px; font-family:fantasy;">to pensando no que escrever...</p>
       </div>
     </div>
     <div class="carousel-item" data-bs-interval="5000">
       <img src="./assets/images/photo3.jpg" class="d-block w-100" style="height:700px;" alt="...">
       <div class="carousel-caption d-md-block">
         <strong><span style="font-size: 70px; margin-right:10px;">AK</span><span style="color:red;font-size: 70px;">DEMIA</span></strong>
-        <p style="font-size: 30px; font-family:fantasy;">to pensando no que escrever...</p>
       </div>
     </div>
   </div>
