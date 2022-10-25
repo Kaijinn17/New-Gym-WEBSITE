@@ -113,7 +113,7 @@
     $tabela = '<table border="1" style="background-color:white;">';//abre table
     $tabela .='<thead>';//abre cabeçalho
     $tabela .= '<tr>';//abre uma linha
-    $tabela .= '<th">ID</th>'; // colunas do cabeçalho
+    $tabela .= '<th>ID</th>'; // colunas do cabeçalho
     $tabela .= '<th>Nome</th>';
     $tabela .= '<th>Plano_Antigo</th>';
     $tabela .= '<th>Plano_Novo</th>';
