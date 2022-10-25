@@ -8,4 +8,4 @@ $sql = "UPDATE clientes SET planos = $plano WHERE id = $id";
 $sql = $connect->query($sql);
 $sql = "UPDATE solicitacoes SET aprovado = 1 WHERE id = $id";
 $sql = $connect->query($sql);
-header("location: ./solicitacoes.php");
+header("location: ../solicitacoes.php");
