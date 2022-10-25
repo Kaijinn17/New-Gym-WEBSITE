@@ -91,11 +91,11 @@
             <li class="nav-item">
               <a class="nav-link" href="./perfil.php">Perfil</a>
             </li>
-            <?php if($user->id == '1') : ?>
-              <li class="nav-item">
-              <a class="nav-link" href="./solicitacoes.php">Solicitações</a>
-            </li>
-            <? endif; ?>
+            <?php if ($_SESSION['id'] == 1) : ?>
+              <li class='nav-item'>
+              <a class='nav-link' href='./solicitacoes.php'>Solicitações</a>
+              </li>
+            <?php endif; ?>
           </ul>
         </div>
       </div>

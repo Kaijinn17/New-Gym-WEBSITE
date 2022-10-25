@@ -70,6 +70,11 @@
                         <li class="nav-item">
                             <a class="nav-link active" href="./perfil.php">Perfil</a>
                         </li>
+                        <?php if ($_SESSION['id'] == 1) : ?>
+              <li class='nav-item'>
+              <a class='nav-link' href='./solicitacoes.php'>Solicitações</a>
+              </li>
+            <?php endif; ?>
                     </ul>
                 </div>
             </div>
