@@ -101,7 +101,15 @@
       </div>
     </nav>
   </header>
+
+  <center>
 <?php
+     $sql = "SELECT * FROM solicitacoes WHERE aprovado = 0";
+     $sql = $pdo->query($sql);
+
+     echo "LISTA DE SOLICITAÇÕES";
+
+     if($sql->rowCount() > 0){
     $tabela = '<table border="1">';//abre table
     $tabela .='<thead>';//abre cabeçalho
     $tabela .= '<tr>';//abre uma linha
@@ -114,6 +122,7 @@
     $tabela .='</thead>'; //fecha cabeçalho
     $tabela .='<tbody>';//abre corpo da tabela
     /*Se você tiver um loop para exibir os dados ele deve ficar aqui*/
+    foreach($sql->fetchAll(PDO::FETCH_ASSOC) as $dado){
     $tabela .= '<tr>'; // abre uma linha
     $tabela .= '<td></td>'; // coluna Alvara
     $tabela .= '<td>'.$exibe[$user->id];'</td>'; //coluna numero
@@ -122,12 +131,21 @@
     $tabela .= '<td>'.$exibe[$user->plano_novo].'</td>';//coluna valor numero
     $tabela .= '<td><'.$exibe[$user->aprovado].'/td>'; // coluna data
     $tabela .= '</tr>'; // fecha linha
+    }
     /*loop deve terminar aqui*/
     $tabela .='</tbody>'; //fecha corpo
     $tabela .= '</table>';//fecha tabela
+  }else{
+    "NENHUMA SOLICITAÇÃO ENCONTRADA";
+}
 
     echo $tabela; // imprime
+
+    
  ?>
+
+</center>
+
   <footer style="background-color:gray;bottom:0; width:100%; text-align:center;" class="footer" id="sec-6969">
     <div class="container mt-3">
       <div class="row">
