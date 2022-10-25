@@ -2,10 +2,10 @@
     require_once('./config.php');
 
     $user_id = $_GET['id'];
-    $plano = $_GET['plano'];
+    $planos = $_GET['plano'];
 
 
-    $sql = "UPDATE clientes SET planos = '$planos' WHERE id = $id";
+    $sql = "UPDATE clientes SET plano = '$planos' WHERE id = $id";
     $sql = $connect->query($sql);
 
     $sql = "UPDATE solicitacoes SET aprovado = 1 WHERE id = $id";
