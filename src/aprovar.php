@@ -9,10 +9,10 @@ $id = $_GET['id'];
 $plano = $_GET['plano'];
 
 $sql = "UPDATE clientes SET planos = '$plano' WHERE id = $id";
-$sql = $pdo->query($sql);
+$stmt = $pdo->prepare($sql);
 
 $sql = "UPDATE solicitacoes SET aprovado = 1 WHERE id = $id";
-$sql = $pdo->query($sql);
+$stmt = $pdo->prepare($sql);
 
 header("location: ../solicitacoes.php");
 
