@@ -12,5 +12,5 @@ $stmt = $pdo->prepare($sql);
 $stmt->bindValue(":planos", $_GET['plano']);
 $stmt->bindValue(":id", $_SESSION['id']);
 $stmt->execute();
-header("location: ../solicitacoes.php");
+header("Location: ../solicitacoes.php");
 exit;
