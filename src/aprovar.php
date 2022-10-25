@@ -10,10 +10,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'GET' && isset($_GET['plano'])) {
         $stmt = $pdo->prepare($sql);
         $sql = "UPDATE solicitacoes SET aprovado = 1 WHERE id = $id";
         $sql = $connect->query($sql);
-        if ($stmt->rowCount() > 0) {
             header("location: ./solicitacoes.php");
             exit;
-        }
     } catch (PDOException $err) {
         echo "Error: " . $err->getMessage();
         exit;
