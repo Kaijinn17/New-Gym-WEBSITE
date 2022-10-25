@@ -113,10 +113,10 @@
     $tabela = '<table border="1" style="display:flex;background-color:white;">';//abre table
     $tabela .='<thead>';//abre cabeçalho
     $tabela .= '<tr>';//abre uma linha
-    $tabela .= '<th style="padding-right:30px;">ID</th>'; // colunas do cabeçalho
-    $tabela .= '<th style="padding-right:30px;>Nome</th>';
-    $tabela .= '<th style="padding-right:30px;>Plano_Antigo</th>';
-    $tabela .= '<th style="padding-right:30px;>Plano_Novo</th>';
+    $tabela .= '<th style="padding-right:5px;">ID</th>'; // colunas do cabeçalho
+    $tabela .= '<th style="padding-right:5px;>Nome</th>';
+    $tabela .= '<th style="padding-right:5px;>Plano_Antigo</th>';
+    $tabela .= '<th style="padding-right:5px;>Plano_Novo</th>';
     $tabela .= '<th>Número de Aprovação</th>';
     $tabela .= '</tr>';//fecha linha
     $tabela .='</thead>'; //fecha cabeçalho
