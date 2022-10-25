@@ -323,6 +323,32 @@
                 </div>
             </div>
         </div>
+        <?php $sql = "SELECT * FROM usuarios WHERE id = 1";
+    $user = $connect->query($sql);
+
+    if($user->rowCount() > 0){
+        $user = $user->fetch(PDO::FETCH_ASSOC);
+    }
+
+    if(isset($_POST['plano'])){
+        $sql = $connect->prepare("INSERT INTO solicitacoes VALUES (default, :id, :user, :plano_antigo, :plano_novo, default)");
+        $sql->bindValue(":id", $user['id']);
+        $sql->bindValue(":user", $user['nome']);
+        $sql->bindValue(":plano_antigo", $user['plano']);
+        $sql->bindValue(":plano_novo", $_POST['plano']);
+        $sql->execute();
+    }
+?>
+
+SOLICITAR ALTERAÇÃO DE PLANO
+<form method="POST">
+    <select name="plano">
+        <option disabled>FREE</option>
+        <option>BASICO</option>
+        <option>PROFISSIONAL</option>
+    </select>
+    <input type="submit" value="SOLICITAR ALTERAÇÃO">
+</form>
     </section>
 
     <footer style="background-color:gray;bottom:0; width:100%; text-align:center;" class="footer" id="sec-6969">
