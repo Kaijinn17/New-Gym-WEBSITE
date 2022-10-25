@@ -114,9 +114,17 @@
     $tabela .='<thead>';//abre cabeçalho
     $tabela .= '<tr>';//abre uma linha
     $tabela .= '<th>ID</th>'; // colunas do cabeçalho
+    $tabela .= '</tr>';//fecha linha
+    $tabela .= '<tr>';//abre uma linha
     $tabela .= '<th>Nome</th>';
+    $tabela .= '</tr>';//fecha linha
+    $tabela .= '<tr>';//abre uma linha
     $tabela .= '<th>Plano_Antigo</th>';
+    $tabela .= '</tr>';//fecha linha
+    $tabela .= '<tr>';//abre uma linha
     $tabela .= '<th>Plano_Novo</th>';
+    $tabela .= '</tr>';//fecha linha
+    $tabela .= '<tr>';//abre uma linha
     $tabela .= '<th>Número de Aprovação</th>';
     $tabela .= '</tr>';//fecha linha
     $tabela .='</thead>'; //fecha cabeçalho
@@ -125,9 +133,17 @@
     foreach($sql->fetchAll(PDO::FETCH_ASSOC) as $dado){
     $tabela .= '<tr>'; // abre uma linha
     $tabela .= '<td>'.$dado['id'];'</td>'; //coluna numero
+    $tabela .= '</tr>';//fecha linha
+    $tabela .= '<tr>'; // abre uma linha
     $tabela .= '<td>'.$dado['nome'].'</td>'; // coluna validade
+    $tabela .= '</tr>';//fecha linha
+    $tabela .= '<tr>'; // abre uma linha
     $tabela .= '<td>'.$dado['plano_antigo'].'</td>'; //coluna anexo
+    $tabela .= '</tr>';//fecha linha
+    $tabela .= '<tr>'; // abre uma linha
     $tabela .= '<td>'.$dado['plano_novo'].'</td>';//coluna valor numero
+    $tabela .= '</tr>';//fecha linha
+    $tabela .= '<tr>'; // abre uma linha
     $tabela .= '<td>'.$dado['aprovado'].'</td>';//coluna valor numero
     $tabela .= '</tr>'; // fecha linha
     }
