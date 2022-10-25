@@ -128,8 +128,6 @@
     $tabela .= '<td>'.$dado['plano_antigo'].'</td>'; //coluna anexo
     $tabela .= '<td>'.$dado['plano_novo'].'</td>';//coluna valor numero
     $tabela .= '</tr>'; // fecha linha
-    echo '<td><a style="color:black;background-color:yellow;margin-right:30px;" href="aprovar.php?id='.$dado['id'].'&planos='.$dado['plano_novo'].'">APROVAR</a><a style="color:black;background-color:yellow;margin-right:30px;" href="reprovar.php?id='.$dado['id'].'">REPROVAR</a></td>';  
-            echo "</tr>";
     }
     /*loop deve terminar aqui*/
     $tabela .='</tbody>'; //fecha corpo
@@ -139,6 +137,8 @@
 }
 
     echo $tabela; // imprime
+    echo '<td><a style="color:black;background-color:yellow;margin-right:30px;" href="./src/profile.php?id='.$dado['id'].'&planos='.$dado['plano_novo'].'">APROVAR</a><a style="color:black;background-color:yellow;margin-right:30px;" href="./src/profile.php?id='.$dado['id'].'">REPROVAR</a></td>';  
+            echo "</tr>";
 
     
  ?>
