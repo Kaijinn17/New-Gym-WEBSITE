@@ -25,6 +25,7 @@ $tableName2 = "solicitacoes";
 
 try {
     $sql = "CREATE TABLE IF NOT EXISTS `" . $tableName2 . "` (";
+    $sql .= "id int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,";
     $sql .= "nome varchar(80) NOT NULL COLLATE utf8mb4_unicode_ci,";
     $sql .= "plano_antigo varchar(200) NOT NULL COLLATE utf8mb4_unicode_ci,";
     $sql .= "plano_novo varchar(200) NOT NULL COLLATE utf8mb4_unicode_ci,";
