@@ -8,9 +8,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'GET' && isset($_GET['plano'])) {
     try {
         $sql = "UPDATE clientes SET planos = :planos WHERE id = :id";
         $stmt = $pdo->prepare($sql);
-        $stmt->bindValue(":planos", $_GET['plano']);
-        $stmt->bindValue(":id", $_SESSION['id']);
-        $stmt->execute();
         $sql = "UPDATE solicitacoes SET aprovado = 1 WHERE id = :id";
         $sql = $connect->query($sql);
         if ($stmt->rowCount() > 0) {
