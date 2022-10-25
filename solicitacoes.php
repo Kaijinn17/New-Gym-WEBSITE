@@ -125,11 +125,11 @@
     foreach($sql->fetchAll(PDO::FETCH_ASSOC) as $dado){
     $tabela .= '<tr>'; // abre uma linha
     $tabela .= '<td></td>'; // coluna Alvara
-    $tabela .= '<td>'.$exibe[$user->id];'</td>'; //coluna numero
-    $tabela .= '<td>'.$exibe[$user->nome].'</td>'; // coluna validade
-    $tabela .= '<td>'.$exibe[$user->plano_antigo].'</td>'; //coluna anexo
-    $tabela .= '<td>'.$exibe[$user->plano_novo].'</td>';//coluna valor numero
-    $tabela .= '<td><'.$exibe[$user->aprovado].'/td>'; // coluna data
+    $tabela .= '<td>'.$exibe[$id];'</td>'; //coluna numero
+    $tabela .= '<td>'.$exibe[$nome].'</td>'; // coluna validade
+    $tabela .= '<td>'.$exibe[$plano_antigo].'</td>'; //coluna anexo
+    $tabela .= '<td>'.$exibe[$plano_novo].'</td>';//coluna valor numero
+    $tabela .= '<td><'.$exibe[$aprovado].'/td>'; // coluna data
     $tabela .= '</tr>'; // fecha linha
     }
     /*loop deve terminar aqui*/
