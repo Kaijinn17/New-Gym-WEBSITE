@@ -101,9 +101,33 @@
       </div>
     </nav>
   </header>
+<?php
+    $tabela = '<table border="1">';//abre table
+    $tabela .='<thead>';//abre cabeçalho
+    $tabela .= '<tr>';//abre uma linha
+    $tabela .= '<th>ID</th>'; // colunas do cabeçalho
+    $tabela .= '<th>Nome</th>';
+    $tabela .= '<th>Plano_Antigo</th>';
+    $tabela .= '<th>Plano_Novo</th>';
+    $tabela .= '<th>Número de Aprovação</th>';
+    $tabela .= '</tr>';//fecha linha
+    $tabela .='</thead>'; //fecha cabeçalho
+    $tabela .='<tbody>';//abre corpo da tabela
+    /*Se você tiver um loop para exibir os dados ele deve ficar aqui*/
+    $tabela .= '<tr>'; // abre uma linha
+    $tabela .= '<td></td>'; // coluna Alvara
+    $tabela .= '<td>'.$exibe[$user->id];'</td>'; //coluna numero
+    $tabela .= '<td>'.$exibe[$user->nome].'</td>'; // coluna validade
+    $tabela .= '<td>'.$exibe[$user->plano_antigo].'</td>'; //coluna anexo
+    $tabela .= '<td>'.$exibe[$user->plano_novo].'</td>';//coluna valor numero
+    $tabela .= '<td><'.$exibe[$user->aprovado].'/td>'; // coluna data
+    $tabela .= '</tr>'; // fecha linha
+    /*loop deve terminar aqui*/
+    $tabela .='</tbody>'; //fecha corpo
+    $tabela .= '</table>';//fecha tabela
 
-
- 
+    echo $tabela; // imprime
+ ?>
   <footer style="background-color:gray;bottom:0; width:100%; text-align:center;" class="footer" id="sec-6969">
     <div class="container mt-3">
       <div class="row">
