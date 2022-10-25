@@ -21,10 +21,10 @@ try {
     exit;
 }
 
-$tableName = "solicitacoes";
+$tableName2 = "solicitacoes";
 
 try {
-    $sql = "CREATE TABLE IF NOT EXISTS `" . $tableName . "` (";
+    $sql = "CREATE TABLE IF NOT EXISTS `" . $tableName2 . "` (";
     $sql .= "nome varchar(80) NOT NULL COLLATE utf8mb4_unicode_ci,";
     $sql .= "plano_antigo varchar(200) NOT NULL COLLATE utf8mb4_unicode_ci,";
     $sql .= "plano_novo varchar(200) NOT NULL COLLATE utf8mb4_unicode_ci,";
