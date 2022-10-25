@@ -111,8 +111,8 @@
 
      if($sql->rowCount() > 0){
     $tabela = '<table border="2" style="background-color:white;">';//abre table
-    $tabela .='<thead>';//abre cabeçalho
-    $tabela .= '<tr padding="20px">';//abre uma linha
+    $tabela .='<thead style="padding:10px;">';//abre cabeçalho
+    $tabela .= '<tr>';//abre uma linha
     $tabela .= '<th>ID</th>'; // colunas do cabeçalho
     $tabela .= '<th>Nome</th>';
     $tabela .= '<th>Plano_Antigo</th>';
@@ -123,19 +123,19 @@
     $tabela .='<tbody>';//abre corpo da tabela
     /*Se você tiver um loop para exibir os dados ele deve ficar aqui*/
     foreach($sql->fetchAll(PDO::FETCH_ASSOC) as $dado){
-    $tabela .= '<tr>'; // abre uma linha
+    $tabela .= '<tr style="display:flex;justify-content:center;">'; // abre uma linha
     $tabela .= '<td>'.$dado['id'];'</td>'; //coluna numero
     $tabela .= '<td>'.$dado['nome'].'</td>'; // coluna validade
     $tabela .= '<td>'.$dado['plano_antigo'].'</td>'; //coluna anexo
     $tabela .= '<td>'.$dado['plano_novo'].'</td>';//coluna valor numero
     $tabela .= '<td>'.$dado['aprovado'].'</td>';//coluna valor numero
     $tabela .= '</tr>'; // fecha linha
+    echo '<td><a href="aprovar.php?id='.$dado['id'].'&planos='.$dado['plano_novo'].'">APROVAR</a><br><a href="reprovar.php?id='.$dado['id'].'">REPROVAR</a></td>';  
+            echo "</tr>";
     }
     /*loop deve terminar aqui*/
     $tabela .='</tbody>'; //fecha corpo
     $tabela .= '</table>';//fecha tabela
-    echo '<td><a href="aprovar.php?id='.$dado['id'].'&planos='.$dado['plano_novo'].'">APROVAR</a><br><a href="reprovar.php?id='.$dado['id'].'">REPROVAR</a></td>';  
-            echo "</tr>";
   }else{
     "NENHUMA SOLICITAÇÃO ENCONTRADA";
 }
