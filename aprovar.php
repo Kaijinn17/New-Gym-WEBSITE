@@ -1,7 +1,7 @@
 <?php
     require_once('./config.php');
 
-    $user_id = $_GET['id'];
+    $id = $_GET['id'];
     $planos = $_GET['plano'];
 
 
