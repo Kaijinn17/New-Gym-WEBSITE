@@ -51,8 +51,8 @@
 
 <body style="background-color:gray;" data-home-page="home.html" data-home-page-title="Página Inicial" class="u-body u-xl-mode" data-lang="pt">
 
-<header>
-  <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: black;">
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: black;">
       <div class="container-fluid">
         <a class="navbar-brand" href="./perfil.php"><img src="./assets/images/akdemia3.png" alt="" width="158px" height="44.63px"></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -63,7 +63,7 @@
             <li class="nav-item">
               <a class="nav-link" aria-current="page" href="./perfil.php">
                 <div class="text-white">
-                  <?php if (isset($_SESSION['nome'])) echo $_SESSION['nome'];?>
+                  <?php if (isset($_SESSION['nome'])) echo $_SESSION['nome']; ?>
                 </div>
               </a>
             </li>
@@ -71,7 +71,7 @@
               <a class="nav-link" aria-current="page" href="./src/logout.php">
                 <button type="button" class="btn btn-sm btn-outline-danger">Sair</button>
               </a>
-            </li> 
+            </li>
           </ul>
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
             <li class="nav-item">
@@ -94,7 +94,7 @@
             </li>
             <?php if ($_SESSION['id'] == 1) : ?>
               <li class='nav-item'>
-              <a class='nav-link' href='./solicitacoes.php'>Solicitações</a>
+                <a class='nav-link' href='./solicitacoes.php'>Solicitações</a>
               </li>
             <?php endif; ?>
           </ul>
@@ -104,78 +104,43 @@
   </header>
 
   <center>
-<?php
-     $sql = "SELECT * FROM solicitacoes WHERE aprovado = 0";
-     $sql = $pdo->query($sql);
+    <?php
+    $sql = "SELECT * FROM solicitacoes WHERE aprovado = 0";
+    $sql = $pdo->query($sql);
 
-     echo "LISTA DE SOLICITAÇÕES";
+    echo "LISTA DE SOLICITAÇÕES";
 
-     if($sql->rowCount() > 0){
-    echo "<table border='2' style='background-color:white;'>";//abre table
-    echo "<thead>";//abre cabeçalho
-    echo "<tr>";//abre uma linha
-    echo "<th>ID</th>"; // colunas do cabeçalho
-    echo "<th>Nome</th>";
-    echo "<th>Plano Antigo</th>";
-    echo "<th>Plano Novo</th>";
-    echo "</tr>";//fecha linhas
-    echo "</thead>"; //fecha cabeçalho
-    echo "<tbody>";//abre corpo da tabela
-    /*Se você tiver um loop para exibir os dados ele deve ficar aqui*/
-    foreach($sql->fetchAll(PDO::FETCH_ASSOC) as $dado){
-    echo "<tr>"; // abre uma linha
-    echo "<td>".$dado['id'];'</td>'; //coluna numero
-    echo "<td>".$dado['nome'].'</td>'; // coluna validade
-    echo "<td>".$dado['plano_antigo'].'</td>'; //coluna anexo
-    echo "<td>".$dado['plano_novo'].'</td>';//coluna valor numero
-    echo "<td><a style='color:black;background-color:yellow;margin-right:30px;' href='./src/aprovar.php?id=".$dado['id'].'&plano='.$dado['plano_novo']."'>APROVAR</a><a style='color:black;background-color:yellow;margin-right:30px;' href='./src/aprovar.php?id=".$dado['id']."'>REPROVAR</a></td>";
-    echo "</tr>"; // fecha linha
+    if ($sql->rowCount() > 0) {
+      echo "<table border='2' style='background-color:white;'>"; //abre table
+      echo "<thead>"; //abre cabeçalho
+      echo "<tr>"; //abre uma linha
+      echo "<th>ID</th>"; // colunas do cabeçalho
+      echo "<th>Nome</th>";
+      echo "<th>Plano Antigo</th>";
+      echo "<th>Plano Novo</th>";
+      echo "</tr>"; //fecha linhas
+      echo "</thead>"; //fecha cabeçalho
+      echo "<tbody>"; //abre corpo da tabela
+      /*Se você tiver um loop para exibir os dados ele deve ficar aqui*/
+      foreach ($sql->fetchAll(PDO::FETCH_ASSOC) as $dado) {
+        echo "<tr>"; // abre uma linha
+        echo "<td>" . $dado['id'];
+        '</td>'; //coluna numero
+        echo "<td>" . $dado['nome'] . '</td>'; // coluna validade
+        echo "<td>" . $dado['plano_antigo'] . '</td>'; //coluna anexo
+        echo "<td>" . $dado['plano_novo'] . '</td>'; //coluna valor numero
+        echo "<td><a style='color:black;background-color:yellow;margin-right:30px;' href='./src/aprovar.php?id=" . $dado['id'] . '&plano=' . $dado['plano_novo'] . "'>APROVAR</a><a style='color:black;background-color:yellow;margin-right:30px;' href='./src/aprovar.php?id=" . $dado['id'] . "'>REPROVAR</a></td>";
+        echo "</tr>"; // fecha linha
+      }
+      /*loop deve terminar aqui*/
+      echo "</tbody>"; //fecha corpo
+      echo "</table>"; //fecha tabela
+    } else {
+      "NENHUMA SOLICITAÇÃO ENCONTRADA";
     }
-    /*loop deve terminar aqui*/
-    echo "</tbody>"; //fecha corpo
-    echo "</table>";//fecha tabela
-  }else{
-    "NENHUMA SOLICITAÇÃO ENCONTRADA";
-}
-    
 
-    
- ?>
- <br><br><br>
-<?php
-$sql = "SELECT * FROM solicitacoes WHERE aprovado = 1";
-$sql = $connect->query($sql);
-
-echo "SOLICITAÇÕES APROVADAS";
-
-if($sql->rowCount() > 0){
-    echo '<table border="1">';
-    echo "<thead>";
-    echo "<tr>";
-    echo "<th>ID</th>"; // colunas do cabeçalho
-    echo "<th>Nome</th>";
-    echo "<th>Plano Antigo</th>";
-    echo "<th>Plano Novo</th>";
-    "</tr>";
-    echo "</thead>";
-    echo "<tbody>";
-    
-    foreach($sql->fetchAll(PDO::FETCH_ASSOC) as $dado){
-        echo "<tr>";
-            echo "<td>".$dado['id']."</td>";
-            echo "<th>".$dado['nome']."</th>";
-            echo "<td>".$dado['plano_antigo']."</td>";
-            echo "<td>".$dado['plano_novo']."</td>";
-        echo "</tr>";
-    }   
-    
-    echo "</tbody>";
-    echo "</table>";
-}else{
-    "NENHUMA SOLICITAÇÃO ENCONTRADA";
-}
-?>
-</center>
+    ?>
+  </center>
 
   <footer style="background-color:gray;bottom:0; width:100%; text-align:center;" class="footer" id="sec-6969">
     <div class="container mt-3">
