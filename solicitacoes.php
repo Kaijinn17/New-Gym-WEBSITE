@@ -111,33 +111,32 @@
      echo "LISTA DE SOLICITAÇÕES";
 
      if($sql->rowCount() > 0){
-    $tabela = '<table border="2" style="background-color:white;">';//abre table
-    $tabela .='<thead">';//abre cabeçalho
-    $tabela .= '<tr>';//abre uma linha
-    $tabela .= '<th>ID</th>'; // colunas do cabeçalho
-    $tabela .= '<th>Nome</th>';
-    $tabela .= '<th>Plano Antigo</th>';
-    $tabela .= '<th>Plano Novo</th>';
-    $tabela .= '</tr>';//fecha linhas
-    $tabela .='</thead>'; //fecha cabeçalho
-    $tabela .='<tbody>';//abre corpo da tabela
+    echo "<table border='2' style='background-color:white;'>";//abre table
+    echo "<thead>";//abre cabeçalho
+    echo "<tr>";//abre uma linha
+    echo "<th>ID</th>"; // colunas do cabeçalho
+    echo "<th>Nome</th>";
+    echo "<th>Plano Antigo</th>";
+    echo "<th>Plano Novo</th>";
+    echo "</tr>";//fecha linhas
+    echo "</thead>"; //fecha cabeçalho
+    echo "<tbody>";//abre corpo da tabela
     /*Se você tiver um loop para exibir os dados ele deve ficar aqui*/
     foreach($sql->fetchAll(PDO::FETCH_ASSOC) as $dado){
-    $tabela .= '<tr">'; // abre uma linha
-    $tabela .= '<td>'.$dado['id'];'</td>'; //coluna numero
-    $tabela .= '<td>'.$dado['nome'].'</td>'; // coluna validade
-    $tabela .= '<td>'.$dado['plano_antigo'].'</td>'; //coluna anexo
-    $tabela .= '<td>'.$dado['plano_novo'].'</td>';//coluna valor numero
-    echo '<td><a style="color:black;background-color:yellow;margin-right:30px;" href="./src/profile.php?id='.$dado['usuario_id'].'&plano='.$dado['plano_novo'].'">APROVAR</a><a style="color:black;background-color:yellow;margin-right:30px;" href="./src/profile.php?id='.$dado['id'].'">REPROVAR</a></td>';
-    $tabela .= '</tr>'; // fecha linha
+    echo "<tr>"; // abre uma linha
+    echo "<td>".$dado['id'];'</td>'; //coluna numero
+    echo "<td>".$dado['nome'].'</td>'; // coluna validade
+    echo "<td>".$dado['plano_antigo'].'</td>'; //coluna anexo
+    echo "<td>".$dado['plano_novo'].'</td>';//coluna valor numero
+    echo "<td><a style='color:black;background-color:yellow;margin-right:30px;' href='./src/profile.php?id=".$dado['usuario_id'].'&plano='.$dado['plano_novo']."'>APROVAR</a><a style='color:black;background-color:yellow;margin-right:30px;' href='./src/profile.php?id=".$dado['id']."'>REPROVAR</a></td>";
+    echo "</tr>"; // fecha linha
     }
     /*loop deve terminar aqui*/
-    $tabela .='</tbody>'; //fecha corpo
-    $tabela .= '</table>';//fecha tabela
+    echo "</tbody>"; //fecha corpo
+    echo "</table>";//fecha tabela
   }else{
     "NENHUMA SOLICITAÇÃO ENCONTRADA";
 }
-    echo $tabela; // imprime
     
 
     
