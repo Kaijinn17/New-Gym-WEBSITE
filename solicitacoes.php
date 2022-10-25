@@ -1,4 +1,5 @@
 <?php include('./src/protect.php'); ?>
+<?php require_once(__DIR__ . '/src/profile.php'); ?>
 <?php include("./config.php"); ?>
 
 <!DOCTYPE html>
@@ -133,11 +134,12 @@
     $tabela .='</tbody>'; //fecha corpo
     $tabela .= '</table>';//fecha tabela
   }else{
-    "NENHUMA SOLICITAÇÃO ENCONTRADA";
+    echo "<br><br><br>";
+    echo "NENHUMA SOLICITAÇÃO ENCONTRADA";
 }
 
     echo $tabela; // imprime
-    echo '<td><a style="color:black;background-color:yellow;margin-right:30px;" href="./src/profile.php?id='.$dado['id'].'&planos='.$dado['plano_novo'].'">APROVAR</a><a style="color:black;background-color:yellow;margin-right:30px;" href="./src/profile.php?id='.$dado['id'].'">REPROVAR</a></td>';  
+    echo '<td><a style="color:black;background-color:yellow;margin-right:30px;" href="./src/profile.php?plano='.$dado['plano_novo'].'">APROVAR</a><a style="color:black;background-color:yellow;margin-right:30px;" href="./src/profile.php?id='.$dado['id'].'">REPROVAR</a></td>';  
             echo "</tr>";
 
     
