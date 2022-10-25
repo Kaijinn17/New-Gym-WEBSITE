@@ -110,13 +110,13 @@
      echo "LISTA DE SOLICITAÇÕES";
 
      if($sql->rowCount() > 0){
-    $tabela = '<table border="1">';//abre table
+    $tabela = '<table border="1" style="display:flex;background-color:white;">';//abre table
     $tabela .='<thead>';//abre cabeçalho
     $tabela .= '<tr>';//abre uma linha
-    $tabela .= '<th>ID</th>'; // colunas do cabeçalho
-    $tabela .= '<th>Nome</th>';
-    $tabela .= '<th>Plano_Antigo</th>';
-    $tabela .= '<th>Plano_Novo</th>';
+    $tabela .= '<th style="padding-right:30px;">ID</th>'; // colunas do cabeçalho
+    $tabela .= '<th style="padding-right:30px;>Nome</th>';
+    $tabela .= '<th style="padding-right:30px;>Plano_Antigo</th>';
+    $tabela .= '<th style="padding-right:30px;>Plano_Novo</th>';
     $tabela .= '<th>Número de Aprovação</th>';
     $tabela .= '</tr>';//fecha linha
     $tabela .='</thead>'; //fecha cabeçalho
