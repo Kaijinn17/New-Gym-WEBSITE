@@ -128,18 +128,16 @@
     $tabela .= '<td>'.$dado['nome'].'</td>'; // coluna validade
     $tabela .= '<td>'.$dado['plano_antigo'].'</td>'; //coluna anexo
     $tabela .= '<td>'.$dado['plano_novo'].'</td>';//coluna valor numero
+    echo '<td><a style="color:black;background-color:yellow;margin-right:30px;" href="./src/profile.php?id='.$dado['usuario_id'].'&plano='.$dado['plano_novo'].'">APROVAR</a><a style="color:black;background-color:yellow;margin-right:30px;" href="./src/profile.php?id='.$dado['id'].'">REPROVAR</a></td>';
     $tabela .= '</tr>'; // fecha linha
     }
     /*loop deve terminar aqui*/
     $tabela .='</tbody>'; //fecha corpo
     $tabela .= '</table>';//fecha tabela
   }else{
-    $messagi .= '<h1>NENHUMA SOLICITAÇÃO ENCONTRADA</h1>';
+    echo "NENHUMA SOLICITAÇÃO ENCONTRADA";
 }
-echo '<td><a style="color:black;background-color:yellow;margin-right:30px;" href="./src/profile.php?id='.$dado['usuario_id'].'&plano='.$dado['plano_novo'].'">APROVAR</a><a style="color:black;background-color:yellow;margin-right:30px;" href="./src/profile.php?id='.$dado['id'].'">REPROVAR</a></td>';  
-            echo "</tr>";
     echo $tabela; // imprime
-    echo $mesagi;
     
 
     
