@@ -91,11 +91,16 @@
             <li class="nav-item">
               <a class="nav-link" href="./perfil.php">Perfil</a>
             </li>
-            <?php if($id == '1') : ?>
+            <?php $user_bd_id_1 = query("SELECT id FROM clientes WHERE id = 1");
+            
+            if($_SESSION['user_id'] == $user_bd_id_1['1'])
+              {
+                echo'
               <li class="nav-item">
               <a class="nav-link" href="./solicitacoes.php">Solicitações</a>
-            </li>
-            <? endif; ?>
+            </li>'
+          }
+            ?>
           </ul>
         </div>
       </div>
