@@ -135,7 +135,7 @@
     $tabela .='</tbody>'; //fecha corpo
     $tabela .= '</table>';//fecha tabela
   }else{
-    echo "NENHUMA SOLICITAÇÃO ENCONTRADA";
+    "NENHUMA SOLICITAÇÃO ENCONTRADA";
 }
     echo $tabela; // imprime
     
