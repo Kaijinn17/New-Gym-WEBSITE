@@ -113,22 +113,20 @@
     $tabela = '<table border="2" style="background-color:white;">';//abre table
     $tabela .='<thead">';//abre cabeçalho
     $tabela .= '<tr>';//abre uma linha
-    $tabela .= '<th padding-right="10px">ID</th>'; // colunas do cabeçalho
+    $tabela .= '<th style="margin-right:10px;">ID</th>'; // colunas do cabeçalho
     $tabela .= '<th>Nome</th>';
-    $tabela .= '<th>Plano_Antigo</th>';
-    $tabela .= '<th>Plano_Novo</th>';
-    $tabela .= '<th>Número de Aprovação</th>';
+    $tabela .= '<th>Plano Antigo</th>';
+    $tabela .= '<th>Plano Novo</th>';
     $tabela .= '</tr>';//fecha linhas
     $tabela .='</thead>'; //fecha cabeçalho
     $tabela .='<tbody>';//abre corpo da tabela
     /*Se você tiver um loop para exibir os dados ele deve ficar aqui*/
     foreach($sql->fetchAll(PDO::FETCH_ASSOC) as $dado){
     $tabela .= '<tr">'; // abre uma linha
-    $tabela .= '<td padding-right="10px">'.$dado['id'];'</td>'; //coluna numero
+    $tabela .= '<td style="margin-right:10px;">'.$dado['id'];'</td>'; //coluna numero
     $tabela .= '<td>'.$dado['nome'].'</td>'; // coluna validade
     $tabela .= '<td>'.$dado['plano_antigo'].'</td>'; //coluna anexo
     $tabela .= '<td>'.$dado['plano_novo'].'</td>';//coluna valor numero
-    $tabela .= '<td>'.$dado['aprovado'].'</td>';//coluna valor numero
     $tabela .= '</tr>'; // fecha linha
     echo '<td><a href="aprovar.php?id='.$dado['id'].'&planos='.$dado['plano_novo'].'">APROVAR</a><br><a href="reprovar.php?id='.$dado['id'].'">REPROVAR</a></td>';  
             echo "</tr>";
