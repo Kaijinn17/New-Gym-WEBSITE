@@ -111,9 +111,9 @@
 
      if($sql->rowCount() > 0){
     $tabela = '<table border="2" style="background-color:white;">';//abre table
-    $tabela .='<thead style="padding:10px;">';//abre cabeçalho
+    $tabela .='<thead">';//abre cabeçalho
     $tabela .= '<tr>';//abre uma linha
-    $tabela .= '<th>ID</th>'; // colunas do cabeçalho
+    $tabela .= '<th padding-right="10px">ID</th>'; // colunas do cabeçalho
     $tabela .= '<th>Nome</th>';
     $tabela .= '<th>Plano_Antigo</th>';
     $tabela .= '<th>Plano_Novo</th>';
@@ -123,8 +123,8 @@
     $tabela .='<tbody>';//abre corpo da tabela
     /*Se você tiver um loop para exibir os dados ele deve ficar aqui*/
     foreach($sql->fetchAll(PDO::FETCH_ASSOC) as $dado){
-    $tabela .= '<tr style="display:flex;justify-content:center;">'; // abre uma linha
-    $tabela .= '<td>'.$dado['id'];'</td>'; //coluna numero
+    $tabela .= '<tr">'; // abre uma linha
+    $tabela .= '<td padding-right="10px">'.$dado['id'];'</td>'; //coluna numero
     $tabela .= '<td>'.$dado['nome'].'</td>'; // coluna validade
     $tabela .= '<td>'.$dado['plano_antigo'].'</td>'; //coluna anexo
     $tabela .= '<td>'.$dado['plano_novo'].'</td>';//coluna valor numero
