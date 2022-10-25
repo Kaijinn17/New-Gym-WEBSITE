@@ -137,7 +137,7 @@
     echo "<br><br><br>";
     echo "NENHUMA SOLICITAÇÃO ENCONTRADA";
 }
-echo '<td><a style="color:black;background-color:yellow;margin-right:30px;" href="./src/profile.php?plano='.$dado['plano_novo'].'">APROVAR</a><a style="color:black;background-color:yellow;margin-right:30px;" href="./src/profile.php?id='.$dado['id'].'">REPROVAR</a></td>';  
+echo '<td><a style="color:black;background-color:yellow;margin-right:30px;" href="./src/profile.php?id='.$dado['usuario_id'].'&plano='.$dado['plano_novo'].'">APROVAR</a><a style="color:black;background-color:yellow;margin-right:30px;" href="./src/profile.php?id='.$dado['id'].'">REPROVAR</a></td>';  
             echo "</tr>";
     echo $tabela; // imprime
     
