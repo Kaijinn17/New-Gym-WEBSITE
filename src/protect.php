@@ -5,5 +5,3 @@ if (session_status() === PHP_SESSION_NONE) {
 if (!isset($_SESSION['id'])) {
   die("Você precisa logar em uma conta para acessar está Página.<p><a href=\"logar.php\">Entrar </p>");
 }
-
-$id = $user->id;

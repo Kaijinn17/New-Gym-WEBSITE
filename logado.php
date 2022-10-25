@@ -1,5 +1,9 @@
 <?php include('./src/protect.php'); ?>
-
+<?php
+if (session_status() === PHP_SESSION_NONE) {
+  session_start();
+}
+?>
 
 <!DOCTYPE html>
 <html style="font-size: 16px;" lang="pt">
@@ -50,8 +54,8 @@
 
 <body style="background-color:gray;" data-home-page="home.html" data-home-page-title="Página Inicial" class="u-body u-xl-mode" data-lang="pt">
 
-<header>
-  <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: black;">
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: black;">
       <div class="container-fluid">
         <a class="navbar-brand" href="./perfil.php"><img src="./assets/images/akdemia3.png" alt="" width="158px" height="44.63px"></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -62,7 +66,7 @@
             <li class="nav-item">
               <a class="nav-link" aria-current="page" href="./perfil.php">
                 <div class="text-white">
-                  <?php if (isset($_SESSION['nome'])) echo $_SESSION['nome'];?>
+                  <?php if (isset($_SESSION['nome'])) echo $_SESSION['nome']; ?>
                 </div>
               </a>
             </li>
@@ -70,7 +74,7 @@
               <a class="nav-link" aria-current="page" href="./src/logout.php">
                 <button type="button" class="btn btn-sm btn-outline-danger">Sair</button>
               </a>
-            </li> 
+            </li>
           </ul>
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
             <li class="nav-item">
@@ -91,48 +95,48 @@
             <li class="nav-item">
               <a class="nav-link" href="./perfil.php">Perfil</a>
             </li>
-            <?php if($id == '1') : ?>
+            <?php if ($_SESSION['id'] == 1) : ?>
               <li class='nav-item'>
               <a class='nav-link' href='./solicitacoes.php'>Solicitações</a>
               </li>
-              <? endif; ?>
+            <?php endif; ?>
           </ul>
         </div>
       </div>
     </nav>
   </header>
   <div style="width:100%; height:700px;" id="carouselExampleInterval" class="carousel carousel-light slide" data-bs-ride="carousel">
-  <div class="carousel-inner">
-    <div class="carousel-item active" data-bs-interval="5000">
-      <img src="./assets/images/6d49dcf7778555f4a1fcb22a3a5b6334f2f9ad034e7c1926e4fe951665c5c2498f1d9e30c50ace3337af7bddf92a8d867dbae75a3f996dea0e7510_1280.jpg" class="d-block w-100" style="height:700px;" alt="...">
-      <div class="carousel-caption d-md-block">
-        <strong><span style="font-size: 70px; margin-right:10px;">AK</span><span style="color:red;font-size: 70px;">DEMIA</span></strong>
-        <p style="font-size: 30px; font-family:fantasy;">Somos a Academia Que Vai Revolucionar a Estética!</p>
+    <div class="carousel-inner">
+      <div class="carousel-item active" data-bs-interval="5000">
+        <img src="./assets/images/6d49dcf7778555f4a1fcb22a3a5b6334f2f9ad034e7c1926e4fe951665c5c2498f1d9e30c50ace3337af7bddf92a8d867dbae75a3f996dea0e7510_1280.jpg" class="d-block w-100" style="height:700px;" alt="...">
+        <div class="carousel-caption d-md-block">
+          <strong><span style="font-size: 70px; margin-right:10px;">AK</span><span style="color:red;font-size: 70px;">DEMIA</span></strong>
+          <p style="font-size: 30px; font-family:fantasy;">Somos a Academia Que Vai Revolucionar a Estética!</p>
+        </div>
+      </div>
+      <div class="carousel-item" data-bs-interval="5000">
+        <img src="./assets/images/photo2.jpg" class="d-block w-100" style="height:700px;" alt="...">
+        <div class="carousel-caption d-md-block">
+          <strong><span style="font-size: 70px; margin-right:10px;">AK</span><span style="color:red;font-size: 70px;">DEMIA</span></strong>
+        </div>
+      </div>
+      <div class="carousel-item" data-bs-interval="5000">
+        <img src="./assets/images/photo3.jpg" class="d-block w-100" style="height:700px;" alt="...">
+        <div class="carousel-caption d-md-block">
+          <strong><span style="font-size: 70px; margin-right:10px;">AK</span><span style="color:red;font-size: 70px;">DEMIA</span></strong>
+        </div>
       </div>
     </div>
-    <div class="carousel-item" data-bs-interval="5000">
-      <img src="./assets/images/photo2.jpg" class="d-block w-100" style="height:700px;" alt="...">
-      <div class="carousel-caption d-md-block">
-        <strong><span style="font-size: 70px; margin-right:10px;">AK</span><span style="color:red;font-size: 70px;">DEMIA</span></strong>
-      </div>
-    </div>
-    <div class="carousel-item" data-bs-interval="5000">
-      <img src="./assets/images/photo3.jpg" class="d-block w-100" style="height:700px;" alt="...">
-      <div class="carousel-caption d-md-block">
-        <strong><span style="font-size: 70px; margin-right:10px;">AK</span><span style="color:red;font-size: 70px;">DEMIA</span></strong>
-      </div>
-    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
   </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
-</div>
-<section style="background-color:white;" class="u-align-center u-clearfix u-section-2" id="carousel_28e0">
+  <section style="background-color:white;" class="u-align-center u-clearfix u-section-2" id="carousel_28e0">
     <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
       <h3 class="u-text u-text-default u-text-1">Nossos professores</h3>
       <div class="u-list u-list-1">
