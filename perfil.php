@@ -330,22 +330,22 @@
         $user = $user->fetch(PDO::FETCH_ASSOC);
     }
 
-    if(isset($_POST['plano'])){
+    if(isset($_POST['planos'])){
         $sql = $connect->prepare("INSERT INTO solicitacoes VALUES (default, :id, :user, :plano_antigo, :plano_novo, default)");
         $sql->bindValue(":id", $user['id']);
         $sql->bindValue(":user", $user['nome']);
-        $sql->bindValue(":plano_antigo", $user['plano']);
-        $sql->bindValue(":plano_novo", $_POST['plano']);
+        $sql->bindValue(":plano_antigo", $user['planos']);
+        $sql->bindValue(":plano_novo", $_POST['planos']);
         $sql->execute();
     }
 ?>
 
 SOLICITAR ALTERAÇÃO DE PLANO
 <form method="POST">
-    <select name="plano">
-        <option disabled>FREE</option>
-        <option>BASICO</option>
-        <option>PROFISSIONAL</option>
+    <select name="planos">
+        <option>Trimestral</option>
+        <option>Intermediário</option>
+        <option>Semanal</option>
     </select>
     <input type="submit" value="SOLICITAR ALTERAÇÃO">
 </form>
