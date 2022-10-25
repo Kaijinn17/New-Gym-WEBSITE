@@ -66,7 +66,7 @@ COMMIT;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 
 
-REATE TABLE `solicitacoes` (
+CREATE TABLE `solicitacoes` (
   `id` int(11) NOT NULL,
   `nome` varchar(80) NOT NULL,
   `plano_antigo` varchar(200) NOT NULL,
