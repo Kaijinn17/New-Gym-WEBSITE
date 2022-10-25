@@ -129,13 +129,14 @@
     $tabela .= '<td>'.$dado['nome'].'</td>'; // coluna validade
     $tabela .= '<td>'.$dado['plano_antigo'].'</td>'; //coluna anexo
     $tabela .= '<td>'.$dado['plano_novo'].'</td>';//coluna valor numero
-    echo '<td><a href="aprovar.php?id='.$dado['id'].'&planos='.$dado['plano_novo'].'">APROVAR</a><br><a href="reprovar.php?id='.$dado['id'].'">REPROVAR</a></td>';  
-            echo "</tr>";
+    $tabela .= '<td>'.$dado['aprovado'].'</td>';//coluna valor numero
     $tabela .= '</tr>'; // fecha linha
     }
     /*loop deve terminar aqui*/
     $tabela .='</tbody>'; //fecha corpo
     $tabela .= '</table>';//fecha tabela
+    echo '<td><a href="aprovar.php?id='.$dado['id'].'&planos='.$dado['plano_novo'].'">APROVAR</a><br><a href="reprovar.php?id='.$dado['id'].'">REPROVAR</a></td>';  
+            echo "</tr>";
   }else{
     "NENHUMA SOLICITAÇÃO ENCONTRADA";
 }
