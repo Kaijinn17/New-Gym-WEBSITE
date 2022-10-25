@@ -92,15 +92,11 @@
               <a class="nav-link" href="./perfil.php">Perfil</a>
             </li>
             <?php $user_bd_id_1 = query("SELECT id FROM clientes WHERE id = 1");
-            
-            if($_SESSION['user_id'] == $user_bd_id_1['1'])
-              {
-                echo'
-              <li class="nav-item">
-              <a class="nav-link" href="./solicitacoes.php">Solicitações</a>
-            </li>'
-          }
-            ?>
+           if($_SESSION['user_id'] == $user_bd_id_1['1']) { echo "
+              <li class='nav-item'>
+              <a class='nav-link' href='./solicitacoes.php'>Solicitações</a>
+              </li>
+             "}?>
           </ul>
         </div>
       </div>
@@ -162,7 +158,7 @@
   </section>
   <section class="u-align-left u-clearfix u-image u-section-3" id="carousel_271a" data-image-width="2258" data-image-height="1500">
     <div class="u-clearfix u-sheet u-sheet-1">
-      <h4 class="u-text u-text-body-alt-color u-text-default u-text-1">mantenha o foco!</h4><span class="u-icon u-icon-circle u-opacity u-opacity-45 u-text-palette-5-base u-icon-1"><svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 409.294 409.294" style="">
+      <h4 class="u-text u-text-body-alt-color u-text-default u-text-1">mantenha o foco!</h4><span class="u-icon u-icon-circle u-opacity u-opacity-45 u-text-palette-5-base u-icon-1"><svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 409.294 409.294">
           <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-b4a9"></use>
         </svg><svg class="u-svg-content" viewBox="0 0 409.294 409.294" id="svg-b4a9">
           <path d="m233.882 29.235v175.412h116.941c0 64.48-52.461 116.941-116.941 116.941v58.471c96.728 0 175.412-78.684 175.412-175.412v-175.412z"></path>
