@@ -103,39 +103,7 @@
   </header>
 
 
-  <?php 
-$sql = "SELECT * FROM solicitacoes WHERE aprovado = 0";
-$sql = $connect->query($sql);
-
-echo "Lista de Solicitações";
-
-if($sql->rowCount() > 0){
-    echo'<table border="1">';
-    echo "<thead>";
-    echo "<tr><th>Usuario</th>
-    <th>Plano Antigo</th>
-    <th>Plano Novo</th>
-    <th>Aprovação</th>
-    </tr>";
-    echo "</thead>";
-    echo "</tbody>";
-
-    foreach($sql->fetchAll(PDO::FETCH_ASSOC) as $dado){
-        echo "<tr>";
-            echo "<td>".$dado['id']."</td>";
-            echo "<td>".$dado['plano_antigo']."</td>";
-            echo "<td>".$dado['plano_novo']."</td>";
-        echo "</tr>";
-    }   
-    
-    echo "</tbody>";
-    echo "</table>";
-}else{
-    "NENHUMA SOLICITAÇÃO ENCONTRADA";
-}
-
-?>
-
+ 
   <footer style="background-color:gray;bottom:0; width:100%; text-align:center;" class="footer" id="sec-6969">
     <div class="container mt-3">
       <div class="row">
