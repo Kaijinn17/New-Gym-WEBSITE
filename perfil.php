@@ -276,6 +276,8 @@
 
                               $sql = $pdo->query($sql);
 
+                              if ($sql->rowCount() > 0) {
+
                               foreach ($sql->fetchAll(PDO::FETCH_ASSOC) as $dado) {
 
                                 echo $dado['nome'];
@@ -285,6 +287,7 @@
                                         Adquirir
                                 </a>";
                             }
+                        }
                                 ?>
                             </p>
                         </div>
