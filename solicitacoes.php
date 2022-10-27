@@ -126,10 +126,10 @@
       foreach ($sql->fetchAll(PDO::FETCH_ASSOC) as $dado) {
         echo "<tr>"; // abre uma linha
         echo "<td style='margin: 0 auto;'>" . $dado['id']; //coluna numero
-        echo "<td style='margin: 0 auto;>" . $dado['nome'] . "</td>"; // coluna validade
-        echo "<td style='margin: 0 auto;>" . $dado['plano_antigo'] . "</td>"; //coluna anexo
-        echo "<td style='margin: 0 auto;>" . $dado['plano_novo'] . "</td>"; //coluna valor numero
-        echo "<td style='margin: 0 auto;>" . $dado['aprovado'] . "</td>";
+        echo "<td style='margin: 0 auto;'>" . $dado['nome'] . "</td>"; // coluna validade
+        echo "<td style='margin: 0 auto;'>" . $dado['plano_antigo'] . "</td>"; //coluna anexo
+        echo "<td style='margin: 0 auto;'>" . $dado['plano_novo'] . "</td>"; //coluna valor numero
+        echo "<td style='margin: 0 auto;'>" . $dado['aprovado'] . "</td>";
         echo "<td><a href='./src/aprovar.php?id=".$dado['id'].'&planos='.$dado['plano_novo']."' name='update' id='update'>APROVAR</a><br><a href='./solicitacoes.php?id=".$dado['id']."'>REPROVAR</a></td>";  
         echo "</tr>"; // fecha linha
       }
