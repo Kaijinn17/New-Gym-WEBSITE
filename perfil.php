@@ -1,4 +1,4 @@
-<<?php include('./src/protect.php'); ?> <?php require_once(__DIR__ . '/src/profile.php'); ?> <?php include("./config.php"); ?> <!DOCTYPE html>
+<?php include('./src/protect.php'); ?> <?php require_once(__DIR__ . '/src/profile.php'); ?> <?php include("./config.php"); ?> <!DOCTYPE html>
     <html lang="pt-BR">
 
     <head>
