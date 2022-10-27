@@ -270,8 +270,12 @@
                                 <p class="card-text d-flex justify-content-center">
                                     <?php
 
+                                    
+
                                     $sql = "SELECT * FROM clientes WHERE id = '$id'";
                                     $sql = $pdo->query($sql);
+
+                                    $id = $_GET['id'];
 
                                     if ($sql->rowCount() > 0) {
                                         foreach ($sql->fetchAll(PDO::FETCH_ASSOC) as $dado) {
