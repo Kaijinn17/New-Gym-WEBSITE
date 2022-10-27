@@ -12,7 +12,7 @@ if (session_status() === PHP_SESSION_NONE) {
     session_start();
 }
 
-$sql = "SELECT * FROM clientes WHERE aprovado = 0";
+$sql = "SELECT * FROM clientes";
 $sql = $pdo->query($sql);
 
 
