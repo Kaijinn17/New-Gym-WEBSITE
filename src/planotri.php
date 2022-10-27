@@ -13,7 +13,7 @@ if (session_status() === PHP_SESSION_NONE) {
 
 
 $id = $_GET['id'];
-$nome = $_GET['name'];
+$user->nome = $_GET['nome'];
 $user->planos = $_GET['planos'];
 
 $sql = "INSERT INTO solicitacoes (id, nome, plano_antigo, plano_novo, aprovado) VALUES ('$id', '$nome', '$planos', 'trimestral', 0)";
