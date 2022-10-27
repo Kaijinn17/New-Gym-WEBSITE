@@ -270,6 +270,8 @@
                                 <p class="card-text d-flex justify-content-center">
                                     <?php
 
+                                    $id = $_GET['id'];
+
                                     $sql = "SELECT FROM clientes WHERE id = '$id'";
                                     $sql = $pdo->query($sql);
 
