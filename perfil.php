@@ -273,7 +273,7 @@
                                     $sql = "SELECT FROM clientes";
                                     $sql = $pdo->query($sql);
 
-                                        foreach ($sql->fetch(PDO::FETCH_ASSOC) as $dado) {
+                                        foreach ($sql->fetchAll($_SESSION["$id"]) as $dado) {
 
                                     echo "<a href='./src/planotri.php?nome=".$dado['nome'].'&planos='.$dado['planos']."' class='w-100'>
                                 <button class='btn btn-success w-100'>Adquirir</button>
