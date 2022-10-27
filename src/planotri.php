@@ -18,7 +18,7 @@ $nome = $_GET["nome"];
 echo "$planos";
 echo "$nome";
 
-$sql = 'INSERT INTO solicitacoes (nome, plano_antigo, plano_novo, aprovado) VALUES ("$nome", "$planos", "trimestral", 0)';
+$sql = "INSERT INTO solicitacoes (nome, plano_antigo, plano_novo, aprovado) VALUES ('$nome', '$planos', 'trimestral', 0)";
 $sql = $pdo->query($sql);
 
 header("Location: ../perfil.php");
