@@ -114,7 +114,6 @@
       echo "<table border='2' style='background-color:white;'>"; //abre table
       echo "<thead>"; //abre cabeçalho
       echo "<tr>"; //abre uma linha
-      echo "<th>ID</th>"; // colunas do cabeçalho
       echo "<th>Nome</th>";
       echo "<th>Plano Antigo</th>";
       echo "<th>Plano Novo</th>";
@@ -125,7 +124,6 @@
       /*Se você tiver um loop para exibir os dados ele deve ficar aqui*/
       foreach ($sql->fetchAll(PDO::FETCH_ASSOC) as $dado) {
         echo "<tr>"; // abre uma linha
-        echo "<td style='margin: 0 auto;'>" . $dado['id']; //coluna numero
         echo "<td style='margin: 0 auto;'>" . $dado['nome'] . "</td>"; // coluna validade
         echo "<td style='margin: 0 auto;'>" . $dado['plano_antigo'] . "</td>"; //coluna anexo
         echo "<td style='margin: 0 auto;'>" . $dado['plano_novo'] . "</td>"; //coluna valor numero
