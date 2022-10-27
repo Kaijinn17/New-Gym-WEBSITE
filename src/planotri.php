@@ -17,8 +17,8 @@ if (session_status() === PHP_SESSION_NONE) {
 
 
 
-$planos = $_GET["planos"];
-$nome = $_GET["nome"];
+$planos = $_GET['planos'];
+$nome = $_GET['nome'];
 
 $sql = "INSERT INTO solicitacoes (nome, plano_antigo, plano_novo, aprovado) VALUES ('$nome', '$planos', 'trimestral', 0)";
 $sql = $pdo->query($sql);
