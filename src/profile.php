@@ -31,3 +31,4 @@ try {
 
 $isPhoto = $user->foto;
 $planos = $user->planos;
+$nome = $user->nome;

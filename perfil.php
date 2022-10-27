@@ -271,7 +271,8 @@
                             <p class="card-text">Segunda a sabado.</p>
                             <p class="card-text d-flex justify-content-center">
                                 <?php
-
+                                include_once('./src/cadastro.php');
+                                include_once('./src/profile.php');
                                 echo "<a href='./src/planotri.php?nome='.['$nome'].'&plano_antigo='.['$planos'].' class='w-100'>
                                         Adquirir
                                 </a>";
