@@ -271,14 +271,13 @@
                             <p class="card-text d-flex justify-content-center">
                                 <?php
 
-
-                                $id = $_GET['id'];
-
                                 $sql = "SELECT * FROM clientes WHERE id = '$id'";
                                 $sql = $pdo->query($sql);
 
                                 if ($sql->rowCount() > 0) {
                                     foreach ($sql->fetchAll(PDO::FETCH_ASSOC) as $dado) {
+
+                                        $id = $_GET['id'];
 
                                         echo "<a href='./src/planotri.php?nome=" . $dado['nome'] . '&planos=' . $dado['planos'] . "' class='w-100'>
                                 <button class='btn btn-success w-100'>Adquirir</button>
