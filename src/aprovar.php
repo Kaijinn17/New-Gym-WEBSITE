@@ -1,21 +1,19 @@
 <?php
 require_once('./config.php');
 
-if (session_status() === PHP_SESSION_NONE) {
-    session_start();
-}
 
 $id = $_GET['id'];
 $plano = $_GET['plano'];
 
-$sql = "UPDATE clientes SET planos = '$plano' WHERE id = $id";
-$stmt = $pdo->prepare($sql);
-$stmt->execute();
+if(isset($_POST['update'])) {
+$sqlUpdate = "UPDATE clientes SET planos = '$plano' WHERE id = $id";
+$result = $pdo->query($sqlUpdate);
 
-$sql = "UPDATE solicitacoes SET aprovado = 1 WHERE id = $id";
-$stmt = $pdo->prepare($sql);
-$stmt->execute();
+$sqlAprovado = "UPDATE solicitacoes SET aprovado = 1 WHERE id = $id";
+$result = $pdo->query($sqlAprovado);
 
-header("location: ../solicitacoes.php");
+}
+
+header("Location: ../solicitacoes.php");
 
 ?>
