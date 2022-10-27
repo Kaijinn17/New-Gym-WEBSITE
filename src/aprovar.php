@@ -18,8 +18,7 @@ if (isset($_POST['update'])) {
         $planos = $_POST['planos'];
 
         $sqlUpdate = "UPDATE clientes SET planos = '$planos' WHERE id = '$id'";
-        $stmt = $pdo->prepare($sqlUpdate);
-        $stmt->execute();
+        $stmt = $pdo->query($sqlUpdate);
 }
 
 header("Location: ../solicitacoes.php");
