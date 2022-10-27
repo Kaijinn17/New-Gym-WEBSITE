@@ -273,13 +273,14 @@
                                     $sql = "SELECT FROM clientes";
                                     $sql = $pdo->query($sql);
 
-                                        foreach ($sql->fetchAll($_SESSION["$id"]) as $dado) {
+                                    if ($sql->rowCount() > 0) {
+                                        foreach ($sql->fetchAll(PDO::FETCH_ASSOC) as $dado) {
 
                                     echo "<a href='./src/planotri.php?nome=".$dado['nome'].'&planos='.$dado['planos']."' class='w-100'>
                                 <button class='btn btn-success w-100'>Adquirir</button>
                                 </a>";
                                         }
-                                    ?>
+                                    }?>
                                 </p>
                             </div>
                         </div>
@@ -357,6 +358,7 @@
 
         <script src="./assets/bootstrap/js/bootstrap.bundle.min.js"></script>
         <script src="./assets/js/photoUpload.js"></script>
+
 
     </body>
 
