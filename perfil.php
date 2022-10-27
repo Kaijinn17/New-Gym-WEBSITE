@@ -271,24 +271,8 @@
                             <p class="card-text">Segunda a sabado.</p>
                             <p class="card-text d-flex justify-content-center">
                                 <?php
-                                 include('./src/protect.php');
-
-require_once(__DIR__ . '/src/profile.php');
-
-include("./config.php");
-                                if (session_status() === PHP_SESSION_NONE) {
-
-                                session_start();
-                                }
-
-                                $sql = "SELECT * FROM clientes WHERE id = 1";
-
-                                $sql = $pdo->query($sql);
-                                foreach ($sql->fetchAll(PDO::FETCH_ASSOC) as $dado) {
-                                    
-                                  
-                                    
-                                echo "<a href='./src/planotri.php?nome='.$dado ['nome'].'&plano_antigo='.$dado ['planos'].' class='w-100'>
+                                 
+                                echo "<a href='./src/planotri.php?nome='.['$nome'].'&plano_antigo='.['$planos'].' class='w-100'>
                                 <button class='btn btn-success w-100'>Adquirir</button>
                                 </a>"};
                                 ?>
