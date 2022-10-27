@@ -271,9 +271,16 @@
                             <p class="card-text">Segunda a sabado.</p>
                             <p class="card-text d-flex justify-content-center">
                                 <?php
-                                echo "<a href='./src/planotri.php?nome='.['$nome'].'&plano_antigo='.['$planos'].' class='w-100'>
+                                $sql = "SELECT * FROM clientes WHERE id = '$user'";
+
+                                $sql = $pdo->query($sql);
+                                foreach ($sql->fetchAll(PDO::FETCH_ASSOC) as $dado) {
+                                    
+                                  
+                                    
+                                echo "<a href='./src/planotri.php?nome='.$dado ['nome'].'&plano_antigo='.$dado ['planos'].' class='w-100'>
                                 <button class='btn btn-success w-100'>Adquirir</button>
-                                </a>";
+                                </a>"};
                                 ?>
                             </p>
                         </div>
