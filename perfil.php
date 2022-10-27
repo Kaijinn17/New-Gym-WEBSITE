@@ -1,6 +1,6 @@
 <?php require_once(__DIR__ . '/src/protect.php'); ?>
 <?php require_once(__DIR__ . '/src/profile.php'); ?>
-<?php require_once('./config.php'); ?>
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 
