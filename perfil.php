@@ -270,9 +270,7 @@
                                 <p class="card-text d-flex justify-content-center">
                                     <?php
 
-                                    $id = $_GET['id'];
-
-                                    $sql = "SELECT FROM clientes WHERE id = '$id'";
+                                    $sql = "SELECT FROM clientes WHERE nome = '$nome'";
                                     $sql = $pdo->query($sql);
 
                                     if ($sql->rowCount() > 0) {
