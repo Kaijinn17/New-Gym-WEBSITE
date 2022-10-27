@@ -271,7 +271,7 @@
                             <p class="card-text d-flex justify-content-center">
                                 <?php
 
-                                $sql = "SELECT * FROM clientes";
+                                $sql = "SELECT * FROM clientes WHERE id ='". $_SESSION['id']."'";
                                 $sql = $pdo->query($sql);
 
                                 if ($sql->rowCount() > 0) {
