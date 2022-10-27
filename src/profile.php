@@ -6,7 +6,6 @@ error_reporting(E_ALL);
 
 require_once __DIR__ . '/createTable.php';
 require_once(__DIR__ . "/../config.php");
-include('./perfil.php');
 
 
 if (session_status() === PHP_SESSION_NONE) {
@@ -33,3 +32,6 @@ try {
 $isPhoto = $user->foto;
 $planos = $user->planos;
 $nome = $user->nome;
+
+
+include('./perfil.php');
