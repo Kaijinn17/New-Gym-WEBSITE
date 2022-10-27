@@ -14,12 +14,13 @@ if (session_status() === PHP_SESSION_NONE) {
 $sql = "SELECT * FROM clientes";
 $sql = $pdo->query($sql);
 
-$id = $_POST["id"];
-$nome = $_POST["nome"];
-$planos = $_POST["planos"];
+$id = $_GET["id"];
+$planos = $_GET["planos"];
 
+$sql = "UPDATE clientes SET planos_antigo = '$planos' WHERE id = '$id'";
+$sql = $pdo->query($sql);
 
-$sql = "INSERT INTO solicitacoes (id, nome, plano_antigo, plano_novo, aprovado) VALUES ('$id', '$nome', '$planos', 'trimestral', 0)";
+$sql = "UPDATE clientes SET aprovado = 0 WHERE id = '$id'";
 $sql = $pdo->query($sql);
 
 header("Location: ../perfil.php");

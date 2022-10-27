@@ -105,7 +105,7 @@
 
   <center>
     <?php
-    $sql = "SELECT * FROM solicitacoes WHERE aprovado = 0";
+    $sql = "SELECT * FROM clientes WHERE aprovado = 0";
     $sql = $pdo->query($sql);
 
     echo "LISTA DE SOLICITAÇÕES";
@@ -127,7 +127,7 @@
         echo "<tr>"; // abre uma linha
         echo "<td style='margin: 0 auto;'>" . $dado['nome'] . "</td>"; // coluna validade
         echo "<td style='margin: 0 auto;'>" . $dado['plano_antigo'] . "</td>"; //coluna anexo
-        echo "<td style='margin: 0 auto;'>" . $dado['plano_novo'] . "</td>"; //coluna valor numero
+        echo "<td style='margin: 0 auto;'>" . $dado['planos'] . "</td>"; //coluna valor numero
         echo "<td style='margin: 0 auto;'>" . $dado['aprovado'] . "</td>";
         echo "<td><a href='./src/aprovar.php?id=".$dado['id'].'&planos='.$dado['plano_novo']."' name='update' id='update'>APROVAR</a><br><a href='./src/reprovar.php?id=".$dado['id']."'>REPROVAR</a></td>";  
         echo "</tr>"; // fecha linha
