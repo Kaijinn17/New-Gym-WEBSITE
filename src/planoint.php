@@ -12,8 +12,8 @@ if (session_status() === PHP_SESSION_NONE) {
 }
 
 
-$planos = $_GET["planos"];
-$nome = $_GET["nome"];
+$planos = $_POST["planos"];
+$nome = $_POST["nome"];
 
 echo "$planos";
 echo "$nome";
