@@ -48,7 +48,7 @@
     }
 
     .table{
-      width: 60%;
+      width: 40%;
       height: 30px;
       margin: 0px auto;
     }
