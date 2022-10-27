@@ -271,11 +271,7 @@
                             <p class="card-text">Segunda a sabado.</p>
                             <p class="card-text d-flex justify-content-center">
                                 <?php
-
-                                $sql = "SELECT * FROM clientes";
-                                $sql = $pdo->query($sql);
-
-                                echo "<a href='./src/planotri.php?id='.$dado ['id'].'&plano_antigo='.$dado ['planos'].&plano_novo='['trimestral'].' class='w-100'>
+                                echo "<a href='./src/planotri.php?id='['$user->id'].'&plano_antigo='['$user->planos'].&plano_novo='['trimestral'].' class='w-100'>
                                         Adquirir
                                 </a>" ?>
                             </p>
