@@ -34,13 +34,7 @@ if (btnSendPhoto) {
 
 //js para exibir/esconder planos
 
-function Mudarestado(el) {
-    var display = document.getElementById(el).style.display;
-    if (display == "none")
-      document.getElementById(el).style.display = 'block';
-    else
-      document.getElementById(el).style.display = 'none';
-  }
+
 
   function Calistenia(el) {
     var display = document.getElementById(el).style.display;
