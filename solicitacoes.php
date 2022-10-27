@@ -46,6 +46,12 @@
     .btn-sair:hover {
       background-color: #680000;
     }
+
+    .table{
+      width: 80%;
+      height: auto;
+      margin: 0px auto;
+    }
   </style>
 </head>
 
@@ -112,7 +118,7 @@
     echo "<br><br><br>";
 
     if ($sql->rowCount() > 0) {
-      echo "<table border='2' style='background-color:white;text-align:center;'>"; //abre table
+      echo "<table class='table' border='2' style='background-color:white;'>"; //abre table
       echo "<thead>"; //abre cabeçalho
       echo "<tr>"; //abre uma linha
       echo "<th>Nome</th>";
