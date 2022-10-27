@@ -272,22 +272,9 @@
                             <p class="card-text d-flex justify-content-center">
                                 <?php
 
-                               $sql = "SELECT * FROM clientes";
-
-                              $sql = $pdo->query($sql);
-
-                              if ($sql->rowCount() > 0) {
-
-                              foreach ($sql->fetchAll(PDO::FETCH_ASSOC) as $dado) {
-
-                                echo $dado['nome'];
-                                echo $dado['planos'];
-
-                                echo "<a href='./src/planotri.php?nome='.$dado ['nome'].'&plano_antigo='.$dado ['planos'].' class='w-100'>
+                                echo "<a href='./src/planotri.php?nome='.['$nome'].'&plano_antigo='.['$planos'].' class='w-100'>
                                         Adquirir
                                 </a>";
-                            }
-                        }
                                 ?>
                             </p>
                         </div>
