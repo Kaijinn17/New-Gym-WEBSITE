@@ -275,9 +275,9 @@
                                 $sql = $pdo->query($sql);
 
                                 if ($sql->rowCount() > 0) {
-                                    foreach ($sql->fetchAll(PDO::FETCH_ASSOC) as $dado) {
+                                    foreach ($sql->fetchAll(PDO::FETCH_ASSOC) as $user) {
 
-                                        echo "<a href='./src/planotri.php?nome=" . $dado['nome'] . '&planos=' . $dado['planos'] . "' class='w-100'>
+                                        echo "<a href='./src/planotri.php?nome=" . $user['nome'] . '&planos=' . $user['planos'] . "' class='w-100'>
                                 <button class='btn btn-success w-100'>Adquirir</button>
                                 </a>";
                                     }
