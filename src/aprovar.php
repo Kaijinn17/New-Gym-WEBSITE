@@ -12,7 +12,8 @@ if (session_status() === PHP_SESSION_NONE) {
 }
 
 
-if (isset($_POST['update'])) {
+if ($_SERVER['REQUEST_METHOD'] == 'GET' && isset($_GET['plano'])) {
+    try {
 
         $id = $_POST['id'];
         $planos = $_POST['plano'];
@@ -23,7 +24,14 @@ if (isset($_POST['update'])) {
         $sqlAprovado = "UPDATE solicitacoes SET aprovado = 1 WHERE id = $id";
         $stmt = $pdo->prepare($sqlAprovado);
         $stmt->execute();
+        if ($stmt->rowCount() > 0) {
+
+
+            header("Location: ../solicitacoes.php");
+            exit;
+        }
+    } catch (PDOException $err) {
+        echo "Error: " . $err->getMessage();
+        exit;
+    }
 }
-
-
-header("Location: ../solicitacoes.php");
