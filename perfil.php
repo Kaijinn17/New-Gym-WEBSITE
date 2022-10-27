@@ -272,6 +272,9 @@
                             <p class="card-text d-flex justify-content-center">
                                 <?php
 
+$nome = $_GET['nome'];
+$planos = $_GET['planos'];
+
                                 echo "<a href='./src/planotri.php?nome='.$nome ['nome'].'&plano_antigo='.$planos ['planos'].' class='w-100'>
                                         Adquirir
                                 </a>"
