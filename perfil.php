@@ -271,7 +271,11 @@
                             <p class="card-text">Segunda a sabado.</p>
                             <p class="card-text d-flex justify-content-center">
                                 <?php
-                                require_once(__DIR__ . "/../config.php");
+                                 include('./src/protect.php');
+
+require_once(__DIR__ . '/src/profile.php');
+
+include("./config.php");
                                 if (session_status() === PHP_SESSION_NONE) {
 
                                 session_start();
