@@ -16,7 +16,7 @@ $id = $_GET['id'];
 $nome = $_GET['nome'];
 $planos = $_GET['planos'];
 
-$sql = "INSERT INTO solicitacoes (id, nome, plano_antigo, plano_novo, aprovado) SELECT solicitacoes.$id, solicitacoes.$nome, solicitacoes.$planos, solicitacoes.'trimestral', solicitacoes.0 FROM solicitacoes";
+$sql = "INSERT INTO solicitacoes (id, nome, plano_antigo, plano_novo, aprovado) SELECT clientes.$id, solicitacoes.$nome, solicitacoes.$planos, solicitacoes.'trimestral', solicitacoes.0 FROM solicitacoes";
 $sql = $pdo->query($sql);
 
 header("Location: ../perfil.php");
