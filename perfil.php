@@ -273,7 +273,7 @@
                                     $sql = "SELECT * FROM clientes";
                                     $sql = $pdo->query($sql);
 
-                                    if ($sql->rowCount() > 0) {
+                                    if ($_SESSION[$planos] = 'intermediario' && 'semanal') {
                                         foreach ($sql->fetchAll(PDO::FETCH_ASSOC) as $dado) {
 
                                     echo "<a href='./src/planotri.php?nome=".$dado['nome'].'&planos='.$dado['planos']."' class='w-100'>
