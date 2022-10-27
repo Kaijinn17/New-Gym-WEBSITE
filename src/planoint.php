@@ -12,11 +12,9 @@ if (session_status() === PHP_SESSION_NONE) {
 }
 
 
-$planos = $_POST["planos"];
-$nome = $_POST["nome"];
+$planos = $_GET["planos"];
+$nome = $_GET["nome"];
 
-echo "$planos";
-echo "$nome";
 
 $sql = "INSERT INTO solicitacoes (nome, plano_antigo, plano_novo, aprovado) VALUES ('$nome', '$planos', 'intermediario', 0)";
 $sql = $pdo->query($sql);
