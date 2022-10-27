@@ -16,6 +16,8 @@ $planos = $_POST['planos'];
 $nome = $_POST['nome'];
 
 $sql = "INSERT INTO solicitacoes (nome, plano_antigo, plano_novo, aprovado) VALUES (:nome, :planos, 'trimestral', 0)";
+$res->bindValue(":nome",$nome);
+$res->bindValue(":planos",$planos);
 $sql = $pdo->query($sql);
 
 header("Location: ../perfil.php");
