@@ -14,9 +14,10 @@ if (session_status() === PHP_SESSION_NONE) {
 $sql = "SELECT * FROM clientes";
 $sql = $pdo->query($sql);
 
+$id = $_GET["id"];
+$nome = $_GET["nome"];
+$planos = $_GET["planos"];
 
-$planos = $user->planos;
-$nome = $user->nome;
 
 $sql = "INSERT INTO solicitacoes (nome, plano_antigo, plano_novo, aprovado) VALUES ('$nome', '$planos', 'trimestral', 0)";
 $sql = $pdo->query($sql);
