@@ -32,6 +32,3 @@ try {
 $isPhoto = $user->foto;
 $planos = $user->planos;
 $nome = $user->nome;
-
-
-include('./perfil.php');
