@@ -270,7 +270,7 @@
                                 <p class="card-text d-flex justify-content-center">
                                     <?php
 
-                                    $sql = "SELECT FROM clientes WHERE id = '$id'";
+                                    $sql = "SELECT FROM clientes";
                                     $sql = $pdo->query($sql);
 
                                         foreach ($sql->fetch(PDO::FETCH_ASSOC) as $dado) {
