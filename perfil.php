@@ -273,13 +273,14 @@
                                     $sql = "SELECT * FROM clientes";
                                     $sql = $pdo->query($sql);
 
-                                    while($user_data = mysqli_fetch_assoc($PDO)) {
+                                    if ($sql->rowCount() > 0) {
+                                        foreach ($sql->fetchAll(PDO::FETCH_ASSOC) as $dado) {
 
-                                    echo "<a href='./src/planotri.php?nome='$id'&plano_antigo='$planos' class='w-100'>
+                                    echo "<a href='./src/planotri.php?nome=".$dado['nome'].'&planos='.$dado['planos']."' class='w-100'>
                                 <button class='btn btn-success w-100'>Adquirir</button>
                                 </a>";
-                                    }
-                                    ?>
+                                        }
+                                    }?>
                                 </p>
                             </div>
                         </div>
