@@ -12,6 +12,9 @@ if (session_status() === PHP_SESSION_NONE) {
     session_start();
 }
 
+$sql = "SELECT * FROM clientes WHERE aprovado = 0";
+$sql = $pdo->query($sql);
+
 
 
 $user = new stdClass;
