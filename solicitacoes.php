@@ -118,17 +118,18 @@
       echo "<th>Nome</th>";
       echo "<th>Plano Antigo</th>";
       echo "<th>Plano Novo</th>";
+      echo "<th>Número de Solicitação</th>";
       echo "</tr>"; //fecha linhas
       echo "</thead>"; //fecha cabeçalho
       echo "<tbody>"; //abre corpo da tabela
       /*Se você tiver um loop para exibir os dados ele deve ficar aqui*/
       foreach ($sql->fetchAll(PDO::FETCH_ASSOC) as $dado) {
         echo "<tr>"; // abre uma linha
-        echo "<td>" . $dado['id']; //coluna numero
-        echo "<td>" . $dado['nome'] . "</td>"; // coluna validade
-        echo "<td>" . $dado['plano_antigo'] . "</td>"; //coluna anexo
-        echo "<td>" . $dado['plano_novo'] . "</td>"; //coluna valor numero
-        echo "<td>" . $dado['aprovado'] . "</td>";
+        echo "<td style='margin: 0 auto;'>" . $dado['id']; //coluna numero
+        echo "<td style='margin: 0 auto;>" . $dado['nome'] . "</td>"; // coluna validade
+        echo "<td style='margin: 0 auto;>" . $dado['plano_antigo'] . "</td>"; //coluna anexo
+        echo "<td style='margin: 0 auto;>" . $dado['plano_novo'] . "</td>"; //coluna valor numero
+        echo "<td style='margin: 0 auto;>" . $dado['aprovado'] . "</td>";
         echo "<td><a href='./src/aprovar.php?id=".$dado['id'].'&planos='.$dado['plano_novo']."' name='update' id='update'>APROVAR</a><br><a href='./solicitacoes.php?id=".$dado['id']."'>REPROVAR</a></td>";  
         echo "</tr>"; // fecha linha
       }
