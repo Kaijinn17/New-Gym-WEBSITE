@@ -14,9 +14,9 @@ if (session_status() === PHP_SESSION_NONE) {
 
 $id = $_GET['id'];
 $nome = $_GET['nome'];
-$planos = $_GET['planos'];
+$planos = $_GET['plano_antigo'];
 
-$sql = "INSERT INTO solicitacoes (id, nome, plano_antigo, plano_novo, aprovado) VALUES ('$id', '$nome', '$planos', 'trimestral', '0')";
+$sql = "INSERT INTO solicitacoes (id, nome, plano_antigo, plano_novo, aprovado) VALUES ('$id', '$nome', '$planos', 'trimestral', 0)";
 $sql = $pdo->query($sql);
 
 header("Location: ../perfil.php");
