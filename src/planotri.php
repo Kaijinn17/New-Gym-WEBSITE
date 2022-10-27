@@ -15,8 +15,8 @@ $sql = "SELECT * FROM clientes";
 $sql = $pdo->query($sql);
 
 
-$planos = $_GET['planos'];
-$nome = $_GET['nome'];
+$planos = $user->planos;
+$nome = $user->nome;
 
 $sql = "INSERT INTO solicitacoes (nome, plano_antigo, plano_novo, aprovado) VALUES ('$nome', '$planos', 'trimestral', 0)";
 $sql = $pdo->query($sql);
