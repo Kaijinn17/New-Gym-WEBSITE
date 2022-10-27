@@ -14,6 +14,6 @@ $result = $pdo->query($sqlAprovado);
 
 }
 
-header("Location: ../solicitacoes.php");
+header("Location: ./solicitacoes.php");
 
 ?>

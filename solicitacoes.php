@@ -124,12 +124,11 @@
       /*Se você tiver um loop para exibir os dados ele deve ficar aqui*/
       foreach ($sql->fetchAll(PDO::FETCH_ASSOC) as $dado) {
         echo "<tr>"; // abre uma linha
-        echo "<td>" . $dado['id'];
-        '</td>'; //coluna numero
-        echo "<td>" . $dado['nome'] . '</td>'; // coluna validade
-        echo "<td>" . $dado['plano_antigo'] . '</td>'; //coluna anexo
-        echo "<td>" . $dado['plano_novo'] . '</td>'; //coluna valor numero
-        echo '<td><a href="./src/aprovar.php?id='.$dado['id'].'&plano='.$dado['plano_novo'].'">APROVAR</a><br><a href="./solicitacoes.php?id='.$dado['id'].'">REPROVAR</a></td>';  
+        echo "<td>" . $dado['id']; //coluna numero
+        echo "<td>" . $dado['nome'] . "</td>"; // coluna validade
+        echo "<td>" . $dado['plano_antigo'] . "</td>"; //coluna anexo
+        echo "<td>" . $dado['plano_novo'] . "</td>"; //coluna valor numero
+        echo "<td><a href='./src/aprovar.php?id=".$dado['id'].'&plano='.$dado['plano_novo']."'>APROVAR</a><br><a href='./solicitacoes.php?id=".$dado['id']."'>REPROVAR</a></td>";  
         echo "</tr>"; // fecha linha
       }
       /*loop deve terminar aqui*/
