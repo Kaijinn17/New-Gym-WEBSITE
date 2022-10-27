@@ -1,19 +1,17 @@
 <?php
-require_once('./config.php');
+require_once(__DIR__ . "/../config.php");
 
 
-$id = $_GET['id'];
-$plano = $_GET['plano'];
+if (isset($_POST['update'])) {
 
-if(isset($_POST['update'])) {
-$sqlUpdate = "UPDATE clientes SET planos = '$plano' WHERE id = $id";
-$result = $pdo->query($sqlUpdate);
+    $id = $_GET['id'];
+    $plano = $_GET['plano'];
 
-$sqlAprovado = "UPDATE solicitacoes SET aprovado = 1 WHERE id = $id";
-$result = $pdo->query($sqlAprovado);
+    $sqlUpdate = "UPDATE clientes SET planos = '$plano' WHERE id = '$id'";
+    $result = $pdo->query($sqlUpdate);
 
+    $sqlAprovado = "UPDATE solicitacoes SET aprovado = '1' WHERE id = '$id'";
+    $result = $pdo->query($sqlAprovado);
 }
 
 header("Location: ./solicitacoes.php");
-
-?>
