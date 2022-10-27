@@ -134,7 +134,7 @@
         echo "<td style='margin: 0 auto;'>" . $dado['nome'] . "</td>"; // coluna validade
         echo "<td style='margin: 0 auto;'>" . $dado['plano_antigo'] . "</td>"; //coluna anexo
         echo "<td style='margin: 0 auto;'>" . $dado['plano_novo'] . "</td>";
-        echo "<td><a href='./src/aprovar.php?id=".$dado['id'].'&planos='.$dado['plano_novo']."' class='btn btn-success w-100' name='update' id='update'>APROVAR</a><br><br><a href='./src/reprovar.php?id=".$dado['id']."' class='btn btn-danger w-100'>REPROVAR</a></td>";  
+        echo "<td><a href='./src/aprovar.php?id=".$dado['id'].'&planos='.$dado['plano_novo']."' class='btn btn-success btn-sm' name='update' id='update'>APROVAR</a><br><a href='./src/reprovar.php?id=".$dado['id']."' class='btn btn-danger btn-sm'>REPROVAR</a></td>";  
         echo "</tr>"; // fecha linha
       }
       /*loop deve terminar aqui*/
