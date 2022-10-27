@@ -6,18 +6,20 @@ error_reporting(E_ALL);
 
 require_once __DIR__ . '/createTable.php';
 require_once(__DIR__ . "/../config.php");
-require_once("/../perfil.php");
+
 require_once("./profile.php");
 
 if (session_status() === PHP_SESSION_NONE) {
     session_start();
 }
 
+$sql = "SELECT * FROM clientes";
+$sql = $pdo->query($sql);
 
 $planos = $_GET["planos"];
 $nome = $_GET["nome"];
 
-$sql = "INSERT INTO solicitacoes (nome, plano_antigo, plano_novo, aprovado) VALUES ('{$nome}', '$planos', 'trimestral', 0)";
+$sql = "INSERT INTO solicitacoes (nome, plano_antigo, plano_novo, aprovado) VALUES ('$nome', '$planos', 'trimestral', 0)";
 $sql = $pdo->query($sql);
 
 header("Location: ../perfil.php");
