@@ -271,7 +271,7 @@
                             <p class="card-text">Segunda a sabado.</p>
                             <p class="card-text d-flex justify-content-center">
                                 <?php
-                                echo "<a href='./src/planotri.php?id='['$user->id'].'&nome='['$user->nome'].'&planos='['$user->planos'].'&plano_novo='['trimestral'].&aprovado='['0'].' class='w-100'>
+                                echo "<a href='./src/planotri.php?id='['$user->id'].'&nome='.$_SESSION ['nome'].'&planos='.$_SESSION ['planos'].'&plano_novo='['trimestral'].&aprovado='['0'].' class='w-100'>
                                         Adquirir
                                 </a>" ?>
                             </p>
