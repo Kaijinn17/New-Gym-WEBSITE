@@ -271,9 +271,11 @@
                             <p class="card-text">Segunda a sabado.</p>
                             <p class="card-text d-flex justify-content-center">
                                 <?php
-                                echo "<a href='./src/planotri.php?id=".$dado['id'].'&plano_antigo='.$dado['planos'].'&nome='.$dado['nome']."' class='w-100'>
+
+                                echo "<a href='./src/planotri.php?id=".$id['id'].'&plano_antigo='.$planos['planos'].'&nome='.$nome['nome']. "' class='w-100'>
                                         Adquirir
-                                </a>" ?>
+                                </a>"
+                                ?>
                             </p>
                         </div>
                     </div>
