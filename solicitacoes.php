@@ -105,7 +105,7 @@
 
   <center>
     <?php
-    $sql = "SELECT * FROM clientes WHERE aprovado = 0";
+    $sql = "SELECT * FROM solicitacoes WHERE aprovado = 0";
     $sql = $pdo->query($sql);
 
     echo "LISTA DE SOLICITAÇÕES";
