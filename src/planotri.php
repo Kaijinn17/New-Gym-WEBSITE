@@ -11,9 +11,6 @@ if (session_status() === PHP_SESSION_NONE) {
     session_start();
 }
 
-$sql = "SELECT * FROM clientes";
-$sql = $pdo->query($sql);
-
 $id = $_GET["id"];
 $planos = $_GET["planos"];
 $nome = $_GET["nome"];
