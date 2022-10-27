@@ -52,6 +52,7 @@
       height: auto;
       margin: 0px auto;
     }
+
   </style>
 </head>
 
@@ -124,7 +125,6 @@
       echo "<th>Nome</th>";
       echo "<th>Plano Antigo</th>";
       echo "<th>Plano Novo</th>";
-      echo "<th>Número de Solicitação</th>";
       echo "</tr>"; //fecha linhas
       echo "</thead>"; //fecha cabeçalho
       echo "<tbody>"; //abre corpo da tabela
@@ -133,9 +133,8 @@
         echo "<tr>"; // abre uma linha
         echo "<td style='margin: 0 auto;'>" . $dado['nome'] . "</td>"; // coluna validade
         echo "<td style='margin: 0 auto;'>" . $dado['plano_antigo'] . "</td>"; //coluna anexo
-        echo "<td style='margin: 0 auto;'>" . $dado['plano_novo'] . "</td>"; //coluna valor numero
-        echo "<td style='margin: 0 auto;'>" . $dado['aprovado'] . "</td>";
-        echo "<td><a href='./src/aprovar.php?id=".$dado['id'].'&planos='.$dado['plano_novo']."' name='update' id='update'>APROVAR</a><br><a href='./src/reprovar.php?id=".$dado['id']."'>REPROVAR</a></td>";  
+        echo "<td style='margin: 0 auto;'>" . $dado['plano_novo'] . "</td>";
+        echo "<td><a href='./src/aprovar.php?id=".$dado['id'].'&planos='.$dado['plano_novo']."' class='btn btn-success w-10' name='update' id='update'>APROVAR</a><br><a href='./src/reprovar.php?id=".$dado['id']."' class='btn btn-danger w-10'>REPROVAR</a></td>";  
         echo "</tr>"; // fecha linha
       }
       /*loop deve terminar aqui*/
