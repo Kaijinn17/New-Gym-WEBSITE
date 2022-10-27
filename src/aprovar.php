@@ -17,10 +17,8 @@ if (isset($_POST['update'])) {
         $id = $_GET['id'];
         $planos = $_GET['plano'];
 
-        $sqlUpdate = "UPDATE clientes SET planos = $planos WHERE id = $id";
+        $sqlUpdate = "UPDATE clientes SET planos = '$planos' WHERE id = '$id'";
         $stmt = $pdo->prepare($sqlUpdate);
-        $stmt->bindValue(":planos", $_POST['plano']);
-        $stmt->bindValue(":id", $_POST['id']);
         $stmt->execute();
 }
 
