@@ -13,7 +13,7 @@ if (session_status() === PHP_SESSION_NONE) {
     session_start();
 }
 
-$sql = "SELECT * FROM clientes";
+$sql = "SELECT * FROM clientes WHERE id = '$id'";
 $sql = $pdo->query($sql);
 
 $planos = $_GET["planos"];
