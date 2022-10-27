@@ -128,7 +128,8 @@
         echo "<td>" . $dado['nome'] . "</td>"; // coluna validade
         echo "<td>" . $dado['plano_antigo'] . "</td>"; //coluna anexo
         echo "<td>" . $dado['plano_novo'] . "</td>"; //coluna valor numero
-        echo "<td><a href='./src/aprovar.php?id=".$dado['id'].'&plano='.$dado['plano_novo']."' name='update' id='update'>APROVAR</a><br><a href='./solicitacoes.php?id=".$dado['id']."'>REPROVAR</a></td>";  
+        echo "<td>" . $dado['aprovado'] . "</td>";
+        echo "<td><a href='./src/aprovar.php?id=".$dado['id'].'&planos='.$dado['plano_novo']."' name='update' id='update'>APROVAR</a><br><a href='./solicitacoes.php?id=".$dado['id']."'>REPROVAR</a></td>";  
         echo "</tr>"; // fecha linha
       }
       /*loop deve terminar aqui*/
