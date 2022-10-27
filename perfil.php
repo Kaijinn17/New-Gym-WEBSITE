@@ -271,7 +271,7 @@
                             <p class="card-text d-flex justify-content-center">
                                 <?php
 
-                                $sql = "SELECT * FROM clientes WHERE id ='". $_SESSION['id']."'";
+                                $sql = "SELECT * FROM clientes WHERE id ='" . $_SESSION['id'] . "'";
                                 $sql = $pdo->query($sql);
 
                                 if ($sql->rowCount() > 0) {
@@ -302,11 +302,19 @@
                             <h5 class="card-title">Periodo</h5>
                             <p class="card-text">3 dias da semana a sua escolha.</p>
                             <p class="card-text d-flex justify-content-center">
-                                <a href="./src/profile.php?plano=intermediario" class="w-100">
-                                    <button class="btn btn-info w-100">
-                                        Adquirir
-                                    </button>
-                                </a>
+                                <?php
+
+                                $sql = "SELECT * FROM clientes WHERE id ='" . $_SESSION['id'] . "'";
+                                $sql = $pdo->query($sql);
+
+                                if ($sql->rowCount() > 0) {
+                                    foreach ($sql->fetchAll(PDO::FETCH_ASSOC) as $user) {
+
+                                        echo "<a href='./src/planoint.php?nome=" . $user['nome'] . '&planos=' . $user['planos'] . "' class='w-100'>
+<button class='btn btn-info w-100'>Adquirir</button>
+</a>";
+                                    }
+                                } ?>
                             </p>
                         </div>
                     </div>
@@ -327,11 +335,19 @@
                             <h5 class="card-title">Periodo</h5>
                             <p class="card-text">Segunda a Sabado.</p>
                             <p class="card-text d-flex justify-content-center">
-                                <a href="./src/profile.php?plano=semanal" class="w-100">
-                                    <button class="btn btn-secondary w-100">
-                                        Adquirir
-                                    </button>
-                                </a>
+                                <?php
+
+                                $sql = "SELECT * FROM clientes WHERE id ='" . $_SESSION['id'] . "'";
+                                $sql = $pdo->query($sql);
+
+                                if ($sql->rowCount() > 0) {
+                                    foreach ($sql->fetchAll(PDO::FETCH_ASSOC) as $user) {
+
+                                        echo "<a href='./src/planotri.php?nome=" . $user['nome'] . '&planos=' . $user['planos'] . "' class='w-100'>
+<button class='btn btn-secondary w-100'>Adquirir</button>
+</a>";
+                                    }
+                                } ?>
                             </p>
                         </div>
                     </div>
