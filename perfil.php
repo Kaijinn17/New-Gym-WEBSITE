@@ -262,7 +262,10 @@
                             <h5 class="card-title">Periodo</h5>
                             <p class="card-text">Segunda a sabado.</p>
                                 <p class="card-text d-flex justify-content-center">
-                                <?php echo "<a href='./src/planotri.php?id='['$id'].'&plano_antigo='['$planos'].&plano_novo='['trimestral'].' class='w-100'>
+                                <?php
+                                $id = $_GET['id'];
+                                $planos = $_GET['planos'];
+                                echo "<a href='./src/planotri.php?id='['$id'].'&plano_antigo='['$planos'].&plano_novo='['trimestral'].' class='w-100'>
                                         Adquirir
                                 </a>"?>
                             </p>
