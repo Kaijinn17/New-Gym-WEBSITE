@@ -14,13 +14,11 @@ if (session_status() === PHP_SESSION_NONE) {
 
 if (isset($_POST['update'])) {
 
-        $id = $_POST['id'];
-        $planos = $_POST['plano'];
+        $id = $_GET['id'];
+        $planos = $_GET['plano'];
 
         $sqlUpdate = "UPDATE clientes SET planos = $planos WHERE id = $id";
-        $sqlAprovado = "UPDATE solicitacoes SET aprovado = 1 WHERE id = $id";
         $stmt = $pdo->prepare($sqlUpdate);
-        $stmt = $pdo->prepare($sqlAprovado);
         $stmt->bindValue(":planos", $_POST['plano']);
         $stmt->bindValue(":id", $_POST['id']);
         $stmt->execute();
