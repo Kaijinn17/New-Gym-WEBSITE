@@ -12,8 +12,7 @@ if (session_status() === PHP_SESSION_NONE) {
 }
 
 
-if ($_SERVER['REQUEST_METHOD'] == 'GET' && isset($_POST['plano'])) {
-    try {
+if (isset($_POST['update'])) {
 
         $id = $_POST['id'];
         $planos = $_POST['plano'];
@@ -25,12 +24,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'GET' && isset($_POST['plano'])) {
         $stmt->bindValue(":planos", $_POST['plano']);
         $stmt->bindValue(":id", $_POST['id']);
         $stmt->execute();
-        if ($stmt->rowCount() > 0) {
-            header("Location: ../solicitacoes.php");
-            exit;
-        }
-    } catch (PDOException $err) {
-        echo "Error: " . $err->getMessage();
-        exit;
-    }
 }
+
+header("Location: ../solicitacoes.php");
