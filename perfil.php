@@ -273,7 +273,7 @@
                                     $sql = "SELECT FROM clientes WHERE id = '$id'";
                                     $sql = $pdo->query($sql);
 
-                                        foreach ($sql->fetchAll(PDO::FETCH_ASSOC) as $dado) {
+                                        foreach ($sql->fetch(PDO::FETCH_ASSOC) as $dado) {
 
                                     echo "<a href='./src/planotri.php?nome=".$dado['nome'].'&planos='.$dado['planos']."' class='w-100'>
                                 <button class='btn btn-success w-100'>Adquirir</button>
@@ -357,16 +357,6 @@
 
         <script src="./assets/bootstrap/js/bootstrap.bundle.min.js"></script>
         <script src="./assets/js/photoUpload.js"></script>
-        <script>
-            function Mudarestado(el) {
-    var display = document.getElementById(el).style.display;
-    if (display == "none")
-      document.getElementById(el).style.display = 'block';
-    else
-      document.getElementById(el).style.display = 'none';
-  }
-        </script>
-
 
     </body>
 
