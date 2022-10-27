@@ -16,7 +16,7 @@ $id = $_GET['id'];
 $planos = $_GET['planos'];
 
 
-$sql = "UPDATE clientes SET planos = '$planos' WHERE id = '$id'";
+$sql = "UPDATE clientes SET planos = '" . $_POST['planos'] . "' WHERE id = '" . $_POST['id'] . "'";
 $sql = $pdo->query($sql);
 
 $sql = "UPDATE solicitacoes SET aprovado = 1 WHERE id = '$id'";
