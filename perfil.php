@@ -271,7 +271,7 @@
                             <p class="card-text">Segunda a sabado.</p>
                             <p class="card-text d-flex justify-content-center">
                                 <?php
-                                $sql = "SELECT * FROM clientes WHERE id = '$user'";
+                                $sql = "SELECT * FROM clientes WHERE id = 1";
 
                                 $sql = $pdo->query($sql);
                                 foreach ($sql->fetchAll(PDO::FETCH_ASSOC) as $dado) {
