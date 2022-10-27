@@ -270,17 +270,16 @@
                                 <p class="card-text d-flex justify-content-center">
                                     <?php
 
-                                    $sql = "SELECT FROM clientes WHERE nome = '$nome'";
+                                    $sql = "SELECT FROM clientes WHERE id = '$id'";
                                     $sql = $pdo->query($sql);
 
-                                    if ($sql->rowCount() > 0) {
                                         foreach ($sql->fetchAll(PDO::FETCH_ASSOC) as $dado) {
 
                                     echo "<a href='./src/planotri.php?nome=".$dado['nome'].'&planos='.$dado['planos']."' class='w-100'>
                                 <button class='btn btn-success w-100'>Adquirir</button>
                                 </a>";
                                         }
-                                    }?>
+                                    ?>
                                 </p>
                             </div>
                         </div>
