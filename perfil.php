@@ -271,11 +271,9 @@
                             <p class="card-text">Segunda a sabado.</p>
                             <p class="card-text d-flex justify-content-center">
                                 <?php
-
-$nome = $_GET['nome'];
-$planos = $_GET['planos'];
-
-                                echo "<a href='./src/planotri.php?nome='$nome'&plano_antigo='$planos' class='w-100'>
+                                $nome = $_SESSION['nome'];
+                                $planos = $_SESSION['planos'];
+                                echo "<a href='./src/planotri.php?nome=".['nome'].'&plano_antigo='.['planos']."' class='w-100'>
                                         Adquirir
                                 </a>"
                                 ?>
