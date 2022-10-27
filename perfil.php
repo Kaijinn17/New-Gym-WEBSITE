@@ -276,7 +276,7 @@
                                 $planos = $user->planos;
 
                                 echo "<a href='./src/planotri.php?nome='.['$nome'].'&plano_antigo='.['$planos'].' class='w-100'>
-                                        Adquirir
+                                <button class='btn btn-success w-100'>Adquirir</button>
                                 </a>";
                                 ?>
                             </p>
