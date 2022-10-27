@@ -17,5 +17,8 @@ $id = $_GET['id'];
 $sql = "UPDATE solicitacoes SET aprovado = 1 WHERE id = '$id'";
 $sql = $pdo->query($sql);
 
+$sql = "DELETE FROM solicitacoes WHERE id = '$id'";
+$sql = $pdo->query($sql);
+
 
 header("Location: ../solicitacoes.php");
