@@ -272,7 +272,7 @@
                             <p class="card-text d-flex justify-content-center">
                                 <?php
 
-                                echo "<a href='./src/planotri.php?id="['id'].'&plano_antigo='['planos'].'&nome='['nome']. "' class='w-100'>
+                                echo "<a href='./src/planotri.php?plano_antigo='.['$planos'].'&nome='.['$nome'].' class='w-100'>
                                         Adquirir
                                 </a>"
                                 ?>
