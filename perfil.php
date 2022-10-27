@@ -271,6 +271,12 @@
                             <p class="card-text">Segunda a sabado.</p>
                             <p class="card-text d-flex justify-content-center">
                                 <?php
+                                require_once(__DIR__ . "/../config.php");
+                                if (session_status() === PHP_SESSION_NONE) {
+
+                                session_start();
+                                }
+
                                 $sql = "SELECT * FROM clientes WHERE id = 1";
 
                                 $sql = $pdo->query($sql);
