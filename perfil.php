@@ -1,6 +1,5 @@
 <?php require_once(__DIR__ . '/src/protect.php'); ?>
 <?php require_once(__DIR__ . '/src/profile.php'); ?>
-<?php require_once __DIR__ . '/createTable.php'; ?>
 <?php require_once(__DIR__ . "/../config.php"); ?>
 <!DOCTYPE html>
 <html lang="pt-BR">
