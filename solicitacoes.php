@@ -109,6 +109,7 @@
     $sql = $pdo->query($sql);
 
     echo "LISTA DE SOLICITAÇÕES";
+    echo "<br><br><br>";
 
     if ($sql->rowCount() > 0) {
       echo "<table border='2' style='background-color:white;'>"; //abre table
