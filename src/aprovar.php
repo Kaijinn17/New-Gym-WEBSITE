@@ -19,9 +19,11 @@ if ($_SERVER['REQUEST_METHOD'] == 'GET' && isset($_POST['plano'])) {
         $planos = $_POST['plano'];
 
         $sqlUpdate = "UPDATE clientes SET planos = $planos WHERE id = $id";
-        $stmt = $pdo->prepare($sqlUpdate);
         $sqlAprovado = "UPDATE solicitacoes SET aprovado = 1 WHERE id = $id";
+        $stmt = $pdo->prepare($sqlUpdate);
         $stmt = $pdo->prepare($sqlAprovado);
+        $stmt->bindValue(":planos", $_POST['plano']);
+        $stmt->bindValue(":id", $_POST['id']);
         $stmt->execute();
         if ($stmt->rowCount() > 0) {
             header("Location: ../solicitacoes.php");
