@@ -277,7 +277,7 @@
                                 $sql1 = "SELECT * FROM solicitacoes WHERE aprovado = 0 AND telefone ='" . $_SESSION['telefone'] . "'";
                                 $sql1 = $pdo->query($sql1);
 
-                                if ($sql1->rowCount() > 0) {
+                                if ($sql1->rowCount() == 0) {
                                     foreach ($sql->fetchAll(PDO::FETCH_ASSOC) as $dado) {
 
                                         echo "<a href='./src/planotri.php?nome=" . $dado['nome'] . '&planos=' . $dado['planos'] .  '&telefone=' . $dado['telefone'] . "' class='w-100'>
