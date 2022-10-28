@@ -10,10 +10,6 @@ require_once(__DIR__ . "/../config.php");
 if (session_status() === PHP_SESSION_NONE) {
     session_start();
 }
-if(
-    isset($_POST['phone'])
-    ) 
-{
 
 try{
 $id = $_GET['id'];
@@ -27,13 +23,11 @@ $sql = $pdo->query($sql);
 $sql = "DELETE FROM solicitacoes WHERE telefone = '$telefone'";
 $sql = $pdo->query($sql);
 
-header("Location: ../solicitacoes.php");
-
+if ($stmt->execute($dados)) {
+    header("Content-type: application/json; charset=utf-8");
+    header("Location: ../solicitacoes.php");
+  }
 } catch (PDOException $e) {
     header("Content-type: application/json; charset=utf-8");
     echo json_encode(array("success" => false, "message" => "Você já fez uma solicitação"));
   }
-} else {
-  die();
-}
-
