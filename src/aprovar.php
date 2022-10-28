@@ -27,6 +27,8 @@ $sql = $pdo->query($sql);
 $sql = "DELETE FROM solicitacoes WHERE telefone = '$telefone'";
 $sql = $pdo->query($sql);
 
+header("Location: ../solicitacoes.php");
+
 } catch (PDOException $e) {
     header("Content-type: application/json; charset=utf-8");
     echo json_encode(array("success" => false, "message" => "Você já fez uma solicitação"));
@@ -35,6 +37,3 @@ $sql = $pdo->query($sql);
   die();
 }
 
-
-
-header("Location: ../solicitacoes.php");
