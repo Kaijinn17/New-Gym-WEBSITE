@@ -278,7 +278,7 @@
                                 $sql1 = $pdo->query($sql1);
 
                                 if ($sql1->rowCount() == 0) {
-                                    if($plano != $_SESSION['plano']){
+                                    if($planos != $_SESSION['planos']){
                                         foreach ($sql->fetchAll(PDO::FETCH_ASSOC) as $dado) {
 
                                             echo "<a href='./src/planotri.php?nome=" . $dado['nome'] . '&planos=' . $dado['planos'] .  '&telefone=' . $dado['telefone'] . "' class='w-100'>
