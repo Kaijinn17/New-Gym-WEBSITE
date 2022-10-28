@@ -14,10 +14,7 @@ if (session_status() === PHP_SESSION_NONE) {
 
 $id = $_GET['id'];
 
-$sql = "UPDATE solicitacoes SET aprovado = 1 WHERE id = '$id'";
-$sql = $pdo->query($sql);
-
-$sql = "DELETE FROM solicitacoes WHERE id = '$id'";
+$sql = "UPDATE solicitacoes SET aprovado = 2 WHERE id = '$id'";
 $sql = $pdo->query($sql);
 
 
