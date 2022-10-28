@@ -11,7 +11,7 @@ if (session_status() === PHP_SESSION_NONE) {
     session_start();
 }
 
-
+if(isset($_POST['update'])){
 $id = $_GET['id'];
 $planos = $_GET['planos'];
 
@@ -22,5 +22,8 @@ $sql = $pdo->query($sql);
 $sql = "UPDATE solicitacoes SET aprovado = 1 WHERE id = '$id'";
 $sql = $pdo->query($sql);
 
+$sql = $pdo->query($sql);
+
+}
 
 header("Location: ../solicitacoes.php");
