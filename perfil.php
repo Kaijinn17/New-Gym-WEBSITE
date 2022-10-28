@@ -278,12 +278,17 @@
                                 $sql1 = $pdo->query($sql1);
 
                                 if ($sql1->rowCount() == 0) {
-                                    foreach ($sql->fetchAll(PDO::FETCH_ASSOC) as $dado) {
+                                    if($plano != $_SESSION['plano']){
+                                        foreach ($sql->fetchAll(PDO::FETCH_ASSOC) as $dado) {
 
-                                        echo "<a href='./src/planotri.php?nome=" . $dado['nome'] . '&planos=' . $dado['planos'] .  '&telefone=' . $dado['telefone'] . "' class='w-100'>
-                                <button class='btn btn-success w-100'>Adquirir</button>
-                                </a>";
+                                            echo "<a href='./src/planotri.php?nome=" . $dado['nome'] . '&planos=' . $dado['planos'] .  '&telefone=' . $dado['telefone'] . "' class='w-100'>
+                                    <button class='btn btn-success w-100'>Adquirir</button>
+                                    </a>";
+                                        }
+                                    }else{
+                                        echo "<h1>minha pik4</h1>";
                                     }
+                                    
                                 } ?>
                             </p>
                         </div>
