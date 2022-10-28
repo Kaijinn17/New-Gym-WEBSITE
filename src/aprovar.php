@@ -19,9 +19,6 @@ $telefone = $_GET['telefone'];
 $sql = "UPDATE clientes SET planos = '$planos' WHERE telefone = '$telefone'";
 $sql = $pdo->query($sql);
 
-$sql = "UPDATE solicitacoes SET aprovado = 1 WHERE telefone = '$telefone'";
-$sql = $pdo->query($sql);
-
 $sql = "DELETE FROM solicitacoes WHERE telefone = '$telefone'";
 $sql = $pdo->query($sql);
 
