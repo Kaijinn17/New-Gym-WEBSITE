@@ -52,7 +52,7 @@ if (isset($_FILES["profile_image"])) {
 
         if (!array_search($uploadTypes[$key], $mimeTypes) !== false && $allowupload) {
             //nesse caso $allowupload, vai continuar como false, e o arquivo respectivo não vai ser aceito;
-            echo $uploadNames[$key] . ", não aceitamos este tipo de arquivo, Produto não cadastrado!<br>";
+            echo $uploadNames[$key] . "<br>não aceitamos este tipo de arquivo, Produto não cadastrado!<br>";
             $allowupload = false;
         }
 
