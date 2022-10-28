@@ -19,7 +19,7 @@ $telefone = $_GET['telefone'];
 $sql = "UPDATE clientes SET planos = '$planos' WHERE telefone = '$telefone'";
 $sql = $pdo->query($sql);
 
-$sql = "UPDATE solicitacoes SET aprovado = 1 WHERE id = '$id'";
+$sql = "UPDATE solicitacoes SET aprovado = 1 WHERE id = '$id";
 $sql = $pdo->query($sql);
 
 header("Location: ../solicitacoes.php");
