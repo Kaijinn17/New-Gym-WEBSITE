@@ -10,7 +10,12 @@ require_once(__DIR__ . "/../config.php");
 if (session_status() === PHP_SESSION_NONE) {
     session_start();
 }
+if(
+    isset($_POST['phone'])
+    ) 
+{
 
+try{
 $id = $_GET['id'];
 $planos = $_GET['planos'];
 $nome = $_GET['nome'];
@@ -22,30 +27,14 @@ $sql = $pdo->query($sql);
 $sql = "DELETE FROM solicitacoes WHERE telefone = '$telefone'";
 $sql = $pdo->query($sql);
 
-if(isset($_GET['cpf'])){ 
-
-    #Recebe o telefone Postado
-    $telefone = $_GET['telefone'];
-
-    #Conecta banco de dados 
-    $sql = $pdo->query($sql);
-    $sql = mysqli_query($Mysqli, "SELECT 
-    telefone 
-        FROM 
-         solicitacoes
-         WHERE 
-             telefone = '".$telefone."'");
-
-    #Se o retorno for maior do que zero, diz que já existe um.
-    if(mysqli_num_rows($sql)>0) 
-
-        echo json_encode(array('telefone' => TRUE,'msg' => 'Você Já Fez Uma Solicitação')); 
-
-    else 
-        echo json_encode(array('telefone' => FALSE ));
-
-
+} catch (PDOException $e) {
+    header("Content-type: application/json; charset=utf-8");
+    echo json_encode(array("success" => false, "message" => "Você já fez uma solicitação"));
+  }
+} else {
+  die();
 }
+
 
 
 header("Location: ../solicitacoes.php");
