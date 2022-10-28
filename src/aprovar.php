@@ -22,7 +22,7 @@ $sql = $pdo->query($sql);
 $sql = "UPDATE solicitacoes SET aprovado = 1 WHERE telefone = '$telefone'";
 $sql = $pdo->query($sql);
 
-$sql = "DELETE FROM solicitacoes WHERE id = '$id'";
+$sql = "DELETE FROM solicitacoes WHERE telefone = '$telefone'";
 $sql = $pdo->query($sql);
 
 
