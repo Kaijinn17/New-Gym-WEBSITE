@@ -286,7 +286,7 @@
                                     </a>";
                                         }
                                     } else {
-                                        echo "<h5 class='card-title'>Plano Atual</h5>";
+                                        echo "<h5 class='card-title text-center'>Plano Atual</h5>";
                                     }
                                 } ?>
                             </p>
@@ -326,7 +326,7 @@
                                     </a>";
                                         }
                                     } else {
-                                        echo "<h5 class='card-title'>Plano Atual</h5>";
+                                        echo "<h5 class='card-title text-center'>Plano Atual</h5>";
                                     }
                                 } ?>
                             </p>
@@ -366,7 +366,7 @@
     </a>";
                                         }
                                     } else {
-                                        echo "<h5 class='card-title'>Plano Atual</h5>";
+                                        echo "<h5 class='card-title text-center'>Plano Atual</h5>";
                                     }
                                 } ?>
                             </p>
