@@ -83,7 +83,7 @@ ini_set("display_errors", false);
           </div>
           <div class="u-form-group u-form-partition-factor-2 u-form-group-4">
             <label for="text-ba05" class="u-label">Senha</label>
-            <input type="password" placeholder="Digite a sua senha" id="text-ba05" name="password" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white" required="">
+            <input type="password" placeholder="Digite a sua senha" id="text-ba05" name="password" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white" minlength="8" required="">
           </div>
           <div class="u-form-date u-form-group u-form-group-5">
             <label for="date-5b56" class="u-label">Data de Nascimento</label>
