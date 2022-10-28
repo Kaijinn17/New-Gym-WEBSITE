@@ -78,7 +78,7 @@ if (isset($_FILES["profile_image"])) {
                     exit;
                 }
                 header("Content-type: application/json; charset=utf-8");
-                echo json_encode(array("success" => true, "message" => "Upload Realizado Com Sucesso!", "path" => "./uploads/$newFileName[$key]"));
+                echo json_encode(array("success" => true, "message" => "Upload Realizado Com Sucesso!", "path" => "./src/uploads/$newFileName[$key]"));
                 exit;
             } else {
                 header("Content-type: application/json; charset=utf-8");
