@@ -321,7 +321,7 @@
                                     if ($planos != 'intermediario') {
                                         foreach ($sql->fetchAll(PDO::FETCH_ASSOC) as $dado) {
 
-                                            echo "<a href='./src/planotri.php?nome=" . $dado['nome'] . '&planos=' . $dado['planos'] .  '&telefone=' . $dado['telefone'] . "' class='w-100'>
+                                            echo "<a href='./src/planoint.php?nome=" . $dado['nome'] . '&planos=' . $dado['planos'] .  '&telefone=' . $dado['telefone'] . "' class='w-100'>
                                     <button class='btn btn-success w-100'>Adquirir</button>
                                     </a>";
                                         }
@@ -361,7 +361,7 @@
                                     if ($planos != 'semanal') {
                                         foreach ($sql->fetchAll(PDO::FETCH_ASSOC) as $dado) {
 
-                                            echo "<a href='./src/planotri.php?nome=" . $dado['nome'] . '&planos=' . $dado['planos'] .  '&telefone=' . $dado['telefone'] . "' class='w-100'>
+                                            echo "<a href='./src/planosem.php?nome=" . $dado['nome'] . '&planos=' . $dado['planos'] .  '&telefone=' . $dado['telefone'] . "' class='w-100'>
     <button class='btn btn-success w-100'>Adquirir</button>
     </a>";
                                         }
