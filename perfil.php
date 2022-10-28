@@ -278,17 +278,16 @@
                                 $sql1 = $pdo->query($sql1);
 
                                 if ($sql1->rowCount() == 0) {
-                                    if($planos != $_SESSION['planos']){
+                                    if ($planos != $_SESSION['planos']) {
                                         foreach ($sql->fetchAll(PDO::FETCH_ASSOC) as $dado) {
 
                                             echo "<a href='./src/planotri.php?nome=" . $dado['nome'] . '&planos=' . $dado['planos'] .  '&telefone=' . $dado['telefone'] . "' class='w-100'>
                                     <button class='btn btn-success w-100'>Adquirir</button>
                                     </a>";
                                         }
-                                    }else{
-                                        echo "<h1>minha pik4</h1>";
+                                    } else {
+                                        echo "<h5 class='card-title'>Plano Atual</h5>";
                                     }
-                                    
                                 } ?>
                             </p>
                         </div>
@@ -315,12 +314,19 @@
                                 $sql = "SELECT * FROM clientes WHERE id ='" . $_SESSION['id'] . "'";
                                 $sql = $pdo->query($sql);
 
-                                if ($sql->rowCount() > 0) {
-                                    foreach ($sql->fetchAll(PDO::FETCH_ASSOC) as $dado) {
+                                $sql1 = "SELECT * FROM solicitacoes WHERE aprovado = 0 AND telefone ='" . $_SESSION['telefone'] . "'";
+                                $sql1 = $pdo->query($sql1);
 
-                                        echo "<a href='./src/planoint.php?nome=" . $dado['nome'] . '&planos=' . $dado['planos'] . '&telefone=' . $dado['telefone'] . "' class='w-100'>
-<button class='btn btn-info w-100'>Adquirir</button>
-</a>";
+                                if ($sql1->rowCount() == 0) {
+                                    if ($planos != $_SESSION['planos']) {
+                                        foreach ($sql->fetchAll(PDO::FETCH_ASSOC) as $dado) {
+
+                                            echo "<a href='./src/planotri.php?nome=" . $dado['nome'] . '&planos=' . $dado['planos'] .  '&telefone=' . $dado['telefone'] . "' class='w-100'>
+                                    <button class='btn btn-success w-100'>Adquirir</button>
+                                    </a>";
+                                        }
+                                    } else {
+                                        echo "<h5 class='card-title'>Plano Atual</h5>";
                                     }
                                 } ?>
                             </p>
@@ -348,12 +354,19 @@
                                 $sql = "SELECT * FROM clientes WHERE id ='" . $_SESSION['id'] . "'";
                                 $sql = $pdo->query($sql);
 
-                                if ($sql->rowCount() > 0) {
-                                    foreach ($sql->fetchAll(PDO::FETCH_ASSOC) as $dado) {
+                                $sql1 = "SELECT * FROM solicitacoes WHERE aprovado = 0 AND telefone ='" . $_SESSION['telefone'] . "'";
+                                $sql1 = $pdo->query($sql1);
 
-                                        echo "<a href='./src/planosem.php?nome=" . $dado['nome'] . '&planos=' . $dado['planos'] .  '&telefone=' . $dado['telefone'] . "' class='w-100'>
-<button class='btn btn-secondary w-100'>Adquirir</button>
-</a>";
+                                if ($sql1->rowCount() == 0) {
+                                    if ($planos != $_SESSION['planos']) {
+                                        foreach ($sql->fetchAll(PDO::FETCH_ASSOC) as $dado) {
+
+                                            echo "<a href='./src/planotri.php?nome=" . $dado['nome'] . '&planos=' . $dado['planos'] .  '&telefone=' . $dado['telefone'] . "' class='w-100'>
+    <button class='btn btn-success w-100'>Adquirir</button>
+    </a>";
+                                        }
+                                    } else {
+                                        echo "<h5 class='card-title'>Plano Atual</h5>";
                                     }
                                 } ?>
                             </p>
