@@ -11,8 +11,8 @@ if (session_status() === PHP_SESSION_NONE) {
     session_start();
 }
 
-$id = $_GET['id'];
-$planos = $_GET['planos'];
+$id = $_POST['id'];
+$planos = $_POST['planos'];
 
 
 $sql = "UPDATE clientes SET planos = '$planos' WHERE id = '$id'";
