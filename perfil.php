@@ -278,7 +278,7 @@
                                 $sql1 = $pdo->query($sql1);
 
                                 if ($sql1->rowCount() == 0) {
-                                    if ($_SESSION['planos'] != 'trimestral') {
+                                    if ($planos != 'trimestral') {
                                         foreach ($sql->fetchAll(PDO::FETCH_ASSOC) as $dado) {
 
                                             echo "<a href='./src/planotri.php?nome=" . $dado['nome'] . '&planos=' . $dado['planos'] .  '&telefone=' . $dado['telefone'] . "' class='w-100'>
@@ -318,7 +318,7 @@
                                 $sql1 = $pdo->query($sql1);
 
                                 if ($sql1->rowCount() == 0) {
-                                    if ($_SESSION['planos'] != 'intermediario') {
+                                    if ($planos != 'intermediario') {
                                         foreach ($sql->fetchAll(PDO::FETCH_ASSOC) as $dado) {
 
                                             echo "<a href='./src/planotri.php?nome=" . $dado['nome'] . '&planos=' . $dado['planos'] .  '&telefone=' . $dado['telefone'] . "' class='w-100'>
@@ -358,7 +358,7 @@
                                 $sql1 = $pdo->query($sql1);
 
                                 if ($sql1->rowCount() == 0) {
-                                    if ($_SESSION['planos'] != 'semanal') {
+                                    if ($planos != 'semanal') {
                                         foreach ($sql->fetchAll(PDO::FETCH_ASSOC) as $dado) {
 
                                             echo "<a href='./src/planotri.php?nome=" . $dado['nome'] . '&planos=' . $dado['planos'] .  '&telefone=' . $dado['telefone'] . "' class='w-100'>
