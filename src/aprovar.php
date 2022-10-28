@@ -11,7 +11,7 @@ if (session_status() === PHP_SESSION_NONE) {
     session_start();
 }
 
-$id = $_POST['id'];
+$id = $_GET['id'];
 $planos = $_POST['planos'];
 
 echo "$id";
