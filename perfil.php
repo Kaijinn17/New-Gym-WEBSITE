@@ -86,7 +86,7 @@
                 <div class="col-md-6 col-lg-5">
                     <div id="infoUpload">
                     </div>
-                    <div class="card" style="width: 3>
+                    <div class="card">
                         <div class="card-header">
                             Profile
                         </div>
