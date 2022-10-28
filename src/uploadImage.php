@@ -64,7 +64,7 @@ if (isset($_FILES["profile_image"])) {
         if ($allowupload) { //faz upload apenas se $allowupload, for true!
             $fileNameP[$key] = str_replace(",", "", $uploadNames[$key]);
             $newFileName[$key] = uniqid(rand()) . "." . $format; //concatena um texto aleatorio + o nome original do arquivo recebido!
-            $isUploaded = move_uploaded_file($value, $uploadDir . "./src/uploads" . $newFileName[$key]);
+            $isUploaded = move_uploaded_file($value, $uploadDir . "./uploads" . $newFileName[$key]);
             if ($isUploaded) {
                 try {
                     $sql = "UPDATE clientes SET foto = :foto WHERE id = :id";
