@@ -14,6 +14,9 @@ if (session_status() === PHP_SESSION_NONE) {
 $id = $_POST['id'];
 $planos = $_POST['planos'];
 
+echo "$id";
+echo "$planos";
+
 
 $sql = "UPDATE clientes SET planos = '$planos' WHERE id = '$id'";
 $sql = $pdo->query($sql);
