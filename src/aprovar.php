@@ -11,7 +11,6 @@ if (session_status() === PHP_SESSION_NONE) {
     session_start();
 }
 
-try{
 $id = $_GET['id'];
 $planos = $_GET['planos'];
 $nome = $_GET['nome'];
