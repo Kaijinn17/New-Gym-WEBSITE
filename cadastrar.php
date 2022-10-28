@@ -75,7 +75,7 @@ ini_set("display_errors", false);
           </div>
           <div class="u-form-group u-form-phone u-form-group-2">
             <label for="phone-16f2" class="u-label">Telefone</label>
-            <input type="tel" placeholder="Insira seu telefone (ex: +14155552675)" id="phone-16f2" name="phone" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white" required="">
+            <input type="tel" placeholder="Insira seu telefone (ex: +14155552675)" id="phone-16f2" name="phone" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white" maxlength="11" required required="">
           </div>
           <div class="u-form-email u-form-group u-form-partition-factor-2">
             <label for="email-7cb6" class="u-label">Email</label>
