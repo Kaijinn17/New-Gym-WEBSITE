@@ -98,7 +98,7 @@
                                 </p>
                                 <input type="file" style="display:none;" id="file" name="file" />
                             <?php else : ?>
-                                <img src="<?php echo $isPhoto; ?>" class="card-img-top" id="profile_photo" alt="porfilePhoto" width="300px" height="300px">
+                                <img src="<?php echo $isPhoto; ?>" class="card-img-top" id="profile_photo" alt="profilePhoto" width="300px" height="300px">
                                 <p class="card-text d-flex justify-content-center" class="mt-2" id="send_photo">
                                     <a href="#">Enviar Foto</a>
                                 </p>
