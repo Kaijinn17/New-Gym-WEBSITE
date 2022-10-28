@@ -277,7 +277,7 @@
                                 if ($sql->rowCount() > 0) {
                                     foreach ($sql->fetchAll(PDO::FETCH_ASSOC) as $dado) {
 
-                                        echo "<a href='./src/planotri.php?nome=" . $dado['nome'] . '&planos=' . $dado['planos'] . "' class='w-100'>
+                                        echo "<a href='./src/planotri.php?nome=" . $dado['nome'] . '&planos=' . $dado['planos'] .  '&telefone=' . $dado['telefone'] . "' class='w-100'>
                                 <button class='btn btn-success w-100'>Adquirir</button>
                                 </a>";
                                     }
@@ -310,7 +310,7 @@
                                 if ($sql->rowCount() > 0) {
                                     foreach ($sql->fetchAll(PDO::FETCH_ASSOC) as $dado) {
 
-                                        echo "<a href='./src/planoint.php?nome=" . $dado['nome'] . '&planos=' . $dado['planos'] . "' class='w-100'>
+                                        echo "<a href='./src/planoint.php?nome=" . $dado['nome'] . '&planos=' . $dado['planos'] . '&telefone=' . $dado['telefone'] . "' class='w-100'>
 <button class='btn btn-info w-100'>Adquirir</button>
 </a>";
                                     }
@@ -343,7 +343,7 @@
                                 if ($sql->rowCount() > 0) {
                                     foreach ($sql->fetchAll(PDO::FETCH_ASSOC) as $dado) {
 
-                                        echo "<a href='./src/planosem.php?nome=" . $dado['nome'] . '&planos=' . $dado['planos'] . "' class='w-100'>
+                                        echo "<a href='./src/planosem.php?nome=" . $dado['nome'] . '&planos=' . $dado['planos'] .  '&telefone=' . $dado['telefone'] . "' class='w-100'>
 <button class='btn btn-secondary w-100'>Adquirir</button>
 </a>";
                                     }

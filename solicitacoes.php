@@ -122,6 +122,7 @@
       echo "<thead>"; //abre cabeçalho
       echo "<tr>"; //abre uma linha
       echo "<th>Nome</th>";
+      echo "<th>Contato do Cliente</th>";
       echo "<th>Plano Antigo</th>";
       echo "<th>Plano Novo</th>";
       echo "</tr>"; //fecha linhas
@@ -131,9 +132,10 @@
       foreach ($sql->fetchAll(PDO::FETCH_ASSOC) as $dado) {
         echo "<tr>"; // abre uma linha
         echo "<td style='margin: 0 auto;'>" . $dado['nome'] . "</td>"; // coluna validade
+        echo "<td style='margin: 0 auto;'>" . $dado['telefone'] . "</td>";
         echo "<td style='margin: 0 auto;'>" . $dado['plano_antigo'] . "</td>"; //coluna anexo
         echo "<td style='margin: 0 auto;'>" . $dado['plano_novo'] . "</td>";
-        echo "<td><a href='./src/aprovar.php?nome=" . $dado['nome'] . '&planos=' . $dado['plano_novo'] . "' class='btn btn-success btn-sm' style='margin-right:10px;' name='update' id='update'>APROVAR</a><a href='./src/reprovar.php?id=" . $dado['id'] . "' class='btn btn-danger btn-sm'>REPROVAR</a></td>";
+        echo "<td><a href='./src/aprovar.php?telefone=" . $dado['telefone'] . '&planos=' . $dado['plano_novo'] . "' class='btn btn-success btn-sm' style='margin-right:10px;' name='update' id='update'>APROVAR</a><a href='./src/reprovar.php?id=" . $dado['id'] . "' class='btn btn-danger btn-sm'>REPROVAR</a></td>";
         echo "</tr>"; // fecha linha
       }
       /*loop deve terminar aqui*/
