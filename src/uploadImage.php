@@ -64,7 +64,7 @@ if (isset($_FILES["profile_image"])) {
         if ($allowupload) { //faz upload apenas se $allowupload, for true!
             $fileNameP[$key] = str_replace(",", "", $uploadNames[$key]);
             $newFileName[$key] = uniqid(rand()) . "." . $format; //concatena um texto aleatorio + o nome original do arquivo recebido!
-            $isUploaded = move_uploaded_file($value, $uploadDir . "./uploads" . $newFileName[$key]);
+            $isUploaded = move_uploaded_file($value, $uploadDir . "/uploads/" . $newFileName[$key]);
             if ($isUploaded) {
                 try {
                     $sql = "UPDATE clientes SET foto = :foto WHERE id = :id";
@@ -78,7 +78,7 @@ if (isset($_FILES["profile_image"])) {
                     exit;
                 }
                 header("Content-type: application/json; charset=utf-8");
-                echo json_encode(array("success" => true, "message" => "Upload Realizado Com Sucesso!", "path" => "./uploads/$newFileName[$key]"));
+                echo json_encode(array("success" => true, "message" => "Upload Realizado Com Sucesso!", "path" => "/uploads/$newFileName[$key]"));
                 exit;
             } else {
                 header("Content-type: application/json; charset=utf-8");
