@@ -12,13 +12,10 @@ if (session_status() === PHP_SESSION_NONE) {
 }
 
 $id = $_GET['id'];
-$planos = $_POST['planos'];
+$planos = $_GET['planos'];
+$nome = $_GET['nome'];
 
-echo "$id";
-echo "$planos";
-
-
-$sql = "UPDATE clientes SET planos = '$planos' WHERE id = '$id'";
+$sql = "UPDATE clientes SET planos = '$planos' WHERE nome = '$nome'";
 $sql = $pdo->query($sql);
 
 $sql = "UPDATE solicitacoes SET aprovado = 1 WHERE id = '$id'";
