@@ -93,9 +93,10 @@
                             Profile
                         </div>
                         <div class="card-body">
-                            <?php if ($genero == 'masculino') : ?>
+                            <?php if ($_SESSION['genero'] == 'masculino') : ?>
                                 <img src="./assets/images/manicon.png" class="card-img-top" id="profile_photo" alt="porfilePhoto" width="300px" height="300px">
-                            <?php elseif ($genero == 'feminino') : ?>
+                                <?php endif; ?>
+                                <?php if ($_SESSION['genero'] == 'feminino') : ?>
                                 <img src="./assets/images/womanicon.png" class="card-img-top" id="profile_photo" alt="porfilePhoto" width="300px" height="300px">
                             <?php endif; ?>
                             <h5 class="card-title d-flex justify-content-center"><?php echo ucfirst($user->nome); ?></h5>
