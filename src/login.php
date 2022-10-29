@@ -28,6 +28,7 @@ if (isset($_POST['email']) || isset($_POST['senha'])) {
                     $_SESSION['nome'] =  $user->nome;
                     $_SESSION['telefone'] =  $user->telefone;
                     $_SESSION['planos'] =  $user->planos;
+                    $_SESSION['genero'] =  $user->genero;
                 }
                 header("location: ../logado.php");
                 exit;
