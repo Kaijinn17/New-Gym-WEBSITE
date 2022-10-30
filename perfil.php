@@ -101,8 +101,7 @@
                             <div class="card-foto d-flex justify-content-center">
                             <?php if ($_SESSION['genero'] == 'Masculino') : ?>
                                 <img src="./assets/images/man-icon.png" class="card-img-top img-responsive">
-                                <?php endif; ?>
-                                <?php if ($_SESSION['genero'] == 'Feminino') : ?>
+                                <?php else : ?>
                                 <img src="./assets/images/girl-icon.png" class="card-img-top img-responsive">
                             <?php endif; ?>
                             </div>
