@@ -32,6 +32,5 @@ try {
 }
 
 
-$isPhoto = "./src/uploads/".$user->foto;
 $planos = $user->planos;
 $nome = $user->nome;

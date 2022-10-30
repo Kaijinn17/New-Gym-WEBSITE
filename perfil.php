@@ -1,5 +1,5 @@
-<?php include('./src/protect.php'); ?> 
-<?php require_once(__DIR__ . '/src/profile.php'); ?> 
+<?php include('./src/protect.php'); ?>
+<?php require_once(__DIR__ . '/src/profile.php'); ?>
 <?php include("./config.php"); ?>
 <!DOCTYPE html>
 <html lang="pt-BR">
@@ -22,7 +22,8 @@
         .btn-plano {
             margin: 20px;
         }
-        .card-foto{
+
+        .card-foto {
             margin: 0px auto;
             width: 200px;
             height: 200px;
@@ -99,11 +100,11 @@
                         </div>
                         <div class="card-body">
                             <div class="card-foto d-flex justify-content-center">
-                            <?php if ($_SESSION['genero'] == 'Masculino') : ?>
-                                <img src="./assets/images/man-icon.png" class="card-img-top img-responsive">
+                                <?php if ($_SESSION['genero'] == 'Masculino') : ?>
+                                    <img src="./assets/images/man-icon.png" class="card-img-top img-responsive">
                                 <?php else : ?>
-                                <img src="./assets/images/girl-icon.png" class="card-img-top img-responsive">
-                            <?php endif; ?>
+                                    <img src="./assets/images/girl-icon.png" class="card-img-top img-responsive">
+                                <?php endif; ?>
                             </div>
                             <h5 class="card-title d-flex justify-content-center" style="margin-top: 10px;"><?php echo ucfirst($user->nome); ?></h5>
                             <p class="card-text">
@@ -396,7 +397,7 @@
     </footer>
 
     <script src="./assets/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="./assets/js/photoUpload.js"></script>
+    <script src="./assets/js/jsmain.js"></script>
 
 
 </body>
