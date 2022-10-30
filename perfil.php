@@ -22,6 +22,10 @@
         .btn-plano {
             margin: 20px;
         }
+        .card-foto{
+            width: 100px;
+            height: 100px;
+        }
     </style>
 
 </head>
@@ -93,7 +97,7 @@
                             Profile
                         </div>
                         <div class="card-body">
-                            <div width="150px" height="150px">
+                            <div class="card-foto">
                             <?php if ($_SESSION['genero'] == 'Masculino') : ?>
                                 <img src="./assets/images/man-icon.png" class="card-img-top img-responsive">
                                 <?php endif; ?>
