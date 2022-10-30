@@ -93,12 +93,14 @@
                             Profile
                         </div>
                         <div class="card-body">
+                            <div width="80%" height="90%">
                             <?php if ($_SESSION['genero'] == 'Masculino') : ?>
-                                <img src="./assets/images/man-icon.png" class="card-img-top" width="150px" height="210px">
+                                <img src="./assets/images/man-icon.png" class="card-img-top img-responsive">
                                 <?php endif; ?>
                                 <?php if ($_SESSION['genero'] == 'Feminino') : ?>
-                                <img src="./assets/images/girl-icon.png" class="card-img-top" width="150px" height="210px">
+                                <img src="./assets/images/girl-icon.png" class="card-img-top img-responsive">
                             <?php endif; ?>
+                            </div>
                             <h5 class="card-title d-flex justify-content-center"><?php echo ucfirst($user->nome); ?></h5>
                             <p class="card-text">
 
