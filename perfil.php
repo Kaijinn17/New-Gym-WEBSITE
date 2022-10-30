@@ -23,6 +23,7 @@
             margin: 20px;
         }
         .card-foto{
+            margin: 0px auto;
             width: 200px;
             height: 200px;
         }
