@@ -436,7 +436,7 @@ A partir daí, leve a anilha para o lado esquerdo até tocar o peso no chão, ao
   </footer>
 
   <script src="./assets/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="./assets/js/photoUpload.js"></script>
+  <script src="./assets/js/jsmain.js"></script>
 
 </body>
 
