@@ -94,10 +94,10 @@
                         </div>
                         <div class="card-body">
                             <?php if ($_SESSION['genero'] == 'Masculino') : ?>
-                                <img src="./assets/images/man-icon.png" class="card-img-top img-responsive">
+                                <img src="./assets/images/man-icon.png" class="card-img-top" width="180px" height="210px">
                                 <?php endif; ?>
                                 <?php if ($_SESSION['genero'] == 'Feminino') : ?>
-                                <img src="./assets/images/girl-icon.png" class="card-img-top img-responsive">
+                                <img src="./assets/images/girl-icon.png" class="card-img-top" width="180px" height="210px">
                             <?php endif; ?>
                             <h5 class="card-title d-flex justify-content-center"><?php echo ucfirst($user->nome); ?></h5>
                             <p class="card-text">
