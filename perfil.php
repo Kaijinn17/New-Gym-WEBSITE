@@ -106,7 +106,7 @@
                                 <img src="./assets/images/girl-icon.png" class="card-img-top img-responsive">
                             <?php endif; ?>
                             </div>
-                            <h5 class="card-title d-flex justify-content-center" style="margin-top: 20px;"><?php echo ucfirst($user->nome); ?></h5>
+                            <h5 class="card-title d-flex justify-content-center" style="margin-top: 10px;"><?php echo ucfirst($user->nome); ?></h5>
                             <p class="card-text">
 
                             <table class="table">
