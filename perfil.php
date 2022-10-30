@@ -23,8 +23,8 @@
             margin: 20px;
         }
         .card-foto{
-            width: 100px;
-            height: 100px;
+            width: 200px;
+            height: 200px;
         }
     </style>
 
@@ -97,7 +97,7 @@
                             Profile
                         </div>
                         <div class="card-body">
-                            <div class="card-foto">
+                            <div class="card-foto d-flex justify-content-center">
                             <?php if ($_SESSION['genero'] == 'Masculino') : ?>
                                 <img src="./assets/images/man-icon.png" class="card-img-top img-responsive">
                                 <?php endif; ?>
