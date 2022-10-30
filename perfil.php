@@ -93,7 +93,7 @@
                             Profile
                         </div>
                         <div class="card-body">
-                            <div width="60%" height="70%">
+                            <div width="150px" height="150px">
                             <?php if ($_SESSION['genero'] == 'Masculino') : ?>
                                 <img src="./assets/images/man-icon.png" class="card-img-top img-responsive">
                                 <?php endif; ?>
